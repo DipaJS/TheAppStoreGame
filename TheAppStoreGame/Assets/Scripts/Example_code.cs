@@ -1,0 +1,57 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Example_code : MonoBehaviour
+{
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
+    }
+
+    // Documentation describing what input is needed, if any, and what the function does.
+    // Comments in English.
+    // Underscore for multi-word function names.
+    void Example_function()
+    {
+        // camelCase for variables.
+        int exampleVariable     = 0;
+        string anotherVariable    = "";
+
+        // Example if statements.
+        if (/*condition*/)
+        {
+            // Code if true.
+        }
+        else if (/*condition*/)
+        {
+            // Code for second statement.
+        }
+        else
+        {
+            // Code for else.
+        }
+
+        // One line if statement.
+        if (/*condition*/) { /*very short code*/; }
+
+        // Standard for loop.
+        for (int i = 0; i < /*number of times to loop*/; i++)
+        {
+            // Iterative code.
+        }
+
+        // Simple loop to iterate through the elements of an array.
+        foreach (/*type*/ /*variableName*/ in /*arrayName*/)
+        {
+            // Iterative code.
+        }
+    }
+}
