@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class ComputerUI : MonoBehaviour
 {
+    public GameObject activeScreen;
+    public GameObject screenSaver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +17,11 @@ public class ComputerUI : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ChangeMonitor(GameObject activate, GameObject inactivate)
+    {
+        activate.SetActive(true);
+        inactivate.SetActive(false);
     }
 }
