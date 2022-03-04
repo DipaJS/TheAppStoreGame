@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);  
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);  
     }
 
 
@@ -26,6 +26,13 @@ public class MainMenu : MonoBehaviour
         audioMixer.SetFloat("volume", volume);
 
     }
+
+    public void GoToStartScreen()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+
 
     // Start is called before the first frame update
     void Start()
