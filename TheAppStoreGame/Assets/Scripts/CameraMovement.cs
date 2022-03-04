@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraMovement : MonoBehaviour
+public class CameraMovement : ComputerUI
 {
     public Vector3 baseCameraPosition;
     public Vector3 baseCamperaRotation;
     public Vector3 cameraPosition;
     public Vector3 cameraRotation;
     public GameObject laptop;
+    public GameObject xButton;
 
     // Start is called before the first frame update
     void Start()
@@ -29,17 +30,27 @@ public class CameraMovement : MonoBehaviour
             Debug.DrawRay(ray.origin, ray.direction * 10);
             if (Physics.Raycast(ray, out hit, 100.0f))
             {
-                //Replace this with whatever logic you want to use to validate the objects you want to click on
-                if (hit.collider.gameObject == laptop)
+                //Open computer/zoom in
+                if (hit.collider.gameObject == laptop && this.transform.position == baseCameraPosition)
                 {
                     move(cameraPosition, cameraRotation);
+                    ChangeMonitor(activeScreen, screenSaver);
                     Debug.Log("Clicked!");
+                }
+
+                //Close window/zoom out
+                if (hit.collider.gameObject == xButton)
+                {
+                    move(baseCameraPosition, baseCamperaRotation);
+                    ChangeMonitor(screenSaver, activeScreen);
+                    Debug.Log("Exited!");
                 }
             }
         }
         if (Input.GetButtonDown("Cancel"))
         {
             move(baseCameraPosition, baseCamperaRotation);
+            ChangeMonitor(screenSaver, activeScreen);
             Debug.Log("Cancel!");
         }
     }
