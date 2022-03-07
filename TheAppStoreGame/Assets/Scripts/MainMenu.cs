@@ -11,7 +11,12 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);  
+        SceneManager.LoadScene("GameView");  
+    }
+
+    public void GoToHowToPlay()
+    {
+        SceneManager.LoadScene("HowToPlay");
     }
 
 
@@ -21,20 +26,23 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+
     public void setVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
 
     }
 
+
     public void GoToStartScreen()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("StartScreen");
     }
 
-    public void GoBackToGameView()
+
+    public void GoToGameView()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene("GameView");
     }
 
 

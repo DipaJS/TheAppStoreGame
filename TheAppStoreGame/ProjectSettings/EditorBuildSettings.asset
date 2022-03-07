@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ComputerScreen.unity
     guid: f50d194a1310cb846b49dad09b57bd5a
+  - enabled: 1
+    path: Assets/Scenes/HowToPlay.unity
+    guid: 04ef54588f4444fc5aa0c7cde4d045d9
   m_configObjects: {}
