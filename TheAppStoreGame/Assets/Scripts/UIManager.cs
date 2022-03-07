@@ -11,11 +11,8 @@ public class UIManager : MonoBehaviour
 	private Text titleField;
 	public GameObject imageField; 
     private Sprite image;
-    private Queue apps;
     public App app1;
     public App app2;
-    public List<App> acceptedApps;
-    public List<App> rejectedApps;
     private App currentApp;
     private PlayerController controller;
    
@@ -23,18 +20,11 @@ public class UIManager : MonoBehaviour
     void Start()
     {
         controller = new PlayerController();
-        apps = new Queue();
-        acceptedApps = new List<App>();
-        rejectedApps = new List<App>();
-        app1 = new App("App 1", "Text för app 1", Resources.Load<Sprite>("ework"), "Konsekvens för app1");
-        app2 = new App("App 2", "Text för app 2", Resources.Load<Sprite>("PAWsitive"), "Konsekvens för app2");
-        apps.Enqueue(app1);
-        apps.Enqueue(app2);
 
         titleField = GameObject.Find("Title").GetComponent<Text>();
         descriptionField = GameObject.Find("Description").GetComponent<Text>();
 
-        currentApp = ((App)apps.Dequeue());
+        currentApp = ((App)GameManager.instance.apps.Dequeue());
         setApp(currentApp);
     }
 
@@ -43,21 +33,21 @@ public class UIManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            //Open computer/zoom in
+            // If app accepted
             if (controller.ifClicked(acceptButton))
             {
                 Debug.Log("Accepted!");
-                acceptedApps.Add(currentApp);
-                currentApp = ((App)apps.Dequeue());
-                setApp(currentApp);
+                GameManager.instance.AppChoice(currentApp, true); // Saves currentApp to GameManager
+                currentApp = ((App)GameManager.instance.apps.Dequeue()); // Sets the next App as currentApp
+                setApp(currentApp); // Updates the screen with the new currentApp
             }
 
-            //Close window/zoom out
+            // If app rejected
             if (controller.ifClicked(rejectButton))
             {
                 Debug.Log("Rejected!");
-                rejectedApps.Add(currentApp);
-                currentApp = ((App)apps.Dequeue());
+                GameManager.instance.AppChoice(currentApp, false);
+                currentApp = ((App)GameManager.instance.apps.Dequeue());
                 setApp(currentApp);
             }
             
