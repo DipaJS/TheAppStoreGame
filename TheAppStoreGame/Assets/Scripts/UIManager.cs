@@ -26,7 +26,7 @@ public class UIManager : MonoBehaviour
         apps = new Queue();
         acceptedApps = new List<App>();
         rejectedApps = new List<App>();
-        app1 = new App("App 1", "Text för app 1", Resources.Load<Sprite>("PAWsitive"), "Konsekvens för app1");
+        app1 = new App("App 1", "Text för app 1", Resources.Load<Sprite>("ework"), "Konsekvens för app1");
         app2 = new App("App 2", "Text för app 2", Resources.Load<Sprite>("PAWsitive"), "Konsekvens för app2");
         apps.Enqueue(app1);
         apps.Enqueue(app2);
