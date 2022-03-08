@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
@@ -35,16 +36,33 @@ public class UIManager : MonoBehaviour
     {
         Debug.Log("Accepted!");
         GameManager.instance.AppChoice(currentApp, true); // Saves currentApp to GameManager
-        currentApp = ((App)GameManager.instance.apps.Dequeue()); // Sets the next App as currentApp
-        setApp(currentApp); // Updates the screen with the new currentApp
+        if (GameManager.instance.apps.Count == 0)
+        {
+           SceneManager.LoadScene("EndScreen");
+        }
+        else
+        {
+            currentApp = ((App)GameManager.instance.apps.Dequeue()); // Sets the next App as currentApp
+            setApp(currentApp); // Updates the screen with the new currentApp
+        }
+       
+
+        
     }
 
     public void Reject()
     {
         Debug.Log("Rejected!");
         GameManager.instance.AppChoice(currentApp, false);
-        currentApp = ((App)GameManager.instance.apps.Dequeue());
-        setApp(currentApp);
+        if (GameManager.instance.apps.Count == 0)
+        {
+            SceneManager.LoadScene("EndScreen");
+        }
+        else
+        {
+            currentApp = ((App)GameManager.instance.apps.Dequeue());
+            setApp(currentApp); // Updates the screen with the new currentApp
+        }
 
     }
 

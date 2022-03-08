@@ -60,4 +60,14 @@ public class CameraMovement : ComputerUI
         this.transform.position = position;
         this.transform.eulerAngles = rotation;
     }
+
+    public void Cancel()
+    {
+        move(cameraPosition, cameraRotation);
+        ChangeMonitor(activeScreen, screenSaver);
+        Debug.Log("Clicked!");
+    }
+
+
+
 }
