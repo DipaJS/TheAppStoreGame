@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("GameView");  
+        SceneManager.LoadScene("Disclaimer");  
     }
 
     public void GoToHowToPlay()
