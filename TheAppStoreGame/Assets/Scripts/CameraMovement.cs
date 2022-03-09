@@ -10,6 +10,8 @@ public class CameraMovement : ComputerUI
     public Vector3 cameraRotation;
     public GameObject laptop;
     public GameObject xButton;
+    public GameObject newspaper;
+    public GameObject newsPopup;
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +50,12 @@ public class CameraMovement : ComputerUI
                     Debug.Log("Exited!");
                 }
                 */
+
+                if (hit.collider.gameObject == newspaper)
+                {
+                    newspaperPopup(true);
+                    Debug.Log("News!");
+                }
             }
         }
         if (Input.GetButtonDown("Cancel"))
@@ -72,6 +80,13 @@ public class CameraMovement : ComputerUI
         
     }
 
-
+    public void newspaperPopup(bool open)
+    {
+        int intBool = 0;
+        if (open) { intBool = 1; }
+        newsPopup.GetComponent<CanvasGroup>().alpha = intBool;
+        newsPopup.GetComponent<CanvasGroup>().blocksRaycasts = open;
+        newsPopup.GetComponent<CanvasGroup>().interactable = open;
+    }
 
 }
