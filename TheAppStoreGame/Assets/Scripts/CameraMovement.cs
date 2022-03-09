@@ -53,7 +53,7 @@ public class CameraMovement : ComputerUI
 
                 if (hit.collider.gameObject == newspaper)
                 {
-                    newspaperPopup(true);
+                    NewspaperPopup(true);
                     Debug.Log("News!");
                 }
             }
@@ -80,7 +80,7 @@ public class CameraMovement : ComputerUI
         
     }
 
-    public void newspaperPopup(bool open)
+    public void NewspaperPopup(bool open)
     {
         int intBool = 0;
         if (open) { intBool = 1; }

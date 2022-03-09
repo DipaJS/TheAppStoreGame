@@ -919,6 +919,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 243854315}
     m_Modifications:
     - target: {fileID: 1028298447856264, guid: d95dfe9eeea7731489064565a2d8b306, type: 3}
+      propertyPath: m_Name
+      value: screen model
+      objectReference: {fileID: 0}
+    - target: {fileID: 1028298447856264, guid: d95dfe9eeea7731489064565a2d8b306, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
