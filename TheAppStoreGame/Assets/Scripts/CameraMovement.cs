@@ -38,6 +38,8 @@ public class CameraMovement : ComputerUI
                     Debug.Log("Clicked!");
                 }
 
+                /*
+
                 //Close window/zoom out
                 if (hit.collider.gameObject == xButton)
                 {
@@ -45,6 +47,7 @@ public class CameraMovement : ComputerUI
                     ChangeMonitor(screenSaver, activeScreen);
                     Debug.Log("Exited!");
                 }
+                */
             }
         }
         if (Input.GetButtonDown("Cancel"))
@@ -63,9 +66,10 @@ public class CameraMovement : ComputerUI
 
     public void Cancel()
     {
-        move(cameraPosition, cameraRotation);
-        ChangeMonitor(activeScreen, screenSaver);
-        Debug.Log("Clicked!");
+            move(baseCameraPosition, baseCamperaRotation);
+            ChangeMonitor(screenSaver, activeScreen);
+            Debug.Log("Exited!");
+        
     }
 
 
