@@ -43,6 +43,7 @@ public class UIManager : MonoBehaviour
         else
         {
             currentApp = ((App)GameManager.instance.apps.Dequeue()); // Sets the next App as currentApp
+            GameManager.instance.newspaperDisplay();
             setApp(currentApp); // Updates the screen with the new currentApp
         }
        
