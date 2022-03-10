@@ -102,6 +102,7 @@ public class CameraMovement : ComputerUI
 
     // Opens or closes the popup for the newspaper
         // bool open - True to open the popup, false to close it
+    // Attatched to the back button for the newspaper
     public void NewspaperPopup(bool open)
     {
         int intBool = 0;

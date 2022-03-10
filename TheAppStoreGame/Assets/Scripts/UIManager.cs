@@ -89,6 +89,7 @@ public class UIManager : MonoBehaviour
         else
         {
             currentApp = ((App)GameManager.instance.apps.Dequeue());
+            GameManager.instance.newspaperDisplay();
             setApp(currentApp); // Updates the screen with the new currentApp
         }
 

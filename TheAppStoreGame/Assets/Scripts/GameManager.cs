@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 // A GameManager singleton
 public class GameManager : MonoBehaviour
@@ -30,11 +31,12 @@ public class GameManager : MonoBehaviour
     // The apps to be reviewed
     public Queue apps;
 
-    // Components and objects for the news popup
+    // Components and objects for the news popup, set in the Inspector
     public GameObject titleField;
     public GameObject descriptionField;
     public Image imageField;
-    public GameObject newsPopup; // Set in the Inspector
+    public GameObject newsPopup;
+    public GameObject newspaperModel;
 
     // Initialize private instances
     private void Awake()
@@ -77,16 +79,21 @@ public class GameManager : MonoBehaviour
 
     public void newspaperDisplay()
     {
+        App app;
         if (acceptedApps.Count != 0)
         {
-            Debug.Log(titleField);
-            /*titleField.GetComponent<TextMesh>().text = "Accepted!";
-            descriptionField.GetComponent<TextMesh>().text = "Great!";*/
-            //imageField.sprite = app.getImage();
+            //Debug.Log(titleField);
+            app = acceptedApps[0];
+            titleField.GetComponent<TextMeshProUGUI>().text = app.getTitle();
+            descriptionField.GetComponent<TextMeshProUGUI>().text = app.getConsequence();
+            imageField.sprite = app.getImage();
         }
         else if (rejectedApps.Count != 0)
         {
-            //rejected code
+            app = rejectedApps[0];
+            titleField.GetComponent<TextMeshProUGUI>().text = app.getTitle();
+            descriptionField.GetComponent<TextMeshProUGUI>().text = app.getConsequence();
+            imageField.sprite = app.getImage();
         }
         else
         {
@@ -105,11 +112,14 @@ public class GameManager : MonoBehaviour
     /*void Start()
     {
         
-    }
+    }*/
 
     // Update is called once per frame
     void Update()
     {
-        
-    }*/
+        if ((acceptedApps.Count + rejectedApps.Count) >= 1)
+        {
+            newspaperModel.SetActive(true);
+        }
+    }
 }
