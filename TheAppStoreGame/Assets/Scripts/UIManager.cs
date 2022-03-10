@@ -93,42 +93,60 @@ public class UIManager : MonoBehaviour
         }
 
     }
+    
+    
 
-        // Update is called once per frame
 
 
-    /*
-    void Update()
+
+
+
+
+
+
+// Update is called once per frame
+
+
+/*
+void Update()
+{
+    if (Input.GetMouseButtonDown(0))
     {
-        if (Input.GetMouseButtonDown(0))
+        // If app accepted
+        if (controller.ifClicked(acceptButton))
         {
-            // If app accepted
-            if (controller.ifClicked(acceptButton))
-            {
-                Debug.Log("Accepted!");
-                GameManager.instance.AppChoice(currentApp, true); // Saves currentApp to GameManager
-                currentApp = ((App)GameManager.instance.apps.Dequeue()); // Sets the next App as currentApp
-                setApp(currentApp); // Updates the screen with the new currentApp
-            }
-
-            // If app rejected
-            if (controller.ifClicked(rejectButton))
-            {
-                Debug.Log("Rejected!");
-                GameManager.instance.AppChoice(currentApp, false);
-                currentApp = ((App)GameManager.instance.apps.Dequeue());
-                setApp(currentApp);
-            }
-            
+            Debug.Log("Accepted!");
+            GameManager.instance.AppChoice(currentApp, true); // Saves currentApp to GameManager
+            currentApp = ((App)GameManager.instance.apps.Dequeue()); // Sets the next App as currentApp
+            setApp(currentApp); // Updates the screen with the new currentApp
         }
-    }
-    */
 
-    public void setApp(App app){
+        // If app rejected
+        if (controller.ifClicked(rejectButton))
+        {
+            Debug.Log("Rejected!");
+            GameManager.instance.AppChoice(currentApp, false);
+            currentApp = ((App)GameManager.instance.apps.Dequeue());
+            setApp(currentApp);
+        }
+
+    }
+}
+*/
+
+
+
+
+
+
+
+public void setApp(App app){
+
         titleField.text = app.getTitle();
         descriptionField.text = app.getDescripton();
         imageField.GetComponent<Image>().sprite = app.getImage();
     }
+ 
 
     //will replace setApp
     public void setApp2(Apps app){

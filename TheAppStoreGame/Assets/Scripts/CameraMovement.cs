@@ -17,6 +17,7 @@ public class CameraMovement : ComputerUI
     //public GameObject xButton;
     public GameObject newspaper; // Newspaper model
     public GameObject newsPopup; // Newspaper textbox
+    public GameObject mailtab; 
 
     // Start is called before the first frame update
     void Start()
@@ -64,6 +65,13 @@ public class CameraMovement : ComputerUI
                     NewspaperPopup(true);
                     Debug.Log("News!");
                 }
+
+                if(hit.collider.gameObject == mailtab)
+                {
+
+                }
+
+                
             }
         }
 
