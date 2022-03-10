@@ -67,7 +67,7 @@ public class CameraMovement : ComputerUI
     public void Cancel()
     {
             move(baseCameraPosition, baseCamperaRotation);
-            ChangeMonitor(screenSaver, activeScreen);
+            //ChangeMonitor(screenSaver, activeScreen);
             Debug.Log("Exited!");
         
     }

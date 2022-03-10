@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 40375138}
   - component: {fileID: 40375137}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: 'Backgroud '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -411,7 +411,7 @@ GameObject:
   - component: {fileID: 359617039}
   - component: {fileID: 359617041}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Blue box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
