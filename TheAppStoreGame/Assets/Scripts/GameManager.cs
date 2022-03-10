@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
+using TMPro; // TextMeshPro package
 
 // A GameManager singleton
+// Attached to GameManager
 public class GameManager : MonoBehaviour
 {
     private static GameManager _instance;
@@ -77,16 +78,19 @@ public class GameManager : MonoBehaviour
         //displayConsequences(app); 
     }
 
+    // Checks if there is either an accepted or a rejected app logged
+    // If there is it activates the newspaper model
+    // and writes it on the newspaper popup
     public void newspaperDisplay()
     {
         App app;
         if (acceptedApps.Count != 0)
         {
-            //Debug.Log(titleField);
             app = acceptedApps[0];
             titleField.GetComponent<TextMeshProUGUI>().text = app.getTitle();
             descriptionField.GetComponent<TextMeshProUGUI>().text = app.getConsequence();
             imageField.sprite = app.getImage();
+            newspaperModel.SetActive(true);
         }
         else if (rejectedApps.Count != 0)
         {
@@ -94,6 +98,7 @@ public class GameManager : MonoBehaviour
             titleField.GetComponent<TextMeshProUGUI>().text = app.getTitle();
             descriptionField.GetComponent<TextMeshProUGUI>().text = app.getConsequence();
             imageField.sprite = app.getImage();
+            newspaperModel.SetActive(true);
         }
         else
         {
@@ -101,25 +106,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    /*private void displayConsequences(App app)
-    {
-        titleField.text = app.getTitle();
-        descriptionField.text = app.getConsequence();
-        imageField.sprite = app.getImage();
-    }*/
-
-    // Start is called before the first frame update
-    /*void Start()
-    {
-        
-    }*/
-
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
-        if ((acceptedApps.Count + rejectedApps.Count) >= 1)
-        {
-            newspaperModel.SetActive(true);
-        }
-    }
+
+    }*/
 }
