@@ -1,0 +1,65 @@
+[
+    {
+        "title" : "Title here App1",
+        "pricing": "Pricing here",
+        "description": "Description here",
+        "images" : ["ework.jpg", "image2.jpg"],
+        "logo" : "logo.jpg",
+        "accepted": {
+            "consequences": [
+                {
+                    "textToDisplay" : "",
+                    "displayLocation": 1
+                }
+            ],
+            "ACM": {
+                "codesHonored": [],
+                "codesDishonored" : []
+            }
+        },
+        "rejected":{
+            "consequences": [
+                {
+                    "textToDisplay" : "",
+                    "displayLocation": 1
+                }
+            ],
+            "ACM": {
+                "codesHonored": [],
+                "codesDishonored" : []
+            }
+        }       
+    },
+    
+    {
+        "title" : "Title here",
+        "pricing": "Pricing here",
+        "description": "Description here",
+        "images" : ["ework.jpg", "image2.jpg"],
+        "logo" : "logo.jpg",
+        "accepted": {
+            "consequences": [
+                {
+                    "textToDisplay" : "",
+                    "displayLocation": 1
+                }
+            ],
+            "ACM": {
+                "codesHonored": [],
+                "codesDishonored" : []
+            }
+        },
+        "rejected":{
+            "consequences": [
+                {
+                    "textToDisplay" : "",
+                    "displayLocation": 1
+                }
+            ],
+            "ACM": {
+                "codesHonored": [],
+                "codesDishonored" : []
+            }
+        }       
+    }
+]
