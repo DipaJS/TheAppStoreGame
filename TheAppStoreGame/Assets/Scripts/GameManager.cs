@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
             rejectedApps.Add(app);
             Debug.Log("Rejected after: " + string.Join(",", rejectedApps));
         }
-        //displayConsequences(app);
+        //displayConsequences(app); 
     }
 
     public void newspaperDisplay()
