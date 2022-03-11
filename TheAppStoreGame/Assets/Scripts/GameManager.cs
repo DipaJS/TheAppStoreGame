@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro; // TextMeshPro package
+using JsonHandler;
+using System.IO;
 
 // A GameManager singleton
 // Attached to GameManager
@@ -26,11 +28,12 @@ public class GameManager : MonoBehaviour
     }
 
     // Lists of the Apps that have been accepted and rejected.
-    public List<App> acceptedApps;
-    public List<App> rejectedApps;
+    public List<Apps> acceptedApps;
+    public List<Apps> rejectedApps;
 
-    // The apps to be reviewed
+    // App queue and an array for conversion from Json
     public Queue apps;
+    private Apps[] appsArray;
 
     // Components and objects for the news popup, set in the Inspector
     public GameObject titleField;
@@ -44,24 +47,21 @@ public class GameManager : MonoBehaviour
     {
         _instance = this;
 
-        acceptedApps = new List<App>();
-        rejectedApps = new List<App>();
-        apps = new Queue();
+        acceptedApps = new List<Apps>();
+        rejectedApps = new List<Apps>();
 
-        // Hard-coded apps for the MVP
-        apps.Enqueue(new App("App 1", "Text för app 1", Resources.Load<Sprite>("ework"), "Konsekvens för app1"));
-        apps.Enqueue(new App("App 2", "Text för app 2", Resources.Load<Sprite>("PAWsitive"), "Konsekvens för app2"));
+        //Loads the json-file and creates an array with applications.
+        StreamReader r = new StreamReader("jsonString.json");
+        string jsonString = r.ReadToEnd();
+        appsArray = Apps.FromJson(jsonString);
 
-        // Initiates the fields for the news popup
-        /*titleField = GameObject.Find("News Title Text").GetComponent<Text>();
-        descriptionField = GameObject.Find("News Text").GetComponent<Text>();
-        imageField = GameObject.Find("News Image").GetComponent<Image>();*/
+        apps = new Queue(appsArray);
     }
 
     // Adds an App to either acceptedApps or rejectedApps
     //  App app         - the App to be added
     //  bool accepted   - true if the App is to be accepted, false if it is rejected
-    public void AppChoice(App app, bool accepted)
+    public void AppChoice(Apps app, bool accepted)
     {
         if (accepted)
         {
@@ -83,21 +83,21 @@ public class GameManager : MonoBehaviour
     // and writes it on the newspaper popup
     public void newspaperDisplay()
     {
-        App app;
+        Apps app;
         if (acceptedApps.Count != 0)
         {
             app = acceptedApps[0];
-            titleField.GetComponent<TextMeshProUGUI>().text = app.getTitle();
-            descriptionField.GetComponent<TextMeshProUGUI>().text = app.getConsequence();
-            imageField.sprite = app.getImage();
+            titleField.GetComponent<TextMeshProUGUI>().text = app.Title;
+            descriptionField.GetComponent<TextMeshProUGUI>().text = app.Accepted.Consequences[0].TextToDisplay;
+            imageField.sprite = Resources.Load<Sprite>(app.Images[0]);
             newspaperModel.SetActive(true);
         }
         else if (rejectedApps.Count != 0)
         {
             app = rejectedApps[0];
-            titleField.GetComponent<TextMeshProUGUI>().text = app.getTitle();
-            descriptionField.GetComponent<TextMeshProUGUI>().text = app.getConsequence();
-            imageField.sprite = app.getImage();
+            titleField.GetComponent<TextMeshProUGUI>().text = app.Title;
+            descriptionField.GetComponent<TextMeshProUGUI>().text = app.Rejected.Consequences[0].TextToDisplay;
+            imageField.sprite = Resources.Load<Sprite>(app.Images[0]);
             newspaperModel.SetActive(true);
         }
         else

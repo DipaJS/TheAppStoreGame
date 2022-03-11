@@ -3,12 +3,12 @@
         "title" : "Title here App1",
         "pricing": "Pricing here",
         "description": "Description here",
-        "images" : ["ework.jpg", "image2.jpg"],
-        "logo" : "logo.jpg",
+        "images" : ["ework", "image2"],
+        "logo" : "logo",
         "accepted": {
             "consequences": [
                 {
-                    "textToDisplay" : "",
+                    "textToDisplay" : "Angery peoples",
                     "displayLocation": 1
                 }
             ],
@@ -35,8 +35,8 @@
         "title" : "Title here",
         "pricing": "Pricing here",
         "description": "Description here",
-        "images" : ["ework.jpg", "image2.jpg"],
-        "logo" : "logo.jpg",
+        "images" : ["ework", "image2"],
+        "logo" : "logo",
         "accepted": {
             "consequences": [
                 {
