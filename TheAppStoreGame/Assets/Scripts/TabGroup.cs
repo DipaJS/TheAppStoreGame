@@ -50,7 +50,7 @@ public class TabGroup : MonoBehaviour
         selectedTab = button;
         ResetTabs();
         button.background.sprite = tabActive;
-        int index = button.transform.GetSiblingIndex(); // index of tab object in hierarchy
+        int index = button.transform.GetSiblingIndex();
         for(int i = 0; i < objectsToSwap.Count; i++)
         {
             if(i == index)
