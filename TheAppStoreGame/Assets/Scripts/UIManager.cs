@@ -39,14 +39,14 @@ public class UIManager : MonoBehaviour
             currentApp = (Apps)GameManager.instance.apps.Dequeue(); // Sets the next App as currentApp
             GameManager.instance.newspaperDisplay();
             setApp(currentApp); // Updates the screen with the new currentApp
-        } 
+        } */
     }
 
     public void Reject()
     {
         Debug.Log("Rejected!");
 
-        GameManager.instance.AppChoice(currentApp, false);
+        /*GameManager.instance.AppChoice(currentApp, false);
         if (GameManager.instance.apps.Count == 0)
         {
             SceneManager.LoadScene("EndScreen");
@@ -56,7 +56,7 @@ public class UIManager : MonoBehaviour
             currentApp = (Apps)GameManager.instance.apps.Dequeue();
             GameManager.instance.newspaperDisplay();
             setApp(currentApp); // Updates the screen with the new currentApp
-        }
+        }*/
 
     }
     
