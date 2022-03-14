@@ -572,7 +572,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "This game stores and processes personal data. Please read the <link=\"ID\">Privacy
     Policy</link> to learn more about how we handle privacy concerns. \n\nThis game
-    aims to teach about ethics in a subjective manner, but this is only possible
+    aims to teach about ethics in an objective manner, but this is only possible
     to a certain extent. Please have this in mind when playing. \n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
