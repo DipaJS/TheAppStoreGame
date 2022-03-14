@@ -14,6 +14,9 @@ namespace JsonHandler
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
 
+    //A script for deserializing the json-file where we store our applications and convert them to C#-classes
+        //Each class has a public set and get function
+
     //get and set functions for the Apps-class and its members.  
     public partial class Apps
     {
@@ -39,6 +42,8 @@ namespace JsonHandler
         public Ted Rejected { get; set; }
     }
 
+    //Set either to accepted or rejected in the Apps-class, should change this name to more suitable
+    //Has a list of consequences and the Acm-class as parameters
     public partial class Ted
     {
         [JsonProperty("consequences")]
@@ -48,6 +53,7 @@ namespace JsonHandler
         public Acm Acm { get; set; }
     }
 
+    //Acm has one list for codesHonored and one for codesDishonored
     public partial class Acm
     {
         [JsonProperty("codesHonored")]
@@ -57,6 +63,7 @@ namespace JsonHandler
         public object[] CodesDishonored { get; set; }
     }
 
+    //Consequence has the textToDisplay and displayLocation
     public partial class Consequence
     {
         [JsonProperty("textToDisplay")]
