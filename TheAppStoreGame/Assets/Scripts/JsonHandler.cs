@@ -1,9 +1,10 @@
 
-// To parse this JSON data, add NuGet 'Newtonsoft.Json' then do:
-//
-//    using JsonHandler;
-//
-//    var apps = Apps.FromJson(jsonString);
+/* 
+    To parse this JSON data, add NuGet 'Newtonsoft.Json' (complete for this projekt) then do: 
+
+    using JsonHandler;
+    var apps = Apps.FromJson(jsonString); 
+*/
 
 namespace JsonHandler
 {
@@ -13,6 +14,7 @@ namespace JsonHandler
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
 
+    //get and set functions for the Apps-class and its members.  
     public partial class Apps
     {
         [JsonProperty("title")]
@@ -64,6 +66,7 @@ namespace JsonHandler
         public long DisplayLocation { get; set; }
     }
 
+    //Converting the json-string to the corresponding C#-classes
     public partial class Apps
     {
         public static Apps[] FromJson(string json) => JsonConvert.DeserializeObject<Apps[]>(json, JsonHandler.Converter.Settings);

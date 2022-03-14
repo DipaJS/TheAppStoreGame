@@ -2,30 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//A script for letting the player interact with things in the gamespace.
+
 public class PlayerController //: MonoBehaviour
 {
-   /* private static PlayerController _instance;
-    public static PlayerController instance{get{
-        if (_instance == null){
-            GameObject go = new GameObject("PlayerController");
-            go.AddComponent<PlayerController>();
-            }
-            return _instance;
-        }
-    }*/
 
-    // Start is called before the first frame update
-   /* void Start()
-    {
-        
-   }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }*/
-
+    //Uses raycast to check if a GameObject was succesfully clicked on
+        //Gameobject o - the GameObject 
+        //Returns a boolean
     public bool ifClicked(GameObject o){
 
         RaycastHit hit;

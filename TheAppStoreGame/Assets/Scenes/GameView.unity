@@ -2150,6 +2150,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceptButton: {fileID: 335452416}
   rejectButton: {fileID: 1302056500}
+  descriptionField: {fileID: 655228355}
+  titleField: {fileID: 1118752850}
   imageField: {fileID: 1103175283}
 --- !u!114 &621930266
 MonoBehaviour:

@@ -5,26 +5,30 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using JsonHandler;
 
+//A script for player interaction with the computer screen. 
+//Attached to 'Screen' in 'GameView'
+
 public class UIManager : MonoBehaviour
 {
+    //Gameobjects that are present on the screen in 'GameView'
 	public GameObject acceptButton;
 	public GameObject rejectButton;
-	private Text descriptionField;
-	private Text titleField;
+	public Text descriptionField;
+	public Text titleField;
 	public GameObject imageField;
+
+    //The app that is currently being reviewed
     private Apps currentApp;
    
     // Start is called before the first frame update
+        //Loads the first application from apps-queue to the main screen
     void Start()
     {
-        titleField = GameObject.Find("Title").GetComponent<Text>();
-        descriptionField = GameObject.Find("Description").GetComponent<Text>();
-
         currentApp = (Apps)GameManager.instance.apps.Dequeue();
-
         setApp(currentApp);
     }
 
+    //Saves the players choice to accept the application for publication and loads a new application to screen
     public void Accept()
     {
         Debug.Log("Accepted!");
@@ -39,67 +43,27 @@ public class UIManager : MonoBehaviour
             currentApp = (Apps)GameManager.instance.apps.Dequeue(); // Sets the next App as currentApp
             GameManager.instance.newspaperDisplay();
             setApp(currentApp); // Updates the screen with the new currentApp
-        } */
+        } 
     }
 
+    //Saves the players choice to reject the application for publication and loads a new application to screen
     public void Reject()
     {
         Debug.Log("Rejected!");
 
-        /*GameManager.instance.AppChoice(currentApp, false);
+        GameManager.instance.AppChoice(currentApp, false);
         if (GameManager.instance.apps.Count == 0)
         {
             SceneManager.LoadScene("EndScreen");
         }
         else
         {
-            currentApp = (Apps)GameManager.instance.apps.Dequeue();
+            currentApp = (Apps)GameManager.instance.apps.Dequeue(); //Sets the next App as currentApp
             GameManager.instance.newspaperDisplay();
             setApp(currentApp); // Updates the screen with the new currentApp
-        }*/
-
-    }
-    
-    
-
-
-
-
-
-
-
-
-
-// Update is called once per frame
-
-
-/*
-void Update()
-{
-    if (Input.GetMouseButtonDown(0))
-    {
-        // If app accepted
-        if (controller.ifClicked(acceptButton))
-        {
-            Debug.Log("Accepted!");
-            GameManager.instance.AppChoice(currentApp, true); // Saves currentApp to GameManager
-            currentApp = ((App)GameManager.instance.apps.Dequeue()); // Sets the next App as currentApp
-            setApp(currentApp); // Updates the screen with the new currentApp
-        }
-
-        // If app rejected
-        if (controller.ifClicked(rejectButton))
-        {
-            Debug.Log("Rejected!");
-            GameManager.instance.AppChoice(currentApp, false);
-            currentApp = ((App)GameManager.instance.apps.Dequeue());
-            setApp(currentApp);
         }
 
     }
-}
-*/
-
 
     // Loads an app to the main screen
         // Apps app - the app to be uploaded
