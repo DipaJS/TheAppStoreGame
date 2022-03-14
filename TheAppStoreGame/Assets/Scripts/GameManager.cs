@@ -105,10 +105,4 @@ public class GameManager : MonoBehaviour
             //throw some error
         }
     }
-
-    // Update is called once per frame
-    /*void Update()
-    {
-
-    }*/
 }

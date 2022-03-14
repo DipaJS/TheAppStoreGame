@@ -48,17 +48,6 @@ public class CameraMovement : ComputerUI
                     Debug.Log("Clicked!");
                 }
 
-                /*
-
-                //Close window/zoom out
-                if (hit.collider.gameObject == xButton)
-                {
-                    move(baseCameraPosition, baseCamperaRotation);
-                    ChangeMonitor(screenSaver, activeScreen);
-                    Debug.Log("Exited!");
-                }
-                */
-
                 // Open Newspaper if the model is clicked
                 if (hit.collider.gameObject == newspaper)
                 {
@@ -69,9 +58,7 @@ public class CameraMovement : ComputerUI
                 if(hit.collider.gameObject == mailtab)
                 {
 
-                }
-
-                
+                }     
             }
         }
 
