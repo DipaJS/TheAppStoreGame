@@ -16,6 +16,8 @@ public class UIManager : MonoBehaviour
 	public Text descriptionField;
 	public Text titleField;
 	public GameObject imageField;
+    //public GameObject ACM; Keep me 
+
 
     //The app that is currently being reviewed
     private Apps currentApp;
@@ -65,6 +67,22 @@ public class UIManager : MonoBehaviour
 
     }
 
+    
+    //Keep me
+    /*public void Evaluate(int num)
+    {
+        if(num == 1)
+        {
+            notAccept = false;
+        }
+        else
+        {
+            notAccept = true;
+        }
+
+
+    }*/
+
     // Loads an app to the main screen
         // Apps app - the app to be uploaded
     public void setApp(Apps app){
@@ -72,4 +90,25 @@ public class UIManager : MonoBehaviour
         descriptionField.text = app.Description;
         imageField.GetComponent<Image>().sprite = Resources.Load<Sprite>(app.Images[0]);
     }
+
+    //Loads the scene with the current code.
+    //OnClick() in the code buttons in the ACM window
+    public void LoadCode(int nr)
+    {
+        SceneManager.LoadScene("Code " + nr);
+
+    }
+
+    //Keep me 
+    /*public void acm()
+    {
+        ACM.GetComponent("ACM");
+        ACM.SetActive(true);
+    }*/
+
+
+
+
+
+
 }
