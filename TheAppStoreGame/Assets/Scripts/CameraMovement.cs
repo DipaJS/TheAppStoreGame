@@ -25,8 +25,9 @@ public class CameraMovement : ComputerUI
         // Saves camera positions
         baseCameraPosition = new Vector3(-3, 5.5f, -4);
         baseCamperaRotation = new Vector3(13.991f, 0, 0);
-        cameraPosition = new Vector3(-3, 4.24f, -2.06f);
         cameraRotation = new Vector3(3.751f, 0, 0);
+        //cameraPosition = new Vector3(-3, 4.24f, -2.06f); //Zoomed in view centered and focused on computer screen
+        cameraPosition = new Vector3(-3.2f, 4.24f, -2.2f); //Alternative zoomed in view with more of the background enviroment visible
     }
 
     // Update is called once per frame
