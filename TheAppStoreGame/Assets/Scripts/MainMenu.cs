@@ -5,26 +5,32 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
 
-//A script to add funtionality to the Main Menu in the game
-//Attached to 'MainMenu' in 'StartScreen'
+// A script to add funtionality to the Main Menu in the game
+    // Attached to 'MainMenu' in 'StartScreen'
+    // Attached to 'Disclaimer' in 'Disclaimer'
+    // Attached to 'How to Play' in 'HowToPlay'
+    // Attached to 'Blue Box' in 'EndScreen'
 public class MainMenu : MonoBehaviour
 {
 
     public AudioMixer audioMixer;
 
-    //Loads the disclaimer scene to the game which is the first scene in the gameloop
-    public void StartGame()
+    // Loads a new scene based on the input string
+        // string scene - the name of the scene to be loaded
+        // Called with "HowToPlay" by 'HowToPlayButton' in 'StartScreen'
+        // Called with "GameView" by 'PlayButton' in 'StartScreen'
+        // Called with "StartScreen" by 'AgreeButton' in 'Disclaimer'
+        // Called with "StartScreen" by 'GotItButton' in 'HowToPlay'
+        // Called with "StartScreen" by 'RestartButton' in 'EndScreen'
+    public void ChangeScene(string scene)
     {
-        SceneManager.LoadScene("Disclaimer");  
+        SceneManager.LoadScene(scene);
     }
 
-    //Loads a scene with information on how to play the game
-    public void GoToHowToPlay()
-    {
-        SceneManager.LoadScene("HowToPlay");
-    }
-
-
+    // Closes the game
+        // Called by 'DeclineButton' in 'Disclaimer'
+        // Called by 'QuitButton' in 'StartScreen'
+        // Called by 'QuitButton' in 'EndScreen'
     public void ExitGame()
     {
         Debug.Log("Exit"); 
@@ -35,17 +41,5 @@ public class MainMenu : MonoBehaviour
     public void setVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
-    }
-
-
-    public void GoToStartScreen()
-    {
-        SceneManager.LoadScene("StartScreen");
-    }
-
-
-    public void GoToGameView()
-    {
-        SceneManager.LoadScene("GameView");
     }
 }
