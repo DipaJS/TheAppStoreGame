@@ -93,18 +93,15 @@ public class UIManager : MonoBehaviour
 
     //Loads the scene with the current code.
     //OnClick() in the code buttons in the ACM window
+    /* Not used at the moment
     public void LoadCode(int nr)
     {
         SceneManager.LoadScene("Code " + nr);
 
     }
+    */
 
-    //Keep me 
-    /*public void acm()
-    {
-        ACM.GetComponent("ACM");
-        ACM.SetActive(true);
-    }*/
+
 
 
 
