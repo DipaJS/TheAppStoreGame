@@ -36,15 +36,15 @@ namespace JsonHandler
         public string Logo { get; set; }
 
         [JsonProperty("accepted")]
-        public Ted Accepted { get; set; }
+        public Status Accepted { get; set; }
 
         [JsonProperty("rejected")]
-        public Ted Rejected { get; set; }
+        public Status Rejected { get; set; }
     }
 
     //Set either to accepted or rejected in the Apps-class, should change this name to more suitable
     //Has a list of consequences and the Acm-class as parameters
-    public partial class Ted
+    public partial class Status 
     {
         [JsonProperty("consequences")]
         public Consequence[] Consequences { get; set; }
