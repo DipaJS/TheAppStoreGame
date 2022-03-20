@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using TMPro;
 // A script for handling the ACM codes
 // Attached to 'ACMStart' in 'GameView'
 
+//check* - left some old code out-commented so we can doublecheck that the functionality is the same and no bugs before deleting
+
 public class ACMTab : ComputerUI
 {
-
+    //Old variables no longer needed, can be removed after check*
     //private static ACMTab _instance;
-    public GameObject acmTab;
     public GameObject code1;
     public GameObject code2;
     public GameObject code3;
@@ -17,61 +18,64 @@ public class ACMTab : ComputerUI
     public GameObject code5;
     public GameObject code6;
     public GameObject code7;
-  
 
-    
+    //variables manually set in Unity to the corresponding object in 'GameView' scene.
+    public GameObject acmTab;
+    public TextMeshProUGUI codeDescription;
+    public GameObject codePage;
+    public GameObject acmTabTitle;
 
-
-   
 
     // Method for returning to the main ACM page (temporary)
-    public void backToACM()
+    public void backToACM0(GameObject code) 
     {
+        ChangeMonitor(acmTab, codePage);
+        ChangeMonitor(acmTabTitle, code);
+    }
 
+    //Method for activating the corresponding page for each code
+    public void code(GameObject code)
+    {
+        ChangeMonitor(codePage, acmTab);
+        code.SetActive(true);
+        acmTabTitle.SetActive(false);
+    }
+}
+
+    //Old functions, can be removed after check* 
+    /*public void backToACM()
+    {
         ChangeMonitor(acmTab, code1);
-
     }
 
     public void backToACM2()
     {
-
         ChangeMonitor(acmTab, code2);
-
     }
 
     public void backToACM3()
     {
-
         ChangeMonitor(acmTab, code3);
-
     }
 
     public void backToACM4()
     {
-
         ChangeMonitor(acmTab, code4);
-
     }
 
     public void backToACM5()
     {
-
         ChangeMonitor(acmTab, code5);
-
     }
 
     public void backToACM6()
     {
-
         ChangeMonitor(acmTab, code6);
-
     }
 
     public void backToACM7()
     {
-
         ChangeMonitor(acmTab, code7);
-
     }
 
     // Methods for activating the corresponding page for each code
@@ -116,7 +120,5 @@ public class ACMTab : ComputerUI
 
         ChangeMonitor(code7, acmTab);
     }
-
-
-
 }
+*/
