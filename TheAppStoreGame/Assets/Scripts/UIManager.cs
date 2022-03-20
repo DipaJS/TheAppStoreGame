@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using JsonHandler;
+using TMPro;
 
 //A script for player interaction with the computer screen. 
 //Attached to 'Screen' in 'GameView'
@@ -13,7 +14,7 @@ public class UIManager : MonoBehaviour
     //Gameobjects that are present on the screen in 'GameView'
 	public GameObject acceptButton;
 	public GameObject rejectButton;
-	public Text descriptionField;
+	public TextMeshProUGUI descriptionField;
 	public Text titleField;
 	public GameObject imageField;
     //public GameObject ACM; Keep me 

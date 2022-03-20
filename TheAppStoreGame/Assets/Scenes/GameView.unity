@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -585,20 +585,19 @@ MonoBehaviour:
     groups conflict, the needs of those less advantaged should be given increased
     attention and priority.
 
-    
 
-    Computing professionals should consider
-    whether the results of their efforts will respect diversity, will be used in
-    socially responsible ways, will meet social needs, and will be broadly accessible.
-    They are encouraged to actively contribute to society by engaging in pro bono
-    or volunteer work that benefits the public good.
 
-    
+    Computing professionals should consider whether
+    the results of their efforts will respect diversity, will be used in socially
+    responsible ways, will meet social needs, and will be broadly accessible. They
+    are encouraged to actively contribute to society by engaging in pro bono or volunteer
+    work that benefits the public good.
 
-    In addition to
-    a safe social environment, human well-being requires a safe natural environment.
-    Therefore, computing professionals should promote environmental sustainability
-    both locally and globally.'
+
+
+    In addition to a safe social environment,
+    human well-being requires a safe natural environment. Therefore, computing professionals
+    should promote environmental sustainability both locally and globally.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -959,20 +958,20 @@ MonoBehaviour:
     understand the rights and responsibilities associated with the collection and
     use of personal information.
 
-    
 
-    Computing professionals should only
-    use personal information for legitimate ends and without violating the rights
-    of individuals and groups. This requires taking precautions to prevent re-identification
-    of anonymized data or unauthorized data collection, ensuring the accuracy of
-    data, understanding the provenance of the data, and protecting it from unauthorized
+
+    Computing professionals should only use personal
+    information for legitimate ends and without violating the rights of individuals
+    and groups. This requires taking precautions to prevent re-identification of
+    anonymized data or unauthorized data collection, ensuring the accuracy of data,
+    understanding the provenance of the data, and protecting it from unauthorized
     access and accidental disclosure. Computing professionals should establish transparent
     policies and procedures that allow individuals to understand what data is being
     collected and how it is being used, to give informed consent for automatic data
     collection, and to review, obtain, correct inaccuracies in, and delete their
     personal data.
 
-    
+
 
     Only the minimum amount of personal information necessary
     should be collected in a system. The retention and disposal periods for that
@@ -4294,7 +4293,7 @@ MonoBehaviour:
     false or misleading claims, fabricating or falsifying data, offering or accepting
     bribes, and other dishonest conduct are violations of the Code.
 
-    
+
 
     Computing
     professionals should be honest about their qualifications, and about any limitations
@@ -4303,11 +4302,11 @@ MonoBehaviour:
     of interest or otherwise tend to undermine the independence of their judgment.
     Furthermore, commitments should be honored.
 
-    
 
-    Computing professionals
-    should not misrepresent an organization''s policies or procedures, and should
-    not speak on behalf of an organization unless authorized to do so.'
+
+    Computing professionals should
+    not misrepresent an organization''s policies or procedures, and should not speak
+    on behalf of an organization unless authorized to do so.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4624,7 +4623,7 @@ MonoBehaviour:
   m_Content: {fileID: 1609344612}
   m_Horizontal: 1
   m_Vertical: 1
-  m_MovementType: 1
+  m_MovementType: 0
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
@@ -4970,7 +4969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   acceptButton: {fileID: 335452416}
   rejectButton: {fileID: 1302056500}
-  descriptionField: {fileID: 655228355}
+  descriptionField: {fileID: 0}
   titleField: {fileID: 1118752850}
   imageField: {fileID: 1103175283}
 --- !u!114 &621930266
@@ -5284,10 +5283,10 @@ MonoBehaviour:
     trade secrets, license agreements, and other methods of protecting authors''
     works.
 
-    
 
-    Both custom and the law recognize that some exceptions to
-    a creator''s control of a work are necessary for the public good. Computing professionals
+
+    Both custom and the law recognize that some exceptions to a creator''s
+    control of a work are necessary for the public good. Computing professionals
     should not unduly oppose reasonable uses of their intellectual works. Efforts
     to help others by contributing time and energy to projects that help society
     illustrate a positive aspect of this principle. Such efforts include free and
@@ -5638,100 +5637,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -50}
   m_SizeDelta: {x: 700, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &655228353
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 655228354}
-  - component: {fileID: 655228356}
-  - component: {fileID: 655228355}
-  - component: {fileID: 655228357}
-  m_Layer: 0
-  m_Name: Description
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &655228354
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655228353}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.15000002, y: 0.15, z: 0.20000002}
-  m_Children: []
-  m_Father: {fileID: 1295309160}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1250, y: -11.775001}
-  m_SizeDelta: {x: 2500, y: 157}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &655228355
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655228353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: e3265ab4bf004d28a9537516768c1c75, type: 3}
-    m_FontSize: 140
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 10
-    m_MaxSize: 140
-    m_Alignment: 0
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 1
-    m_LineSpacing: 1
-  m_Text: New Text
---- !u!222 &655228356
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655228353}
-  m_CullTransparentMesh: 1
---- !u!114 &655228357
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 655228353}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalFit: 0
-  m_VerticalFit: 0
 --- !u!1 &669386458
 GameObject:
   m_ObjectHideFlags: 0
@@ -5785,7 +5690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Content: {fileID: 1295309160}
-  m_Horizontal: 0
+  m_Horizontal: 1
   m_Vertical: 1
   m_MovementType: 0
   m_Elasticity: 0.1
@@ -8413,7 +8318,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1077016916
 Transform:
   m_ObjectHideFlags: 0
@@ -10264,7 +10169,7 @@ MonoBehaviour:
     and unjustified damage to property, reputation, and the environment. This list
     is not exhaustive.
 
-    
+
 
     Well-intended actions, including those that accomplish
     assigned duties, may lead to harm. When that harm is unintended, those responsible
@@ -10274,21 +10179,21 @@ MonoBehaviour:
     to ensure that the harm is ethically justified. In either case, ensure that all
     harm is minimized.
 
-    
 
-    To minimize the possibility of indirectly or
-    unintentionally harming others, computing professionals should follow generally
-    accepted best practices unless there is a compelling ethical reason to do otherwise.
-    Additionally, the consequences of data aggregation and emergent properties of
-    systems should be carefully analyzed. Those involved with pervasive or infrastructure
-    systems should also consider Principle 3.7.
 
-    
+    To minimize the possibility of indirectly or unintentionally
+    harming others, computing professionals should follow generally accepted best
+    practices unless there is a compelling ethical reason to do otherwise. Additionally,
+    the consequences of data aggregation and emergent properties of systems should
+    be carefully analyzed. Those involved with pervasive or infrastructure systems
+    should also consider Principle 3.7.
 
-    A computing professional
-    has an additional obligation to report any signs of system risks that might result
-    in harm. If leaders do not act to curtail or mitigate such risks, it may be necessary
-    to "blow the whistle" to reduce potential harm. However, capricious or misguided
+
+
+    A computing professional has an additional
+    obligation to report any signs of system risks that might result in harm. If
+    leaders do not act to curtail or mitigate such risks, it may be necessary to
+    "blow the whistle" to reduce potential harm. However, capricious or misguided
     reporting of risks can itself be harmful. Before reporting risks, a computing
     professional should carefully assess relevant aspects of the situation.'
   m_isRightToLeft: 0
@@ -10821,7 +10726,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 655228354}
+  - {fileID: 1939465191}
   m_Father: {fileID: 783532593}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12130,7 +12035,7 @@ MonoBehaviour:
     this principle. Fairness requires that even careful decision processes provide
     some avenue for redress of grievances.
 
-    
+
 
     Computing professionals should
     foster fair participation of all people, including those of underrepresented
@@ -12142,7 +12047,7 @@ MonoBehaviour:
     that, amongst other harms, limits fair access to the virtual and physical spaces
     where such harassment takes place.
 
-    
+
 
     The use of information and technology
     may cause new, or enhance existing, inequities. Technologies and practices should
@@ -16135,6 +16040,150 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897795108}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1939465190
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1939465191}
+  - component: {fileID: 1939465193}
+  - component: {fileID: 1939465192}
+  m_Layer: 0
+  m_Name: Description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1939465191
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939465190}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1295309160}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1939465192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939465190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: This app is only for use by licensed officers of the City of Harrisonburg
+    Police Department and may only be downloaded with affirmed consent from the City
+    of Harrisonburg Police Department. This app will be used to expedite the search
+    for and booking of convicted criminals in the City of Harrisonburg area. When
+    a warrant is issued for an individual's arrest, their description and identifying
+    characteristics are automatically entered into the app. Harrisonburg's facial
+    detection system, enabled by traffic cameras on our major streets, will then
+    be able to automatically locate, flag, and track any individual matching the
+    description when they are seen by a camera. Officers logged in to the app can
+    see the status of an arrest warrant and the location of any suspects. This innovative
+    app will make for a more efficient police department and a safer City of Harrisonburg.
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 16
+  m_fontSizeBase: 16
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1939465193
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939465190}
+  m_CullTransparentMesh: 1
 --- !u!1 &1944999483
 GameObject:
   m_ObjectHideFlags: 0
