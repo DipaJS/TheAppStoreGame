@@ -17,16 +17,12 @@ public class ACMTab : ComputerUI
     public GameObject code5;
     public GameObject code6;
     public GameObject code7;
+  
+
+    
 
 
-
-
-    // Methods for activating the corresponding page for each code
-    public void Code1()
-    {
-        //ComputerUI.instance.ChangeMonitor(code1, acmTab);
-        ChangeMonitor(code1, acmTab);
-    }
+   
 
     // Method for returning to the main ACM page (temporary)
     public void backToACM()
@@ -34,6 +30,55 @@ public class ACMTab : ComputerUI
 
         ChangeMonitor(acmTab, code1);
 
+    }
+
+    public void backToACM2()
+    {
+
+        ChangeMonitor(acmTab, code2);
+
+    }
+
+    public void backToACM3()
+    {
+
+        ChangeMonitor(acmTab, code3);
+
+    }
+
+    public void backToACM4()
+    {
+
+        ChangeMonitor(acmTab, code4);
+
+    }
+
+    public void backToACM5()
+    {
+
+        ChangeMonitor(acmTab, code5);
+
+    }
+
+    public void backToACM6()
+    {
+
+        ChangeMonitor(acmTab, code6);
+
+    }
+
+    public void backToACM7()
+    {
+
+        ChangeMonitor(acmTab, code7);
+
+    }
+
+    // Methods for activating the corresponding page for each code
+    public void Code1()
+    {
+        //ComputerUI.instance.ChangeMonitor(code1, acmTab);
+        ChangeMonitor(code1, acmTab);
     }
 
     public void Code2()
