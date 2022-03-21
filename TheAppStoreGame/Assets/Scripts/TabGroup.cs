@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI; 
 
-// Controller script for managing each tab
-// Toggles new state when a new tab is interacted with 
+// Controller script for managing each tab. Toggles new state when a new tab is interacted with
+// Attached to 'TabArea' in 'GameView'
 
 public class TabGroup : MonoBehaviour
 {
@@ -17,7 +17,7 @@ public class TabGroup : MonoBehaviour
     public List<GameObject> objectsToSwap; 
     
     public void Subscribe(TabButton button)
-    {// Create a list after the first button subscribes to the group 
+    {// Create a list after the first TabButton subscribes to the group 
         if(tabButtons == null)
         {
             tabButtons = new List<TabButton>();
@@ -27,9 +27,9 @@ public class TabGroup : MonoBehaviour
         tabButtons.Add(button);
     }
 
-    // Methods for controlling the tabs
-    // Each method changes the state of the button when one of the tabs is interacted with 
+ 
 
+    // Set tab to gray sprite if hovered
     public void OnTabEnter(TabButton button)
     {
         ResetTabs();
@@ -45,6 +45,9 @@ public class TabGroup : MonoBehaviour
         ResetTabs();
     }
 
+    // Set tab to selected before resetting to save 
+    // Takes index of object in hierarchy and compares to index in list. 
+    // Sets the one that matches to active (white sprite color)
     public void OnTabSelected(TabButton button)
     {
         selectedTab = button;
@@ -64,7 +67,7 @@ public class TabGroup : MonoBehaviour
         }
     }
 
-    // Set all tabs to idle
+    // Set all tabs to idle except selected tab
     public void ResetTabs()
     {
         foreach(TabButton button in tabButtons)
