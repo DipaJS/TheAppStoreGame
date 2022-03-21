@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using AcmCodeJsonHandler;
+using System.IO;
 // A script for handling the ACM codes
 // Attached to 'ACMStart' in 'GameView'
 
@@ -11,38 +13,57 @@ public class ACMTab : ComputerUI
 {
     //Old variables no longer needed, can be removed after check*
     //private static ACMTab _instance;
-    public GameObject code1;
-    public GameObject code2;
+    /*public GameObject code2;
     public GameObject code3;
     public GameObject code4;
     public GameObject code5;
     public GameObject code6;
-    public GameObject code7;
+    public GameObject code7;*/
 
     //variables manually set in Unity to the corresponding object in 'GameView' scene.
+    public GameObject code1;
     public GameObject acmTab;
     public TextMeshProUGUI codeDescription;
-    public GameObject codePage;
-    public GameObject acmTabTitle;
+    public TextMeshProUGUI title;
 
+    //array with the codes 
+    public AcmCode[] acmCodes;
 
-    // Method for returning to the main ACM page (temporary)
-    public void backToACM0(GameObject code) 
-    {
-        ChangeMonitor(acmTab, codePage);
-        ChangeMonitor(acmTabTitle, code);
+    // Initialize private instances
+    private void Awake(){
+
+        //loads the json-file with codes to acmCodes
+        StreamReader r = new StreamReader("ACMCodes.json");
+        string jsonString = r.ReadToEnd();
+        acmCodes = AcmCode.FromJson(jsonString);
     }
 
+    //Method for activating a page with title and description for the corresponding applications
+    public void LoadCode(int i){
+        codeDescription.text = acmCodes[i].Description;
+        title.text = acmCodes[i].Title;
+        acmTab.SetActive(false);
+        code1.SetActive(true);
+        //acmTabTitle.SetActive(false);
+    }
+
+    // Method for returning to the main ACM page
+    public void backToACM() 
+    {
+        ChangeMonitor(acmTab, code1);
+        //acmTabTitle.SetActive(false);
+    }
+}
+    //OBS! Old functions below, can be removed after check* 
+
     //Method for activating the corresponding page for each code
-    public void code(GameObject code)
+    /*public void code(GameObject code)
     {
         ChangeMonitor(codePage, acmTab);
         code.SetActive(true);
         acmTabTitle.SetActive(false);
     }
 }
-
-    //Old functions, can be removed after check* 
     /*public void backToACM()
     {
         ChangeMonitor(acmTab, code1);
