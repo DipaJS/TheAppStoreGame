@@ -32,6 +32,23 @@ public class UIManager : MonoBehaviour
     }
 
     //Saves the players choice to accept the application for publication and loads a new application to screen
+
+    public void Evaluate(bool accepted)
+    {
+        GameManager.instance.AppChoice(currentApp, accepted); // Saves currentApp to GameManager
+        if (GameManager.instance.apps.Count == 0)
+        {
+           SceneManager.LoadScene("EndScreen");
+        }
+        else
+        {
+            currentApp = (Apps)GameManager.instance.apps.Dequeue(); // Sets the next App as currentApp
+            GameManager.instance.newspaperDisplay();
+            setApp(currentApp); // Updates the screen with the new currentApp
+        } 
+    }
+
+    //Accept and Reject replaced with Evaluate() so can be removed after meeting today
     public void Accept()
     {
         Debug.Log("Accepted!");
