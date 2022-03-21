@@ -17,6 +17,8 @@ public class UIManager : MonoBehaviour
 	public TextMeshProUGUI descriptionField;
 	public Text titleField;
 	public GameObject imageField;
+    public GameObject standardView;
+    public GameObject noApplicationsView;
     //public GameObject ACM; Keep me 
 
 
@@ -38,7 +40,7 @@ public class UIManager : MonoBehaviour
         GameManager.instance.AppChoice(currentApp, accepted); // Saves currentApp to GameManager
         if (GameManager.instance.apps.Count == 0)
         {
-           SceneManager.LoadScene("EndScreen");
+           NoApplications();
         }
         else
         {
@@ -47,59 +49,6 @@ public class UIManager : MonoBehaviour
             setApp(currentApp); // Updates the screen with the new currentApp
         } 
     }
-
-    //Accept and Reject replaced with Evaluate() so can be removed after meeting today
-    public void Accept()
-    {
-        Debug.Log("Accepted!");
-
-        GameManager.instance.AppChoice(currentApp, true); // Saves currentApp to GameManager
-        if (GameManager.instance.apps.Count == 0)
-        {
-           SceneManager.LoadScene("EndScreen");
-        }
-        else
-        {
-            currentApp = (Apps)GameManager.instance.apps.Dequeue(); // Sets the next App as currentApp
-            GameManager.instance.newspaperDisplay();
-            setApp(currentApp); // Updates the screen with the new currentApp
-        } 
-    }
-
-    //Saves the players choice to reject the application for publication and loads a new application to screen
-    public void Reject()
-    {
-        Debug.Log("Rejected!");
-
-        GameManager.instance.AppChoice(currentApp, false);
-        if (GameManager.instance.apps.Count == 0)
-        {
-            SceneManager.LoadScene("EndScreen");
-        }
-        else
-        {
-            currentApp = (Apps)GameManager.instance.apps.Dequeue(); //Sets the next App as currentApp
-            GameManager.instance.newspaperDisplay();
-            setApp(currentApp); // Updates the screen with the new currentApp
-        }
-
-    }
-
-    
-    //Keep me
-    /*public void Evaluate(int num)
-    {
-        if(num == 1)
-        {
-            notAccept = false;
-        }
-        else
-        {
-            notAccept = true;
-        }
-
-
-    }*/
 
     // Loads an app to the main screen
         // Apps app - the app to be uploaded
@@ -109,6 +58,11 @@ public class UIManager : MonoBehaviour
         imageField.GetComponent<Image>().sprite = Resources.Load<Sprite>(app.Images[0]);
     }
 
+    public void NoApplications()
+    {
+        noApplicationsView.SetActive(true);
+        standardView.SetActive(false);
+    }
     //Loads the scene with the current code.
     //OnClick() in the code buttons in the ACM window
     /* Not used at the moment

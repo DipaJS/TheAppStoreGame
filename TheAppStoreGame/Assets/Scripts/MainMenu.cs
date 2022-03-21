@@ -22,6 +22,7 @@ public class MainMenu : MonoBehaviour
         // Called with "StartScreen" by 'AgreeButton' in 'Disclaimer'
         // Called with "StartScreen" by 'GotItButton' in 'HowToPlay'
         // Called with "StartScreen" by 'RestartButton' in 'EndScreen'
+        // Called with "EndScreen" by 'End session' in 'GameView'
     public void ChangeScene(string scene)
     {
         SceneManager.LoadScene(scene);
