@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using JsonHandler;
+using TMPro;
 
 //A script for player interaction with the computer screen. 
 //Attached to 'Screen' in 'GameView'
@@ -13,7 +14,7 @@ public class UIManager : MonoBehaviour
     //Gameobjects that are present on the screen in 'GameView'
 	public GameObject acceptButton;
 	public GameObject rejectButton;
-	public Text descriptionField;
+	public TextMeshProUGUI descriptionField;
 	public Text titleField;
 	public GameObject imageField;
     //public GameObject ACM; Keep me 
@@ -31,6 +32,23 @@ public class UIManager : MonoBehaviour
     }
 
     //Saves the players choice to accept the application for publication and loads a new application to screen
+
+    public void Evaluate(bool accepted)
+    {
+        GameManager.instance.AppChoice(currentApp, accepted); // Saves currentApp to GameManager
+        if (GameManager.instance.apps.Count == 0)
+        {
+           SceneManager.LoadScene("EndScreen");
+        }
+        else
+        {
+            currentApp = (Apps)GameManager.instance.apps.Dequeue(); // Sets the next App as currentApp
+            GameManager.instance.newspaperDisplay();
+            setApp(currentApp); // Updates the screen with the new currentApp
+        } 
+    }
+
+    //Accept and Reject replaced with Evaluate() so can be removed after meeting today
     public void Accept()
     {
         Debug.Log("Accepted!");
