@@ -33,9 +33,10 @@ public class ACMTab : ComputerUI
     private void Awake(){
 
         //loads the json-file with codes to acmCodes
-        StreamReader r = new StreamReader("ACMCodes.json");
-        string jsonString = r.ReadToEnd();
-        acmCodes = AcmCode.FromJson(jsonString);
+        //StreamReader r = new StreamReader("ACMCodes.json"); // Kept as I changed how we load json without input from anyone else, feel free to delete
+        //string jsonString = r.ReadToEnd();
+        TextAsset jsonString = Resources.Load<TextAsset>(Path.Combine("json", "ACMCodes"));
+        acmCodes = AcmCode.FromJson(jsonString.text);
     }
 
     //Method for activating a page with title and description for the corresponding applications

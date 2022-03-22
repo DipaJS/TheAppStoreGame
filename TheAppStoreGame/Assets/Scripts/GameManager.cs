@@ -51,9 +51,11 @@ public class GameManager : MonoBehaviour
         rejectedApps = new List<Apps>();
 
         //Loads the json-file and creates an array with applications.
-        StreamReader r = new StreamReader("jsonString.json");
-        string jsonString = r.ReadToEnd();
-        appsArray = Apps.FromJson(jsonString);
+        //StreamReader r = new StreamReader("jsonString.json"); // Kept as I changed how we load json without input from anyone else, feel free to delete
+        //string jsonString = r.ReadToEnd();
+        TextAsset jsonString = Resources.Load<TextAsset>(Path.Combine("json", "jsonString"));
+        appsArray = Apps.FromJson(jsonString.text);
+        Debug.Log("Loaded Json");
 
         apps = new Queue(appsArray);
     }

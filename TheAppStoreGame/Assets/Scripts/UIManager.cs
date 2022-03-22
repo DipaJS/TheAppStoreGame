@@ -7,7 +7,7 @@ using JsonHandler;
 using TMPro;
 
 //A script for player interaction with the computer screen. 
-//Attached to 'Screen' in 'GameView'
+//Attached to 'Computer Screen' in 'GameView'
 
 public class UIManager : MonoBehaviour
 {
