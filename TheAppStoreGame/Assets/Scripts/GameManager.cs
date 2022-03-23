@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
 
     // App queue and an array for conversion from Json
     public Queue apps;
+    public Queue evaluatedApps;
     private Apps[] appsArray;
 
     // Components and objects for the news popup, set in the Inspector
@@ -50,6 +51,8 @@ public class GameManager : MonoBehaviour
         acceptedApps = new List<Apps>();
         rejectedApps = new List<Apps>();
 
+        evaluatedApps = new Queue();
+
         //Loads the json-file and creates an array with applications.
         //StreamReader r = new StreamReader("jsonString.json"); // Kept as I changed how we load json without input from anyone else, feel free to delete
         //string jsonString = r.ReadToEnd();
@@ -60,51 +63,56 @@ public class GameManager : MonoBehaviour
         apps = new Queue(appsArray);
     }
 
-    // Adds an App to either acceptedApps or rejectedApps
+    // Adds an app to evaluatedApps Queue and sets the status to either accepted (true) or rejected (false)
+    // Also activates the newspaper model
     //  App app         - the App to be added
     //  bool accepted   - true if the App is to be accepted, false if it is rejected
     public void AppChoice(Apps app, bool accepted)
     {
-        if (accepted)
-        {
-            Debug.Log("Accepted before: " + string.Join(",", acceptedApps));
-            acceptedApps.Add(app);
-            Debug.Log("Accepted after: " + string.Join(",", acceptedApps));
-        }
-        else
-        {
-            Debug.Log("Rejected before: " + string.Join(",", rejectedApps));
-            rejectedApps.Add(app);
-            Debug.Log("Rejected after: " + string.Join(",", rejectedApps));
-        }
-        //displayConsequences(app); 
+        app.Status = accepted;  
+        evaluatedApps.Enqueue(app);
+        newspaperModel.SetActive(true); 
     }
 
-    // Checks if there is either an accepted or a rejected app logged
-    // If there is it activates the newspaper model
-    // and writes it on the newspaper popup
-    public void newspaperDisplay()
-    {
+    /* Uses the most recently evaluated application and checks if there are any consequences that should be 
+    displayed, if there are - this method calls for the corresponding Display-method (e.g. NewspaperDisplay) */
+    // Method called in UIManager.Evaluate
+    public void LoadConsequences(){
+
         Apps app;
-        if (acceptedApps.Count != 0)
-        {
-            app = acceptedApps[0];
-            titleField.GetComponent<TextMeshProUGUI>().text = app.Title;
-            descriptionField.GetComponent<TextMeshProUGUI>().text = app.Accepted.Consequences[0].TextToDisplay;
-            imageField.sprite = Resources.Load<Sprite>(app.Images[0]);
-            newspaperModel.SetActive(true);
+        Consequence[] consequences; 
+        Consequence newsPaperConsequence = null;
+        Consequence emailConsequence = null;
+
+        if (evaluatedApps.Count != 0){                                  
+            app = (Apps)evaluatedApps.Dequeue(); //app is the most recently reviewed application
+
+            //Checks if the application was accepted or rejected and loads the corresponding consqequences to variable         
+            if (app.Status){consequences = app.Accepted.Consequences;}  
+            else {consequences = app.Rejected.Consequences;}
+
+            //Checks where each consequence should be displayed and saves them in the corresponding variable
+                //Implemented as a switch method so it is easy to add more display locations in future development
+            foreach (Consequence c in consequences){
+                switch (c.DisplayLocation){
+                    case 1: newsPaperConsequence = c; break;
+                    case 2: emailConsequence = c; break;
+                }
+            }
+            //Calls for the corresponding Display-method if there are any new consequences to display in that location
+            if (newsPaperConsequence != null){NewspaperDisplay(newsPaperConsequence, app);}
+            if (emailConsequence != null){EmailDisplay(emailConsequence, app);}
         }
-        else if (rejectedApps.Count != 0)
-        {
-            app = rejectedApps[0];
-            titleField.GetComponent<TextMeshProUGUI>().text = app.Title;
-            descriptionField.GetComponent<TextMeshProUGUI>().text = app.Rejected.Consequences[0].TextToDisplay;
-            imageField.sprite = Resources.Load<Sprite>(app.Images[0]);
-            newspaperModel.SetActive(true);
-        }
-        else
-        {
-            //throw some error
-        }
+    }
+    // Loads the newspaper with consquence text and title+image for the corresponding application
+    public void NewspaperDisplay(Consequence c, Apps app)
+    {   
+        titleField.GetComponent<TextMeshProUGUI>().text = app.Title;
+        descriptionField.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
+        imageField.sprite = Resources.Load<Sprite>(app.Images[0]);
+    }
+
+    public void EmailDisplay(Consequence c, Apps app){
+        //Load the parameters of consequence c to a new Email in the Email-tab
     }
 }

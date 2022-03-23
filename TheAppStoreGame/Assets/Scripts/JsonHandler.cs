@@ -40,9 +40,11 @@ namespace JsonHandler
 
         [JsonProperty("rejected")]
         public Status Rejected { get; set; }
+
+        public bool Status {get; set;}
     }
 
-    //Set either to accepted or rejected in the Apps-class, should change this name to more suitable
+    //Set either to accepted or rejected in the Apps-class
     //Has a list of consequences and the Acm-class as parameters
     public partial class Status 
     {

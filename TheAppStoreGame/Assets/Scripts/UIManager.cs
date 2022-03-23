@@ -37,7 +37,9 @@ public class UIManager : MonoBehaviour
 
     public void Evaluate(bool accepted)
     {
+        currentApp.Status = accepted;
         GameManager.instance.AppChoice(currentApp, accepted); // Saves currentApp to GameManager
+        GameManager.instance.LoadConsequences();
         if (GameManager.instance.apps.Count == 0)
         {
            NoApplications();
@@ -45,7 +47,7 @@ public class UIManager : MonoBehaviour
         else
         {
             currentApp = (Apps)GameManager.instance.apps.Dequeue(); // Sets the next App as currentApp
-            GameManager.instance.newspaperDisplay();
+            //GameManager.instance.newspaperDisplay();
             setApp(currentApp); // Updates the screen with the new currentApp
         } 
     }
