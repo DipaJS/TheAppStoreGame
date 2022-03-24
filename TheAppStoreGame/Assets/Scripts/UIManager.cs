@@ -12,8 +12,6 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     //Gameobjects that are present on the screen in 'GameView'
-	//public GameObject acceptButton;
-	//public GameObject rejectButton;
 	public TextMeshProUGUI descriptionField;
 	public Text titleField;
 	public GameObject imageField;
