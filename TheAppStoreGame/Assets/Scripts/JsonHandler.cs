@@ -71,6 +71,12 @@ namespace JsonHandler
         [JsonProperty("textToDisplay")]
         public string TextToDisplay { get; set; }
 
+        [JsonProperty("email")]
+        public string Email { get; set; }
+
+        [JsonProperty("sender")]
+        public string Sender { get; set; }
+
         [JsonProperty("displayLocation")]
         public long DisplayLocation { get; set; }
     }
