@@ -92,11 +92,10 @@ public class GameManager : MonoBehaviour
                 //Implemented as a switch method so it is easy to add more display locations in future development
             foreach (Consequence c in consequences){
                 switch (c.DisplayLocation){
-                case 1: emailConsequence = c; break;
-                case 2: newsPaperConsequence = c; break;
-          
-
-            }
+                case 1: newsPaperConsequence = c; break;
+                case 2: emailConsequence = c; break;
+                }
+                Debug.Log(newsPaperConsequence.TextToDisplay);
             }
             //Calls for the corresponding Display-method if there are any new consequences to display in that location
             if (newsPaperConsequence != null){NewspaperDisplay(newsPaperConsequence, app);}
@@ -105,7 +104,8 @@ public class GameManager : MonoBehaviour
     }
     // Loads the newspaper with consquence text and title+image for the corresponding application
     public void NewspaperDisplay(Consequence c, Apps app)
-    {   
+    {
+        Debug.Log(app.Title);
         titleField.GetComponent<TextMeshProUGUI>().text = app.Title;
         descriptionField.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
         imageField.sprite = Resources.Load<Sprite>(app.Images[0]);
