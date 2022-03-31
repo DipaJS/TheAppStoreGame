@@ -44,7 +44,7 @@ public class GameManager : MonoBehaviour
     public GameObject newspaperModel;
 
     public GameObject textMail;
-    public GameObject senderMail;
+    public GameObject nameMail;
 
     // Initialize private instances
     private void Awake()
@@ -95,7 +95,7 @@ public class GameManager : MonoBehaviour
                 case 1: newsPaperConsequence = c; break;
                 case 2: emailConsequence = c; break;
                 }
-                Debug.Log(newsPaperConsequence.TextToDisplay);
+                Debug.Log("Test: " + newsPaperConsequence.TextToDisplay);
             }
             //Calls for the corresponding Display-method if there are any new consequences to display in that location
             if (newsPaperConsequence != null){NewspaperDisplay(newsPaperConsequence, app);}
@@ -113,8 +113,8 @@ public class GameManager : MonoBehaviour
 
     public void EmailDisplay(Consequence c, Apps app){
         //Load the parameters of consequence c to a new Email in the Email-tab
-        senderMail.GetComponent<TextMeshProUGUI>().text = c.Sender;
-        textMail.GetComponent<TextMeshProUGUI>().text = c.Email;
+        nameMail.GetComponent<TextMeshProUGUI>().text = c.Name;
+        textMail.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
         //descriptionFieldMail.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
 
     }

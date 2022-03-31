@@ -935,7 +935,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1620927867}
   m_HandleRect: {fileID: 1620927866}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0.99999934
   m_Size: 0.71072125
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -5566,7 +5566,7 @@ MonoBehaviour:
   newsPopup: {fileID: 1274590868}
   newspaperModel: {fileID: 1178996420}
   textMail: {fileID: 384948920}
-  senderMail: {fileID: 783221703}
+  nameMail: {fileID: 783221703}
 --- !u!4 &1052636203
 Transform:
   m_ObjectHideFlags: 0
