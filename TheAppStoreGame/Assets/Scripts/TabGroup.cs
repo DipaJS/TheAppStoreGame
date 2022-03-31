@@ -14,8 +14,9 @@ public class TabGroup : MonoBehaviour
     public Sprite tabHover;
     public Sprite tabActive;
     public TabButton selectedTab; // Store current tab to avoid resetting the tab that is clicked 
-    public List<GameObject> objectsToSwap; 
-    
+    public List<GameObject> objectsToSwap;
+    public GameObject emailNotification;
+
     public void Subscribe(TabButton button)
     {// Create a list after the first TabButton subscribes to the group 
         if(tabButtons == null)
@@ -63,6 +64,15 @@ public class TabGroup : MonoBehaviour
             else
             {
                 objectsToSwap[i].SetActive(false);
+            } 
+            if(index == 1)
+            {
+                objectsToSwap[1].SetActive(true);
+                emailNotification = GameObject.Find("MailNotification");
+                emailNotification.GetComponent<CanvasGroup>().alpha = 0;
+            } else
+            {
+                objectsToSwap[1].SetActive(false);
             }
         }
     }

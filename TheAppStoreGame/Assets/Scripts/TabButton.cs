@@ -14,12 +14,20 @@ public class TabButton : MonoBehaviour, IPointerEnterHandler, IPointerClickHandl
 {
     public TabGroup tabGroup;
     public Image background; // Background color of tab changes depending of state. Is set in TabGroup. 
+    
+
 
     private void Start()
     {
         background = GetComponent<Image>();
         tabGroup.Subscribe(this); 
+        
     }
+
+   
+
+
+    
 
     
 
