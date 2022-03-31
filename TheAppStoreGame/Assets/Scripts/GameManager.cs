@@ -115,7 +115,6 @@ public class GameManager : MonoBehaviour
         //Load the parameters of consequence c to a new Email in the Email-tab
         nameMail.GetComponent<TextMeshProUGUI>().text = c.Name;
         textMail.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
-        //descriptionFieldMail.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
 
     }
 }
