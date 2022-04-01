@@ -4,32 +4,91 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro; //Textmesh Pro package
 
+// Fills and filters a custom searchable dropdown menu
+// Attached to 'Country' in PlayerDetails
 public class DropdownFilter : MonoBehaviour
 {
-    [SerializeField]
-    private TMP_InputField inputField;
+    // List of strings to put as options in the dropdown
+    private List<string> optionsList;
 
-    [SerializeField]
-    private TMP_Dropdown dropdown;
+    // Variables to check when the dropdown should be closed
+    private bool close;
+    private int closeCounter;
 
-    private List<TMP_Dropdown.OptionData> dropdownOptions;
+    // Variables set in the inspector
+    public TMP_InputField inputField;
+    public GameObject dropdown;
+    public GameObject dropdownContent;
+    public Button optionPrefab;
 
     // Start is called before the first frame update
     private void Start()
     {
-        dropdownOptions = dropdown.options;
+        optionsList = new List<string> { "Option A", "Option B", "Option C", "Option D" };
+
+        foreach (string option in optionsList)
+        {
+            CreateButton(option);
+        }
+
+        dropdown.SetActive(false);
+        
+        closeCounter = 0;
     }
 
+    // Creates a short delay to let the onClick event register before the buttons are removed
+    private void FixedUpdate()
+    {
+        if (close)
+        {
+            closeCounter++;
+            if(closeCounter >= 10)
+            {
+                dropdown.SetActive(false);
+                close = false;
+                closeCounter = 0;
+            }
+        }
+    }
+
+    // Primes the dropdown for closing
+        // Called on OnEndEdit for the inputField
+    public void closeSearch()
+    {
+        close = true;
+    }
+
+    // Creates a button in the dropdown
+        // string option - The text displayed on the button, as well as what it will use as parameter for its clickOption
+    private Button CreateButton(string option)
+    {
+        Button button = Object.Instantiate(optionPrefab, dropdownContent.transform);
+        button.transform.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text = option;
+        button.onClick.AddListener(delegate { clickOption(option); });
+        return button;
+    }
+
+    // onClick for the dropdown options to select that option
+        // string option - The string that will be put into the inputField
+    public void clickOption(string option)
+    {
+        inputField.text = option;
+    }
+
+    // Filters which options are displayed in the dropdown
+        // string input - A string that is searched for, if the options has it as a substring they will be set as active, otherwise they will be set as deactive
     public void FilterDropdown(string input)
     {
-        List<TMP_Dropdown.OptionData> tmp = dropdownOptions.FindAll(option => option.text.IndexOf(input, System.StringComparison.OrdinalIgnoreCase) >= 0);
-        if (tmp.Count != 0)
+        foreach(Transform button in dropdownContent.transform)
         {
-            dropdown.options = tmp;
-        }
-        else
-        {
-            dropdown.options = new List<TMP_Dropdown.OptionData> { new TMP_Dropdown.OptionData("No results found") };
+            if(button.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text.IndexOf(input, System.StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                button.gameObject.SetActive(true);
+            }
+            else
+            {
+                button.gameObject.SetActive(false);
+            }
         }
     }
 }
