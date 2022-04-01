@@ -2453,7 +2453,7 @@ MonoBehaviour:
   inputField: {fileID: 0}
   dropdown: {fileID: 0}
   dropdownContent: {fileID: 0}
-  buttonPrefab: {fileID: 0}
+  optionPrefab: {fileID: 0}
 --- !u!1 &721966385
 GameObject:
   m_ObjectHideFlags: 0
@@ -4637,7 +4637,7 @@ MonoBehaviour:
   inputField: {fileID: 339774208}
   dropdown: {fileID: 1802843295}
   dropdownContent: {fileID: 8767359}
-  buttonPrefab: {fileID: 2274759230895438416, guid: a0e5c9ec3fc7037489de393c4df96d29, type: 3}
+  optionPrefab: {fileID: 2274759230895438416, guid: a0e5c9ec3fc7037489de393c4df96d29, type: 3}
 --- !u!1 &1282396195
 GameObject:
   m_ObjectHideFlags: 0
@@ -8167,7 +8167,7 @@ GameObject:
   - component: {fileID: 2138310714}
   - component: {fileID: 2138310713}
   m_Layer: 5
-  m_Name: Dropdown
+  m_Name: Dropdown (old)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
