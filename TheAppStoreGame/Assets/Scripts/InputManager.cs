@@ -80,7 +80,8 @@ public class InputManager : MonoBehaviour
                 savedGender = genderField.text;
                 break;
             case "age":
-                savedAge = int.Parse(ageField.text);
+                int.TryParse(ageField.text, out int input);
+                savedAge = input;
                 break;
             case "country": 
                 savedCountry = countryField.text;
