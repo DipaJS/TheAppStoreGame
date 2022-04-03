@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro; //Textmesh Pro package
+using UnityEngine.SceneManagement;
 
 // Saves player inputs and manages tools for ease of entering the same inputs
 // Attached to 'Input Fields' in PlayerDetails
@@ -12,6 +13,12 @@ public class InputManager : MonoBehaviour
     public GameObject gender;
     public GameObject age;
     public GameObject country;
+
+    // Warning texts, set in inspector
+    public GameObject nameWarning;
+    public GameObject genderWarning;
+    public GameObject ageWarning;
+    public GameObject countryWarning;
 
     // Input field references to only need to find them once, as they'll be called often
     TMP_InputField nameField;
@@ -33,12 +40,6 @@ public class InputManager : MonoBehaviour
         genderField = gender.GetComponent<TMP_InputField>();
         ageField = age.GetComponent<TMP_InputField>();
         countryField = country.GetComponent<TMP_InputField>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     // Increments or decrements the age input (minimum of zero)
@@ -75,20 +76,61 @@ public class InputManager : MonoBehaviour
         {
             case "nickname":
                 savedName = nameField.text;
+                Warnings(savedName, nameWarning);
                 break;
             case "gender": 
                 savedGender = genderField.text;
+                Warnings(savedGender, genderWarning);
                 break;
             case "age":
                 int.TryParse(ageField.text, out int input);
                 savedAge = input;
+                Warnings("", ageWarning);
                 break;
             case "country": 
                 savedCountry = countryField.text;
+                Warnings(savedCountry, countryWarning);
                 break;
             default:
                 Debug.Log("Unknown argument for OnInputChange, data not saved!");
                 break;
+        }
+    }
+
+    // Checks if the saved data is in the correct format, activates a warning if not
+        // string field - The string with the saved data to be checked
+            // For checking age this is irrelevant
+        // GameObject warning - The warning corresponding to the input field
+    public bool Warnings(string field, GameObject warning)
+    {
+        bool complete = true;
+
+        if(warning == ageWarning)
+        {
+            complete = 10 <= savedAge && savedAge <= 150;
+        }
+        else
+        {
+            complete = field != "";
+        }
+
+        warning.SetActive(!complete);
+        return complete;
+    }
+
+    // Checks that all fields are filled correctly, and if so moves on to [WHICH SCENE?]
+    public void checkOut()
+    {
+        bool complete;
+
+        complete = Warnings(savedName, nameWarning);
+        complete = Warnings(savedGender, genderWarning) && complete;
+        complete = Warnings("", ageWarning) && complete;
+        complete = Warnings(savedCountry, countryWarning) && complete;
+
+        if (complete)
+        {
+            SceneManager.LoadScene("GameView");
         }
     }
 }
