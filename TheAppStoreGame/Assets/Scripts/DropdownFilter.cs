@@ -20,11 +20,21 @@ public class DropdownFilter : MonoBehaviour
     public GameObject dropdown;
     public GameObject dropdownContent;
     public Button optionPrefab;
+    public bool exhaustive; // Determines if the input must be from the optionsList or if free input is allowed
+    public string optionFile; // The name of the file containing the dropdown options
 
     // Start is called before the first frame update
     private void Start()
     {
-        optionsList = new List<string> { "Option A", "Option B", "Option C", "Option D" };
+        /*TextAsset txt = (TextAsset)Resources.Load("position", typeof(TextAsset));  
+            and then split the text into lines
+
+        List<string> lines = new List<string>(txt.text.Split('System.Environment.NewLine'));*/
+        //optionsList = new List<string> { "Option A", "Option B", "Option C", "Option D" };
+
+        TextAsset optionsTxt = Resources.Load<TextAsset>(System.IO.Path.Combine("Text Files", optionFile));
+        optionsList = new List<string>(optionsTxt.text.Split('\n'));
+        optionsList.Sort();
 
         foreach (string option in optionsList)
         {
@@ -34,6 +44,13 @@ public class DropdownFilter : MonoBehaviour
         dropdown.SetActive(false);
         
         closeCounter = 0;
+    }
+
+    // Primes the dropdown for closing
+    // Called on OnEndEdit for the inputField
+    public void closeSearch()
+    {
+        close = true;
     }
 
     // Creates a short delay to let the onClick event register before the buttons are removed
@@ -47,15 +64,15 @@ public class DropdownFilter : MonoBehaviour
                 dropdown.SetActive(false);
                 close = false;
                 closeCounter = 0;
+                if(exhaustive)
+                {
+                    if (!optionsList.Contains(inputField.text))
+                    {
+                        inputField.text = "";
+                    }
+                }
             }
         }
-    }
-
-    // Primes the dropdown for closing
-        // Called on OnEndEdit for the inputField
-    public void closeSearch()
-    {
-        close = true;
     }
 
     // Creates a button in the dropdown
@@ -79,16 +96,30 @@ public class DropdownFilter : MonoBehaviour
         // string input - A string that is searched for, if the options has it as a substring they will be set as active, otherwise they will be set as deactive
     public void FilterDropdown(string input)
     {
+        bool anyActive = false;
         foreach(Transform button in dropdownContent.transform)
         {
-            if(button.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text.IndexOf(input, System.StringComparison.OrdinalIgnoreCase) >= 0)
+            string buttonText = button.GetChild(0).gameObject.GetComponent<TextMeshProUGUI>().text;
+
+            if(buttonText.IndexOf("No results found") >= 0)
+            {
+                Destroy(button.gameObject);
+            }
+
+            if(buttonText.IndexOf(input, System.StringComparison.OrdinalIgnoreCase) >= 0)
             {
                 button.gameObject.SetActive(true);
+                anyActive = true;
             }
             else
             {
                 button.gameObject.SetActive(false);
             }
+        }
+
+        if(!anyActive && exhaustive)
+        {
+            CreateButton("No results found");
         }
     }
 }
