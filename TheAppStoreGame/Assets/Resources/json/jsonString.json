@@ -49,24 +49,34 @@
         "images" : ["ework", "image2"],
         "logo" : "logo",
         "accepted": {
-            "consequences": [
-                {
-                    "textToDisplay" : "",
-                    "displayLocation": 1
-                }
-            ],
+          "consequences": [
+            {
+              "textToDisplay": "",
+              "displayLocation": 1
+            },
+            {
+              "textToDisplay": "Accepted email",
+              "Name": "Accepted name",
+              "displayLocation": 2
+            },
+          ],
             "ACM": {
                 "codesHonored": [],
                 "codesDishonored" : []
             }
         },
         "rejected":{
-            "consequences": [
-                {
-                    "textToDisplay" : "",
-                    "displayLocation": 1
-                }
-            ],
+          "consequences": [
+            {
+              "textToDisplay": "",
+              "displayLocation": 1
+            },
+            {
+              "textToDisplay": "Rejected email",
+              "Name": "Reject name",
+              "displayLocation": 2
+            },
+          ],
             "ACM": {
                 "codesHonored": [],
                 "codesDishonored" : []
