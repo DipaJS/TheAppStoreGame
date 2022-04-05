@@ -44,6 +44,7 @@ public class MainMenu : MonoBehaviour
         string scene;
         if (GameManager.instance.playerDetailsFilled)
         {
+            GameManager.instance.Initialize();
             scene = "GameView";
         }
         else

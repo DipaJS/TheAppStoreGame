@@ -46,7 +46,7 @@ public class GameManager : MonoBehaviour
     }
 
     // Sets the initial values for a fresh game
-    private void Initialize()
+    public void Initialize()
     {
         evaluatedApps = new Queue();
         apps = new Queue(appsArray);
