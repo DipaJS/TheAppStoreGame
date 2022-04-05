@@ -34,7 +34,7 @@ public class cameraMovementNew : MonoBehaviour
                 if (hit.collider.gameObject == screen && this.transform.position == baseCameraPosition)
                 {
                     Move(cameraPosition, cameraRotation);
-                    //OpenUI(ui);
+                    OpenUI(ui);
                     Debug.Log("Clicked!");
                 }
             }
@@ -45,6 +45,7 @@ public class cameraMovementNew : MonoBehaviour
         {
             Cancel();
             Debug.Log("Cancel!");
+            ui.SetActive(false);
         }
     }
 
