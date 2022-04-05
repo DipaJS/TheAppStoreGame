@@ -17,6 +17,13 @@ public class GameManager : MonoBehaviour
     public Queue evaluatedApps;
     private Apps[] appsArray;
 
+    // Player detail variables
+    public bool playerDetailsFilled;
+    private string playerName;
+    private string playerGender;
+    private int playerAge;
+    private string playerCountry;
+
     private void Awake()
     {
         // Creates a persistent instance
@@ -43,5 +50,15 @@ public class GameManager : MonoBehaviour
     {
         evaluatedApps = new Queue();
         apps = new Queue(appsArray);
+    }
+
+    // Sets the player details variables
+    public void PlayerDetails(string name, string gender, int age, string country)
+    {
+        playerName = name;
+        playerGender = gender;
+        playerAge = age;
+        playerCountry = country;
+        playerDetailsFilled = true;
     }
 }
