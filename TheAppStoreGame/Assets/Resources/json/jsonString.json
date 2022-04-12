@@ -25,7 +25,7 @@
         "rejected":{
             "consequences": [
               {
-                "textToDisplay": "Recent news of CrimeCognition being rejected has quickly spread throughout the city of Harrisonburg like wildfire, where some have voiced their concerns regarding what side the AppStore(?) is on and some are wondering why it’s not the government that oversees if CrimeCognition should be used by the police or not. \n\nWe have today interviewed some locals of Harrisonburg where they will share their thoughts on the recent news. “It’s insane? What side are the government on and especially what side is the AppStore company on? How can we reject something that would clearly help us get rid of criminals and make our city a much safer place? I am in disbelief”. While others agree with rejecting CrimeCognition, “I think people fail to see the bigger picture, the technology is not quite ready yet and not only that, there might be more consequences if we give the police and government more power to govern us. First cameras everywhere and before you know it we will have surveillance in every corner in our city where we are being constantly watched.\n\nThere has been some dispute between the police and the AppStore. The police of Harrisonburg wants the app to be approved as it can benefit them tremendously to catch criminals and keep the city clean. We might see some actions taken by the police to have CrimeCognition approved.",
+                "textToDisplay": "Recent news of CrimeCognition being rejected has quickly spread throughout the city of Harrisonburg like wildfire, where some have voiced their concerns regarding what side the AppStore(?) is on and some are wondering why it’s not the government that oversees if CrimeCognition should be used by the police or not. \n\nWe have today interviewed some locals of Harrisonburg where they will share their thoughts on the recent news. “It’s insane? What side are the government on and especially what side is the AppStore company on? How can we reject something that would clearly help us get rid of criminals and make our city a much safer place? I am in disbelief”. While others agree with rejecting CrimeCognition, “I think people fail to see the bigger picture, the technology is not quite ready yet and not only that, there might be more consequences if we give the police and government more power to govern us. First cameras everywhere and and before you know it we will have surveillance in every corner in our city where we are being constantly watched.\n\nThere has been some dispute between the police and the AppStore. The police of Harrisonburg wants the app to be approved as it can benefit them tremendously to catch criminals and keep the city clean. We might see some actions taken by the police to have CrimeCognition approved.",
                 "displayLocation": 1
               },
               {
@@ -49,34 +49,24 @@
         "images" : ["ework", "image2"],
         "logo" : "logo",
         "accepted": {
-          "consequences": [
-            {
-              "textToDisplay": "",
-              "displayLocation": 1
-            },
-            {
-              "textToDisplay": "Accepted email",
-              "Name": "Accepted name",
-              "displayLocation": 2
-            },
-          ],
+            "consequences": [
+                {
+                    "textToDisplay" : "",
+                    "displayLocation": 1
+                }
+            ],
             "ACM": {
                 "codesHonored": [],
                 "codesDishonored" : []
             }
         },
         "rejected":{
-          "consequences": [
-            {
-              "textToDisplay": "",
-              "displayLocation": 1
-            },
-            {
-              "textToDisplay": "Rejected email",
-              "Name": "Reject name",
-              "displayLocation": 2
-            },
-          ],
+            "consequences": [
+                {
+                    "textToDisplay" : "",
+                    "displayLocation": 1
+                }
+            ],
             "ACM": {
                 "codesHonored": [],
                 "codesDishonored" : []

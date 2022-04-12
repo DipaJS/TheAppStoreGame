@@ -118,7 +118,7 @@ public class InputManager : MonoBehaviour
         return complete;
     }
 
-    // Checks that all fields are filled correctly, and if so saves to GameManager and moves on to GameView
+    // Checks that all fields are filled correctly, and if so moves on to [WHICH SCENE?]
     public void checkOut()
     {
         bool complete;
@@ -130,7 +130,6 @@ public class InputManager : MonoBehaviour
 
         if (complete)
         {
-            GameManager.instance.PlayerDetails(savedName, savedGender, savedAge, savedCountry);
             SceneManager.LoadScene("GameView");
         }
     }

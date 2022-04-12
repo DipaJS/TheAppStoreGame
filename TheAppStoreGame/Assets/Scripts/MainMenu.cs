@@ -18,6 +18,7 @@ public class MainMenu : MonoBehaviour
     // Loads a new scene based on the input string
         // string scene - the name of the scene to be loaded
         // Called with "HowToPlay" by 'HowToPlayButton' in 'StartScreen'
+        // Called with "GameView" by 'PlayButton' in 'StartScreen'
         // Called with "StartScreen" by 'AgreeButton' in 'Disclaimer'
         // Called with "StartScreen" by 'GotItButton' in 'HowToPlay'
         // Called with "StartScreen" by 'RestartButton' in 'EndScreen'
@@ -35,24 +36,6 @@ public class MainMenu : MonoBehaviour
     {
         Debug.Log("Exit"); 
         Application.Quit();
-    }
-
-    // Moves to the PlayerDetails scene, or to GameView if the player details are already filled
-        // Called by 'PlayButton' in 'StartScreen'
-    public void startGame()
-    {
-        string scene;
-        if (GameManager.instance.playerDetailsFilled)
-        {
-            GameManager.instance.Initialize();
-            scene = "GameView";
-        }
-        else
-        {
-            scene = "PlayerDetails";
-        }
-
-        ChangeScene(scene);
     }
 
 

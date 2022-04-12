@@ -34,8 +34,8 @@ public class UIManager : MonoBehaviour
     // Saves the players choice to accept the application for publication and loads a new application to screen
     public void Evaluate(bool accepted)
     {
-        ConsequenceManager.instance.AppChoice(currentApp, accepted); // Saves currentApp to GameManager
-        ConsequenceManager.instance.LoadConsequences();
+        GameManager.instance.AppChoice(currentApp, accepted); // Saves currentApp to GameManager
+        GameManager.instance.LoadConsequences();
         if (GameManager.instance.apps.Count == 0)
         {
            NoApplications();
