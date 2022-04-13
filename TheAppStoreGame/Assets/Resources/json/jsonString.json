@@ -13,7 +13,7 @@
               },
               {
                 "textToDisplay": "Accepted email",
-                "Name" : "Accept name",
+                "Sender" : "Accept name",
                 "displayLocation": 2
               }
             ],
@@ -30,9 +30,9 @@
               },
               {
                 "textToDisplay": "Rejected email",
-                "Name" :  "Reject name",
+                "Sender" :  "Reject name",
                 "displayLocation": 2
-              },
+              }
 
             ],
             "ACM": {
@@ -56,9 +56,9 @@
             },
             {
               "textToDisplay": "Accepted email",
-              "Name": "Accepted name",
+              "Sender": "Accepted name",
               "displayLocation": 2
-            },
+            }
           ],
             "ACM": {
                 "codesHonored": [],
@@ -73,9 +73,9 @@
             },
             {
               "textToDisplay": "Rejected email",
-              "Name": "Reject name",
+              "Sender": "Reject name",
               "displayLocation": 2
-            },
+            }
           ],
             "ACM": {
                 "codesHonored": [],

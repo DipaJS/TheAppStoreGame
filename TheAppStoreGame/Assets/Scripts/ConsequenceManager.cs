@@ -87,7 +87,7 @@ public class ConsequenceManager : MonoBehaviour
         //Load the parameters of consequence c to a new Email in the Email-tab
 
         emailNotification.GetComponent<CanvasGroup>().alpha = 1;
-        nameMail.GetComponent<TextMeshProUGUI>().text = c.Name;
+        nameMail.GetComponent<TextMeshProUGUI>().text = c.Sender;
         textMail.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
 
     }
