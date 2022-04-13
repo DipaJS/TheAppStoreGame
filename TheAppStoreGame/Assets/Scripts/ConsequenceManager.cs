@@ -21,10 +21,15 @@ public class ConsequenceManager : MonoBehaviour
     public GameObject textMail;
     public GameObject nameMail;
 
+    public GameObject emailPrefab;
+    public List<EmailConsequence> emailList;
+
     // Start is called before the first frame update
     void Start()
     {
         instance = this;
+
+        emailList = new List<EmailConsequence>();
     }
 
     // Adds an app to evaluatedApps Queue and sets the status to either accepted (true) or rejected (false)
@@ -69,7 +74,7 @@ public class ConsequenceManager : MonoBehaviour
             }
             //Calls for the corresponding Display-method if there are any new consequences to display in that location
             if (newsPaperConsequence != null) { NewspaperDisplay(newsPaperConsequence, app); }
-            if (emailConsequence != null) { EmailDisplay(emailConsequence, app); }
+            if (emailConsequence != null) { EmailDisplay(emailConsequence); }
         }
     }
     // Loads the newspaper with consquence text and title+image for the corresponding application
@@ -82,7 +87,7 @@ public class ConsequenceManager : MonoBehaviour
     }
 
     // Loads the email with consquence text and name for the corresponding application
-    public void EmailDisplay(Consequence c, Apps app)
+    public void EmailDisplay(Consequence c)
     {
         //Load the parameters of consequence c to a new Email in the Email-tab
 
@@ -90,5 +95,14 @@ public class ConsequenceManager : MonoBehaviour
         nameMail.GetComponent<TextMeshProUGUI>().text = c.Sender;
         textMail.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
 
+        // Keep below
+        //emailList.Add(new EmailConsequence(c, newEmail(), "Date"));
     }
+
+    // Keep me - work in process
+    /*public GameObject newEmail()
+    {
+        GameObject mail = Object.Instantiate(emailPrefab, /*parent*//*);
+        return mail;
+    }*/
 }

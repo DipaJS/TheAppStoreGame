@@ -2,19 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using JsonHandler;
+using UnityEngine.UI;
+using TMPro; // TextMeshPro package
 
 public class EmailConsequence
 {
-    public string sender { get; set; }
-    public string subject { get; set; }
-    public string content { get; set; }
     public GameObject mail { get; set; }
 
-    public EmailConsequence(Consequence consequence, GameObject mailObject)
+    public TextMeshProUGUI sender { get; set; }
+    public TextMeshProUGUI subject { get; set; }
+    public TextMeshProUGUI content { get; set; }
+    public TextMeshProUGUI date { get; set; }
+    public GameObject notification { get; set; }
+    public Image emailIcon { get; set; }
+
+    public EmailConsequence(Consequence c, GameObject mailObject, string date)
     {
-        sender = consequence.Sender;
-        subject = consequence.Subject;
-        content = consequence.Subject;
-        mail = mailObject;
+        mail            = mailObject;
+        sender          = mail.transform.Find("Sender").gameObject.GetComponent<TextMeshProUGUI>();
+        subject         = mail.transform.Find("Subject").gameObject.GetComponent<TextMeshProUGUI>();
+        content         = mail.transform.Find("Content Preview").gameObject.GetComponent<TextMeshProUGUI>();
+        this.date       = mail.transform.Find("Date").gameObject.GetComponent<TextMeshProUGUI>();
+        notification    = mail.transform.Find("Notification").gameObject;
+        emailIcon       = mail.transform.Find("Email Icon").gameObject.GetComponent<Image>();
+
+        sender.text     = c.Sender;
+        subject.text    = c.Subject;
+        content.text    = c.TextToDisplay;
+        this.date.text  = date;
     }
 }
