@@ -55,4 +55,92 @@ public class ACMTab : ComputerUI
         //acmTabTitle.SetActive(false);
     }
 }
-   
+    //OBS! Old functions below, can be removed after check* 
+
+    //Method for activating the corresponding page for each code
+    /*public void code(GameObject code)
+    {
+        ChangeMonitor(codePage, acmTab);
+        code.SetActive(true);
+        acmTabTitle.SetActive(false);
+    }
+}
+    /*public void backToACM()
+    {
+        ChangeMonitor(acmTab, code1);
+    }
+
+    public void backToACM2()
+    {
+        ChangeMonitor(acmTab, code2);
+    }
+
+    public void backToACM3()
+    {
+        ChangeMonitor(acmTab, code3);
+    }
+
+    public void backToACM4()
+    {
+        ChangeMonitor(acmTab, code4);
+    }
+
+    public void backToACM5()
+    {
+        ChangeMonitor(acmTab, code5);
+    }
+
+    public void backToACM6()
+    {
+        ChangeMonitor(acmTab, code6);
+    }
+
+    public void backToACM7()
+    {
+        ChangeMonitor(acmTab, code7);
+    }
+
+    // Methods for activating the corresponding page for each code
+    public void Code1()
+    {
+        //ComputerUI.instance.ChangeMonitor(code1, acmTab);
+        ChangeMonitor(code1, acmTab);
+    }
+
+    public void Code2()
+    {
+
+        ChangeMonitor(code2, acmTab);
+    }
+
+    public void Code3()
+    {
+
+        ChangeMonitor(code3, acmTab);
+    }
+
+    public void Code4()
+    {
+
+        ChangeMonitor(code4, acmTab);
+    }
+
+    public void Code5()
+    {
+
+        ChangeMonitor(code5, acmTab);
+    }
+
+    public void Code6()
+    {
+
+        ChangeMonitor(code6, acmTab);
+    }
+
+    public void Code7()
+    {
+
+        ChangeMonitor(code7, acmTab);
+    }
+}
+*/
