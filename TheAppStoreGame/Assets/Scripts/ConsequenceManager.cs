@@ -80,8 +80,8 @@ public class ConsequenceManager : MonoBehaviour
     // Loads the newspaper with consquence text and title+image for the corresponding application
     public void NewspaperDisplay(Consequence c, Apps app)
     {
-        Debug.Log(app.Title);
-        titleField.GetComponent<TextMeshProUGUI>().text = app.Title;
+        Debug.Log(app.Name);
+        titleField.GetComponent<TextMeshProUGUI>().text = app.Name;
         descriptionField.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
         imageField.sprite = Resources.Load<Sprite>(app.Images[0]);
     }

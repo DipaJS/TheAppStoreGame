@@ -20,9 +20,16 @@ namespace JsonHandler
     //get and set functions for the Apps-class and its members.  
     public partial class Apps
     {
-        [JsonProperty("title")]
-        public string Title { get; set; }
+        [JsonProperty("name")]
+        public string Name { get; set; }
 
+        [JsonProperty("creator")]
+        public string Creator { get; set; }
+
+        [JsonProperty("category")]
+        public string Category { get; set; }
+
+        //Keep?
         [JsonProperty("pricing")]
         public string Pricing { get; set; }
 
@@ -55,30 +62,30 @@ namespace JsonHandler
         public Acm Acm { get; set; }
     }
 
-    //Acm has one list for codesHonored and one for codesDishonored
+    //ACM has a list of strings for the scores for the codes
     public partial class Acm
     {
-        [JsonProperty("codesHonored")]
-        public object[] CodesHonored { get; set; }
+        [JsonProperty("positiveCodeScores")]
+        public int[] PositiveCodeScores { get; set; }
 
-        [JsonProperty("codesDishonored")]
-        public object[] CodesDishonored { get; set; }
+        [JsonProperty("negativeCodeScores")]
+        public int[] NegativeCodeScores { get; set; }
     }
 
     //Consequence has the textToDisplay and displayLocation
     public partial class Consequence
     {
+        [JsonProperty("header")]
+        public string Header { get; set; }
+
         [JsonProperty("textToDisplay")]
         public string TextToDisplay { get; set; }
 
         [JsonProperty("sender")]
         public string Sender { get; set; }
 
-        [JsonProperty("subject")]
-        public string Subject { get; set; }
-
         [JsonProperty("displayLocation")]
-        public long DisplayLocation { get; set; }
+        public int DisplayLocation { get; set; }
     }
 
     //Converting the json-string to the corresponding C#-classes
