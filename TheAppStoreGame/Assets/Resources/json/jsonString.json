@@ -1,21 +1,26 @@
 [
     {
-        "name" : "City of Harrisonburg Police Department Warrant Planner",
-        "pricing": "Restricted to licensed officer",
-        "description": "This app is only for use by licensed officers of the City of Harrisonburg Police Department and may only be downloaded with affirmed consent from the City of Harrisonburg Police Department. This app will be used to expedite the search for and booking of convicted criminals in the City of Harrisonburg area. When a warrant is issued for an individual's arrest, their description and identifying characteristics are automatically entered into the app. Harrisonburg's facial detection system, enabled by traffic cameras on our major streets, will then be able to automatically locate, flag, and track any individual matching the description when they are seen by a camera. Officers logged in to the app can see the status of an arrest warrant and the location of any suspects. This innovative app will make for a more efficient police department and a safer City of Harrisonburg.",
+        "name" : "CrimeCognition",
+        "creator" : "",
+        "category" : "",
+        "description": "Introducing CrimeCognition, an app for severe increase in safety in your city. As soon as a warrant is issued for an individual’s arrest, their description and identifying characteristics are automatically entered into the app. CrimeCognition’s facial detection system, enabled by traffic cameras on our major streets, will then be able to automatically locate, flag, and track any individual matching the description when they are seen by a camera. Officers logged in to the app can see the status of an arrest warrant and the location of any suspects. This innovative app will make for a more efficient police department and make your city more safe.\n\nThis app is only for use by licensed officers of your city’s Police Department.",
         "images" : ["harrisonburg-police", "image2"],
         "logo" : "logo",
         "accepted": {
             "consequences": [
               {
-                "textToDisplay": "With the newly approved app, CrimeCognition people have voiced their concerns regarding the readiness of the app. “We already know how racial and gender bias facial recognition is, and I don’t think the technology is quite ready yet, especially in law enforcement where people's lives are at stake,” says the mayor of Harrisonburg. Some citizens of Harrisonburg are not only worried about the short term consequences, but also the long term. “Facial recognition, identifying characteristics using surveillance cameras, what else is the government going to do, soon we’ll have no freedom at all”.\n\nHowever, not all have the same opinion regarding CrimeCognition. “I really think this is a big step against crime, and I will feel a lot safer now knowing that the police of Harrisonburg got more resources to catch criminals.”\n\nWe also had the chance to interview the COP of Harrisonburg and he shared his thoughts on CrimeCognition. “I don’t think people realize how much more effective this app allows us to be, not only do we save time and resources but we also have more at our disposal to keep the streets clean”.\n\nAlthough the opinion of this newly introduced app is rather divided, only time will tell how it will affect not only our community here at Harrisonburg but also how it will affect the world. Will CrimeCognition help lower the crime rate and the usage of the app will spread like wildfire, or will there be clear gender and racial bias due to an incomplete technology.",
+                "header": "Racial and Gender Bias Gap is Widening",
+                "textToDisplay": "With the newly approved app, CrimeCognition people have voiced their concerns regarding the readiness of the app, especially with the current technology. It’s not a surprise that some softwares such as facial recognition needs to be advanced and researched more before heading into the public, even more so when there are lives at stake. The clear racial as well as gender bias is not something that should be a factor when it comes to crime.\n\nHowever, CrimeCognition has caused some people to rejoice. They feel that something more was needed to fight crime, some of them are Police Chief Directors where they view CrimeCognition as a new asset that will allow them to “Reduce crime rate, save resources and keep people safe”\n\nAlthough the opinion of CrimeCognition is rather divided, only time will tell how it will affect your city and the world. How will it change the crime rate, will the rate of innocent people in jail change and is CrimeCognition ready to be used in law?\nLastly, will “All are equal before the law”, hold true when CrimeCognition is used in every city.",
+                "sender": "",
                 "displayLocation": 1
               },
               {
-                "textToDisplay": "Accepted email",
-                "sender" : "Accept name",
+                "header": "",
+                "textToDisplay": "Accept email",
+                "sender": "Accept name",
                 "displayLocation": 2
               }
+
             ],
             "ACM": {
                 "positiveCodeScores": [2, 2, 1, 0, 0, 0],
@@ -25,15 +30,17 @@
         "rejected":{
             "consequences": [
               {
-                "textToDisplay": "Recent news of CrimeCognition being rejected has quickly spread throughout the city of Harrisonburg like wildfire, where some have voiced their concerns regarding what side the AppStore(?) is on and some are wondering why it’s not the government that oversees if CrimeCognition should be used by the police or not. \n\nWe have today interviewed some locals of Harrisonburg where they will share their thoughts on the recent news. “It’s insane? What side are the government on and especially what side is the AppStore company on? How can we reject something that would clearly help us get rid of criminals and make our city a much safer place? I am in disbelief”. While others agree with rejecting CrimeCognition, “I think people fail to see the bigger picture, the technology is not quite ready yet and not only that, there might be more consequences if we give the police and government more power to govern us. First cameras everywhere and before you know it we will have surveillance in every corner in our city where we are being constantly watched.\n\nThere has been some dispute between the police and the AppStore. The police of Harrisonburg wants the app to be approved as it can benefit them tremendously to catch criminals and keep the city clean. We might see some actions taken by the police to have CrimeCognition approved.",
+                "header": "Title",
+                "textToDisplay": "Recent news of CrimeCognition being rejected has quickly spread throughout the world like wildfire. Some have voiced their concerns regarding the rejection of CrimeCognition, and post’s of conspiracy theories on the internet have emerged, where the government is allegedly on the criminals' side. While others believe that this was for the best, saying the technology and society is not ready.\n\nIt is not about what is accepted or rejected today, it is about the consequences for it in the future. Will the rejection encourage criminals to do crime at a higher rate before new technology and invention makes it easier to prevent crimes, or was the rejection of CrimeCognition for the best. Maybe society is not ready for that change yet or would the change be a stepping stone for something much bigger that would not impose on our freedom?\n\nRejection of CrimeCognition has caused an uproar with police departments around the world, and actions might be taken to have CrimeCognition approved in one way or another.",
+                "sender": "",
                 "displayLocation": 1
               },
               {
+                "header": "",
                 "textToDisplay": "Rejected email",
-                "sender" :  "Reject name",
+                "sender": "Reject name",
                 "displayLocation": 2
               }
-
             ],
             "ACM": {
                 "positiveCodeScores": [],
@@ -43,40 +50,321 @@
     },
     
     {
-        "name" : "E.Work (Effective Work)",
-        "pricing": "Pricing here",
-        "description": "E.Work sets out to maximize efficiency, employee trust and overall satisfaction in the workplace. This application operates as a starting point to choosing your package as well as functioning as a control center when E.Work is added and registered to your workplace. E.Work has multiple customer packages with different feature lists and levels of implementation. Do you, as an employer, notice declining work performance in your office even though total work hours have stayed unchanged? Install our ‘E.Work Basic™’ package on all your technical devices. With EWork Basic(or EW.B), you can track work efficiency during active use of e.g a employee computer, see during what time of the day your employees work better or worse or set custom hours when certain focus is needed with our EW.eh (E.Work.effectivehours) addon, complete with customizable features like on screen guidance specific to your company, restricted access to certain applications and direct communication channels between working parties. EW.B also has extensive support for visual tracking with many trusted and widespread brands of web-cameras. * All installation done on-site with the help of experienced EWork employees.",
-        "images" : ["ework", "image2"],
-        "logo" : "logo",
+        "name" : "E.Work Basic (Effective Work)",
+        "creator" : "",
+        "category" : "",
+        "description": "EWork is only purchasable by official companies that:\n\n- Post a yearly revenue of over $20 million dollars\n- Consists of 150 or more employees\n\nE.Work sets out to maximize efficiency, employee trust and overall satisfaction in the workplace. Do you, as an employer, notice declining work performance in your office even though total work hours have stayed unchanged? Install our ‘E.Work Basic™’ package on all your technical devices. This application operates as a control center when E.Work is added and registered to your workplace.\n\nWith EWork Basic(or EW.B), you can track work efficiency during active use of e.g a employee computer, see during what time of the day your employees work better or worse or set custom hours when certain focus is needed with our EW.eh (E.Work.effectivehours) addon, complete with customizable features like on screen guidance specific to your company, restricted access to certain applications and direct communication channels between working parties. \n\nEW.B also has extensive support for visual tracking with many trusted and widespread brands of web-cameras, enabling you to track how much time your employees actually spend performing their assigned tasks. \n* All installation done on-site with the help of experienced EWork employees.",
+        "images" : ["", ""],
+        "logo" : "ework",
         "accepted": {
-          "consequences": [
-            {
-              "textToDisplay": "",
-              "displayLocation": 1
-            },
-            {
-              "textToDisplay": "Accepted email",
-              "sender": "Accepted name",
-              "displayLocation": 2
+            "consequences": [
+              {
+                "header": "Effectively Working, Efficiently Draining",
+                "textToDisplay": "With the latest invention from the E brand, E.Work Basic has quickly been integrated in many workplaces around the world. With their soaring stocks, growing power in the market and their influence in all parts of life, E has quietly been growing to something that we all depend on in recent years. In their latest endeavor, they have moved away from their previous focus on commerce and social media to instead look at improving the workplace.\n\nToday, we have a short interview with one employee working at a company that has recently integrated their E.Work Basic package into their system. While seeing a boost in revenue both from the respective news as well as having the Basic package improve efficiency around the clock, rumors have it that the employee morale is questionable.\n\n“It’s been some work to get used to, to say the least.” Our guest mentioned, highlighting the now predetermined workflow created in their workplace. “I’ve seen some of my colleagues be let go because of the performance during our assigned hours where we are directly monitored. This is even though they’ve substantially contributed to all work before E.Work, just that it happened during early or late hours. It feels like our senior staff have gotten way too focused on pure numbers and fail to understand that some people work differently.” Our contact continued, showing us warnings issued at their desk describing the exact time they were absent from their computer. “The increased wage is something I won’t complain about, but the workplace seems to get more and more disconnected from the human element I felt earlier.” \n\nE.Work have also presented early adopters of their Basic package with financial support during the first two years using the system, both to sweeten the deal and reward employees following the new, efficiency-based workplace habits. It is hard to say whether or not this new venture for the E brand will result in another industry hit, seeing as the opposition for the practices used grow by the numbers. But even then, we see a steady increase in companies deciding to implement Basic across the world with no indication that this will slow down.",
+                "sender": "",
+                "displayLocation": 1
+              },
+              {
+                "header": "Recent layoffs",
+                "textToDisplay": "Hey!\n\nHave you noticed the recent layoffs on floor 9? I got curious and decided to head down there and see why all of them had to leave. Apparently E.Work did a preliminary scan on our time and work sheets from the last 6 months, and decided to recommend which people to fire before we even got everything installed!\n\nCan you believe it? Even Frank down in the server room was let go just because there hadn’t been ENOUGH problems with our network for him to work on. Crazy, right? I really hope they’re not tracking our emails now too, otherwise I have really screwed up.",
+                "sender": "Worker #7840",
+                "displayLocation": 2
+              },
+              {
+                "header": "Money problems",
+                "textToDisplay": "Hey hun.\n\nIs everything going okay at home and at work? Hope you’re doing great!\n\nI could be having a better week, if I’m being honest. They installed this new thing called E.Work back at my office, and just after a couple of days I got called for a meeting and got told that I needed to up my efficiency at the workplace and that I would be put on unpaid leave for 2 weeks! I know I’m not the quickest worker, but I’m getting pretty old these days and I thought they would take notice of that, but I guess it’s all about numbers now.\n\nSince I’m not earning much money this month, I was wondering if you could help me with stocking up my fridge? I just need some milk, bread and cheese for now, and it would be such a big help right now. Hope it’s not too much of a hassle!\n\nLove, Mom",
+                "sender": "Mom",
+                "displayLocation": 2
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [0, 0, 3, 0, 0, 3],
+                "negativeCodeScores": [2, 2, 0, 2, 0, 0]
             }
-          ],
+        },
+        "rejected":{
+            "consequences": [
+              {
+                "header": "E now looking at the school sector, CTO says",
+                "textToDisplay": "Following their surprising rejection from the App Store, CTO of E announces the company will now target digital solutions connected to the educational system, primarily looking at the compulsory stage. “While we did not expect this setback, we always have other ideas in place when it comes to these situations.” The CTO said during a press conference last Monday while trying to insure shareholders and consumers that the falling stock price is nothing to be concerned about.\n\nWhile there has not been much specific information about what E will target or develop in the educational sector, credible sources say the company is pursuing more aggressive tactics when it comes to getting their latest technology approved for the public. These tactics include more tight-knit relations with high-level politicians, substantial financial aid for publicly showing support for their release as well as reportedly around the clock development cycles.\n\nIn what looks like the E-brand’s most ambitious project to date, only time will tell if it will come to fruition in the way that E hopes.",
+                "sender": "",
+                "displayLocation": 1
+              }
+            ],
             "ACM": {
                 "positiveCodeScores": [],
                 "negativeCodeScores": []
             }
+        }       
+    },
+    
+    {
+        "name" : "E.Work Enterprise",
+        "creator" : "",
+        "category" : "",
+        "description": "EWork is only purchasable by official companies that:\n\n- Post a yearly revenue of over $50 million dollars\n- Consists of 300 or more employees\n\nAs with our E.Work Basic product, this application serves as a control center and tracking software for all your efficiency needs.\n\nBeing our latest and most advanced product yet, ‘E.Work Enterprise™’ is targeted toward our largest and most ambitious clients. Using the latest version of our award-winning* and tested** E.Work ChipTracker, employees use implantable microchips in order to get the most out of themselves, both for your benefit and theirs. E.Work Enterprise is able to track employee stress levels, breathing patterns and even moods with our patented MoodLvl™. \n\nE.Work Enterprise also comes with EW.Planner, the most advanced work planning software available on the market. EW.Planner can assign and plan out each workday according to each employees most suitable task measured by our microchip while still maintaining equal workloads (adjustable salary rates available through external purchase of EW.SalTrkr™). \n\nEver suspect your employees call in sick when they are not? With ChipTracker, we can evaluate each employee based on their mental or physical health in order to get them the appropriate help needed and automatically call in sick if the need arises. ChipTracker also hosts an even wider variety of tracking tools compared to our Basic package, resulting in the most advanced and comprehensible workplace tool to date. In addition to tracking all your needs, the microchip also allows two-way audio messaging both on and off site, ensuring the quickest and easiest workplace communication available today. \n\nAs always, purchases of our most state-of-the-art packages include 24/7 support with no waiting time, lifetime warranty and on-site support implemented throughout your workspace.\n\n*Most Innovative Product, LPS Summit \n** Testing results not publicly available, inquire to support for more information.",
+        "images" : ["", ""],
+        "logo" : "ework",
+        "accepted": {
+            "consequences": [
+              {
+                "header": "E.Work ChipTracker installation causing major issues, says users",
+                "textToDisplay": "Early testing and installations of the E.Work Enterprise package has not gone forward without its share problems, says sources close to companies involved in the early launch.\n\nSoftware with incorrect measures, bug-filled implementation and even physical implications related to the installing the chip has surfaced even as the E brand has worked closely on not having any leaks be present in the media. In the latest bunch of reports given out by our sources, an employee experienced intense headaches, reduced vision and poor general health only a week after the surgical procedure.\n\nWith previous controversy relating to other forms of microchips, is it possible for the technology to still be lacking and unstable, even when backed by something such as E? In an article published later this week, we will examine further on the E.Work ChipTracker and hopefully talk further with an employee directly dealing with the latest and ‘greatest’ from the E brand.",
+                "sender": "",
+                "displayLocation": 1
+              },
+              {
+                "header": "Chip Installation Booking",
+                "textToDisplay": "Hello, Worker #3457.\n\nWe are contacting you to confirm that your Chip Installation procedure will happen at the end of the week during the morning. Instead of walking to your usual desk, you will come over to Floor 3 where the E.Work Staff is situated.\n\nDon’t forget that you should not consume any food or alcohol 12 hours before your appointment! If you have any more questions, we recommend that you read through the FAQ Pamphlet that can be found on each of your floors.\n\nSincerely (and Efficiently), The E.Work Staff",
+                "sender": "E.Work Staff",
+                "displayLocation": 2
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [0, 0, 2, 1, 1, 1],
+                "negativeCodeScores": [1, 2, 1, 3, 1, 3]
+            }
         },
         "rejected":{
-          "consequences": [
-            {
-              "textToDisplay": "",
-              "displayLocation": 1
-            },
-            {
-              "textToDisplay": "Rejected email",
-              "sender": "Reject name",
-              "displayLocation": 2
+            "consequences": [
+              {
+                "header": "E Microchip already flawed to begin with, says insider source",
+                "textToDisplay": "With their latest microshop project rejected and subsequently scrapped, more sources have come out and commented on the latest endeavor made by E, one that has been controversial and widely talked about ever since its inception.\n\n“Even the development process was filled with constantly differing opinions, both about the implementation and the fundamental idea.” A source close to the project describes as more and more stories from the development stage surfaces after the project was turned away during the acceptance stage. Our source later describes how the clashing opinions assuredly made for a complicated workspace and certainly made way for the delayed launch. “With increasing pressure from management and a prolonged crunch period, many thought the final product was anything but complete.”\n\nWith the E-brand now vowing to look at other ways to improve the job sector (including introducing more utilities to their steadily growing E.Work Basic package), their CTO says they are looking to improve on already set foundations instead of bringing, whilst groundbreaking, potentially polarizing technology into the field.",
+                "sender": "",
+                "displayLocation": 1
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [],
+                "negativeCodeScores": []
             }
-          ],
+        }       
+    },
+    
+    {
+        "name" : "Haze",
+        "creator" : "",
+        "category" : "",
+        "description": "Have you ever wanted to do live streams but haven’t had a great experience with previous applications?  With Haze, you can create content and let out your creative self by not having to worry about having the latest phone or the best system requirements. Our streaming service has deployed a new algorithm, proving to beat any rival in speed and optimization. You can now live stream with ease in the highest quality without sacrificing performance. \n\nBut this is not the only upper hand our product has; Does increasing your viewers at a fast rate sound interesting? Would you like your viewers to support you long-term? The advanced EmoteCapture plugin uses the camera on your phone to capture all your physical signs, giving your viewers an idea of how you view them by tracking body language among other things. This data gets processed by our software and displays it to your viewers with an intuitive interface directly on your streaming page. There is also the ViewSense bracelet that builds on top of EmoteCapture by measuring your heart rate in real time and also processes everything you are saying to indicate your honesty. Both EmoteCapture and ViewSense are directly connected to your Haze account and senses when you go live, but these features can also be turned off.",
+        "images" : ["", ""],
+        "logo" : "",
+        "accepted": {
+            "consequences": [
+              {
+                "header": "New streaming app has led people to demand a refund for donations",
+                "textToDisplay": "Haze, a streaming app enabling viewers to get a feel for the honesty and emotions of a streamer directly through a screen has started to set off, and not in a good way. A great deal of viewers are saying that the streamer is not who they thought they were and not being honest towards the viewers. The technology that is making this possible is called ViewSense, a heart rate tracker and voice recorder integrated in a bracelet, and EmoteCapture, a camera that captures physical signs. A recent event of this was when ViewSense detected one of the largest streamer on the platform, Practical_Panic884, lying about being able to stream on a specific day by first saying that he couldn’t because of personal matters and in the same stream then saying that there will be no stream since construction workers is coming over to renovate the bathroom. Some viewers were quick to question this and began demanding a refund for donations and even went as far as trying to cancel this streamer. \n\nOn the other hand, some viewers are not finding this technology reliable and saying that it is inaccurate and slow to pick up physical signs as well as processing voice recordings.",
+                "sender": "",
+                "displayLocation": 1
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [1, 0, 2, 1, 1, 1],
+                "negativeCodeScores": [1, 1, 0, 2, 0, 0]
+            }
+        },
+        "rejected":{
+            "consequences": [
+              {
+                "displayLocation": 0
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [],
+                "negativeCodeScores": []
+            }
+        }       
+    },
+    
+    {
+        "name" : "LifeGuide",
+        "creator" : "",
+        "category" : "",
+        "description": "Feeling lost, lacking direction in life? LifeGuide is here to help in all steps of life. Making use of groundbreaking machine learning algorithms, LifeGuide (henceforth referred to as LG) uses all information publicly available for a user to evaluate a comprehensive guide to help them on their way, wherever they may be.\n\nAmong other features, we can accurately suggest and predict:\n\n- What education and degree you should aim for\n- Your future dream job, complete with resume suggestions and open job offers\n- Friend suggestions based on your personality and compatibility\n- Your dream vacation destination\n- The city and apartment solutions that best tailor your needs\n- Most compatible romantic interests\n- A diet balanced around both your tastes and optimal calorie consumption\n- A complete and fool-proof budget plan\n\n..And with many more features still in development!\n\nLG will work closely with major corporations and companies to provide e.g the best pre-planning for a job interview, the most exclusive sales on products contained in your diet plan, or even automatically advertise you to companies that are very likely to be interested in what you provide as an asset. \n\nFor an even more accurate and exclusive plan, users can opt-in to provide more specific information about them, as well as letting LG be integrated to other apps in their phones to extract the most useful information to further improve on the analysis. All of this personal data will only be used to better the plan and final result, as mentioned in our ‘LG Personal Privacy Terms & Conditions’. \n\nEarly testing has proven that LG will be a massive help to a potentially massive number of people looking to find their true purpose and furthermore see themselves enjoy life to the fullest, just like they planned.",
+        "images" : ["", ""],
+        "logo" : "",
+        "accepted": {
+            "consequences": [
+              {
+                "header": "LifeGuide opening to soaring review scores after (x) months",
+                "textToDisplay": "Following its release, many were skeptical about the LifeGuide application and its seemingly impossible goals of tailoring your lifestyle, ranging from choosing your diet choice, showing the optimal job selection or even suggesting which dates you would go on.\n\nBarring a couple of negative reviews, these worries seem to have vanished after only a couple months after LifeGuide’s official release. With overwhelming praise for both the technical aspects as well as for the accuracy of the results and suggestions given, it looks as if LifeGuide made sure of their promises.\n\nWith reportedly even more features on the way and news of other companies and sectors looking to invest in the LifeGuide product, their marketing director mentioned earlier this week that ‘there is nowhere to go but up’, and when looking at those numbers, who can blame them?",
+                "sender": "",
+                "displayLocation": 1
+              },
+              {
+                "header": "Review Notification: LifeGuide",
+                "textToDisplay": "This is an automated email sent since employees asked to be sent various reviews for applications they accepted.\n\n“LG has given me a whole new chance! I was stuck studying in a field I had lost all interest in with seemingly no real way out, until I picked this up! Just like that, I got a personal offer for a new degree that has worked out perfectly, I even dropped my old friends for a club that LG recommended! There isn't a day, maybe even a waking hour, where I don’t use LG to figure out which next step I should take in my life, and I can use it for everything that I can think of!” - 5 Star App Store review from user LifeOnCruiseControl57",
+                "sender": "App Store",
+                "displayLocation": 2
+              }
+            ],
+            "ACM": {
+              "positiveCodeScores": [3, 2, 2, 3, 2, 2],
+              "negativeCodeScores": [0, 1, 0, 0, 0, 0]
+            }
+        },
+        "rejected":{
+            "consequences": [
+              {
+                "header": "LifeGuide Cancellation",
+                "textToDisplay": "Why the hell would you reject LifeGuide?! I have been beta-testing this stuff for almost a year and gotten dependent on it, and now I hear you’re the reason I’ll never get to use the full product? Why would you even do such a thing, there’s literally no downside with it and it helped me with EVERYTHING! \n\nThanks for ruining my whole year, I hope you’re proud!",
+                "sender": "Clarissa Simmons",
+                "displayLocation": 2
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [],
+                "negativeCodeScores": []
+            }
+        }       
+    },
+    
+    {
+        "name" : "MaxHealth",
+        "creator" : "",
+        "category" : "",
+        "description": "Are you tired of needing to buy several individual dietary supplements from several different companies? Avoid bulky packaging and the risk of forgetting to take one of your supplements by trying our pre-packaged supplements. We have a wide selection of supplements to find everything that you need and you can also mix and match different supplements*. Once you have chosen your preferred supplements, we will package them together for you in small disposable plastic pouches. Each box contains supplements for 30 days (a total of 30 pouches) and the price starts at $52/month. \n\n*Minimum of 5 different supplements \n\nSave money and join our monthly, yearly or special subscription: \n\n- Monthly: $42 (save $10)\n- Yearly: $252 (save $31/month)\n- Special: $337. Same as yearly but also includes a HealthCheck\n\nWould you like to know the exact supplements YOU need in order to thrive in life? Introducing HealthCheck, a comprehensive vitamin panel measuring the amount of different vitamins and minerals in your body. Price: $105. This test includes a total of 10 markers: \n\n- Vitamin D\n- Vitamin B12\n- Vitamin C\n- Vitamin K1\n- Vitamin A\n- Ferritin\n- Folate \n- Iron \n- Magnesium\n- Zinc \n\nWe have our own clinics where you take the tests to ensure you the fastest and cheapest test results. With HealthCheck, test results are private and directly sent to you in the app. Only 4 steps are required to take control of your health:\n\n1. Order the test.\n2. Take the test at one of our nearest clinics.\n3. Authenticate yourself and see the results in the app and the supplements we recommend for each marker.\n4. Place a checkmark in the box for the supplements you would like directly in the app and proceed with the order.",
+        "images" : ["", ""],
+        "logo" : "",
+        "accepted": {
+            "consequences": [
+              {
+                "header": "Low Bioavailability and Bad Environmental Impacts of Pre-Packaged Supplements",
+                "textToDisplay": "Pre-packaged supplements sound convenient since you can take them at one specific time, but is it just another fad? A recent study from Micro Science Lab investigated the bioavailability of the pre-packaged supplements from MaxHealth, one of the recent supplement companies rising in popularity. The study looked at how well the supplements were taken up in the body together and showed that some of the supplements would have a better effect if taken separately rather than combined. However, MaxHealth has stated clearly that the supplements can be taken together but customers are now upset and feel ripped off since they have been needing to buy more supplements than necessary to get the same effect. \n\nAnother criticism MaxHealth has been receiving lately is the choice in using plastic for their pre-packaged supplements. MaxHealth has responded by saying that a more environmentally friendly solution would make their product more expensive and not be appreciated by their customers. It remains to be seen how MaxHealth takes care of these issues.",
+                "sender": "",
+                "displayLocation": 1
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [2, 1, 1, 1, 0, 1],
+                "negativeCodeScores": [1, 1, 0, 0, 1, 0]
+            }
+        },
+        "rejected":{
+            "consequences": [
+              {
+                "header": "Plastic Usage Back at All Time High Thanks to New Supplement Service",
+                "textToDisplay": "The consumption of plastic has for a long time been a hot topic since it contributes to extensive environmental degradation. As companies become more aware of their environmental impact, the latest trends have shown companies switching from using plastic to more environmentally friendly materials such as bambu and paper. This has reduced the plastic consumption tremendously - but now a recoil in plastic consumption is observed. One of the main forces is considered to be the supplement company MaxHealth that is rapidly taking over the industry as a recent study shows that over 60% of the citys’ citizens are MaxHealth customers. They offer supplement subscriptions where personalized supplements are packaged in 500 grams of plastic per subscription. This has led to plastic usage being back at almost the same levels as before the transition from plastic to environmentally friendly materials.",
+                "sender": "",
+                "displayLocation": 1
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [],
+                "negativeCodeScores": []
+            }
+        }       
+    },
+    
+    {
+        "name" : "MedBud",
+        "creator" : "",
+        "category" : "",
+        "description": "Prioritize your wellbeing with MedBud, the latest and greatest tool for checking and improving on all your health concerns.\n\nInstalled into your body via a chip injected along the back of your neck (administered and controlled by professional medical personnel), MedBud can track everything from your blood pressure, vitamins, heart rate and blood sugar! Keep up on your health deficiencies and get quick recommendations on what to do when finding out what your body is lacking. Additionally, MedBud offers around-the-clock support sessions with medical experts in case you need a more personal and exclusive check-up. \n\nMedBud also offers communication with a large number of both public hospitals and private clinics. If your primary doctor or physician is located in our extensive list of contacts, MedBud can automatically alert them when the situation is needed and offer a more effective and quicker appointment to deal with your problems.\n\nMedBud also promises a steady flow of upgrades and additions to our already vast tracking capabilities and advances in keeping you in your healthiest self, as well as 24/7 support if any problem arises.",
+        "images" : ["", ""],
+        "logo" : "",
+        "accepted": {
+            "consequences": [
+              {
+                "header": "MedBud Adds Drug and Alcohol Tracking in Latest Update",
+                "textToDisplay": "With the latest iteration made to add features and improve on existing ones, the popular health tracker MedBud has added a tracker for analyzing drug and alcohol content in the bloodstream. When reaching a preset (or personally set) level of either substance, the application is made to alert its user about the situation and its prominent side-effects, going so far as to even subject the user to small shocks or stimulations when going above the recommended level.\n\nWe have seen continuous updates being released for MedBud in recent months, many targeting the growing interest in parents wanting to keep track of their children. The previous Parental Control update, including ways to both keep track of children and to also limit their various consumption. MedBud has also communicated that this new drug and alcohol functionality will be available for their Parental Control sections, making it possible for parents to further monitor and control their children. Whilst this has seen some valid criticism in the media, the creators of MedBud have responded with references to their clearly described Terms of Service, citing that every update is within its bounds.",
+                "sender": "",
+                "displayLocation": 1
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [1, 1, 2, 2, 2, 1],
+                "negativeCodeScores": [0, 0, 3, 0, 0, 1]
+            }
+        },
+        "rejected":{
+            "consequences": [
+              {
+                "displayLocation": 0
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [],
+                "negativeCodeScores": []
+            }
+        }       
+    },
+    
+    {
+        "name" : "NX-Scan",
+        "creator" : "",
+        "category" : "",
+        "description": "(Only compatible with latest generation phones equipped with Mx16 camera and laser sensors, compatible models listed in additional notes.)\n\nWith the latest technology brought in from the Mx-sensors, we can now present NX-Scan, or NeXt-Gen Scan. With enhanced sensor capabilities and the Mx’s laser technology, NX-Scan has the same capabilities as an MRI or X-Ray! Within 25 minutes of letting your phone scan the desired body part, NX-Scan can identify possible fractures, torn ligaments, muscles and even inflammations with over 90% accuracy*.\n\nAvoid the crippling costs of a medical scan and get the same results from the comfort of your home, avoid a potentially unnecessary doctor visit or possibly get the opportunity to fast-track the treatment process with one simple tool.\n\n* Tests conducted with a sample size of 50.",
+        "images" : ["", ""],
+        "logo" : "",
+        "accepted": {
+            "consequences": [
+              {
+                "displayLocation": 0
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [1, 2, 1, 2, 1, 0],
+                "negativeCodeScores": [1, 0, 1, 0, 1, 0]
+            }
+        },
+        "rejected":{
+            "consequences": [
+              {
+                "header": "NX-Scan Usage Linked to Increased Cancer Risk, Study Says",
+                "textToDisplay": "Following a rather rocky release and review cycle, the much talked about NX-Scan application has recently been a part of a study detailing its use being linked to an increased risk of cancer. Tested across 5000 people of varying age, backgrounds and medical history, the study concluded a small but significant difference between people having used the app to ‘scan’ body parts and those who had not interacted with the product. \n\nThis also seems in line with earlier news from single users reporting on deteriorating health months after using the application, especially early adopters who notably used NX-Scan during a time where it would not shut off its scanning functionality upon being terminated and only when the phone was completely shut off..\n\nUpon its release, phone manufacturers engaged in developing phones using the new Mx16 camera/laser systems were careful not to recommend the application to the general public, citing the inherent risks. While not objecting to the advertised features of the application, the companies were quick to warn users about the proposed danger when using the technology involved and urging users to read more about the practices involved.\n\nNow facing multiple lawsuits, the NX company has refused any and all interviews, instead focusing on showing the positives and relative success of their release, citing the improved accuracy and numerous bug-fixes released to reduce the problems mentioned in this article.",
+                "sender": "",
+                "displayLocation": 1
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [],
+                "negativeCodeScores": []
+            }
+        }       
+    },
+    
+    {
+        "name" : "RealFilter",
+        "creator" : "",
+        "category" : "",
+        "description": "Have you ever wanted to preview a new you? With RealFilter, that is always a possibility.\n\nBegin by taking a photo of the part of your body that you’d like to preview changes on. RealFilter provides support for whichever photo you provide but works best with full body pictures or face close-ups. After you’ve imported the photo into RealFilter, you’re free to explore all the changes you’d like!\n\nHow would your body shape or face look if you lost (or gained) a couple of pounds? Thinking about a nose job? Maybe you’re interested in seeing your muscle definition based on variable body fat percentages? Trying new hairstyles, different makeup? RealFilter has the ability to show you it all, the only thing stopping you is your imagination.",
+        "images" : ["", ""],
+        "logo" : "",
+        "accepted": {
+            "consequences": [
+              {
+                "header": "",
+                "textToDisplay": "",
+                "sender": "",
+                "displayLocation": 1
+              },
+              {
+                "header": "",
+                "textToDisplay": "",
+                "sender": "",
+                "displayLocation": 2
+              }
+            ],
+            "ACM": {
+                "positiveCodeScores": [1, 0, 1, 2, 1, 0],
+                "negativeCodeScores": [0, 1, 0, 1, 0, 1]
+            }
+        },
+        "rejected":{
+            "consequences": [
+              {
+                "header": "",
+                "textToDisplay": "",
+                "sender": "",
+                "displayLocation": 1
+              },
+              {
+                "header": "",
+                "textToDisplay": "",
+                "sender": "",
+                "displayLocation": 2
+              }
+            ],
             "ACM": {
                 "positiveCodeScores": [],
                 "negativeCodeScores": []
