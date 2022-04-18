@@ -333,16 +333,10 @@
         "accepted": {
             "consequences": [
               {
-                "header": "",
-                "textToDisplay": "",
+                "header": "Has the cracks of RealFilter begun to show?",
+                "textToDisplay": "Since its initial release earlier this year, reviewers and consumers alike raved about the application's technical prowess and its unparalleled accuracy compared to other ones operating in the same market. While taking an extended time to break out into the market, the passing months has seen RF soar to the top charts when it came to downloads.\n\nHowever, with time it seems that its technical superiority and wide range of options is not only used to preview different changes on your body. Lately, reports have been gathered seeing a substantial increase in cases containing ‘cat-fishing’ that has in some instances resulted in violent crime charges. This is certainly only one of the things that RealFilter has been used for, other ones including occurrences of minors starving themselves to reach a certain body goal previewed by the application, as told by their parents. Even moreso, the most recent news concerning the application revolves around the act of identity theft, where tech aficionados have found a way to manipulate the backend of the application to gain even more control over features to the point where they can impersonate others.\n\nWhile this only covers a rather miniscule part of the massive user base that RealFilter has accrued, it does present the question - How do you balance the freedom to present technical achievements made in the recent years with the potential misuse that can happen when it is presented to literally anyone?",
                 "sender": "",
                 "displayLocation": 1
-              },
-              {
-                "header": "",
-                "textToDisplay": "",
-                "sender": "",
-                "displayLocation": 2
               }
             ],
             "ACM": {
@@ -353,16 +347,7 @@
         "rejected":{
             "consequences": [
               {
-                "header": "",
-                "textToDisplay": "",
-                "sender": "",
-                "displayLocation": 1
-              },
-              {
-                "header": "",
-                "textToDisplay": "",
-                "sender": "",
-                "displayLocation": 2
+                "displayLocation": 0
               }
             ],
             "ACM": {

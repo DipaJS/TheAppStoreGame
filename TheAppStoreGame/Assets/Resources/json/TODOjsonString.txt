@@ -65,4 +65,4 @@ Creator
 Category
 Images
 Logo
-No consequences?
+No rejected consequence?
