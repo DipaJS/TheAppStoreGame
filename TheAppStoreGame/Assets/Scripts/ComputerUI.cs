@@ -25,4 +25,12 @@ public class ComputerUI : MonoBehaviour
         activate.SetActive(true);
         inactivate.SetActive(false);
     }
+
+    public void SetActiveTab(GameObject activate){
+        activate.SetActive(true);
+    }
+
+    public void SetInactiveTab(GameObject inactivate){
+        inactivate.SetActive(false);
+    }
 }

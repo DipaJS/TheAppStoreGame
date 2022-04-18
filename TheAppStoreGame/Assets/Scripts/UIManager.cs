@@ -13,7 +13,7 @@ public class UIManager : MonoBehaviour
 {
     //Gameobjects that are present on the screen in 'GameView'
 	public TextMeshProUGUI descriptionField;
-	public Text titleField;
+	public TextMeshProUGUI titleField;
 	public GameObject imageField;
     public GameObject standardView;
     public GameObject noApplicationsView;
