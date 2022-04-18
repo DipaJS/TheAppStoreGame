@@ -29,10 +29,6 @@ namespace JsonHandler
         [JsonProperty("category")]
         public string Category { get; set; }
 
-        //Keep?
-        [JsonProperty("pricing")]
-        public string Pricing { get; set; }
-
         [JsonProperty("description")]
         public string Description { get; set; }
 
