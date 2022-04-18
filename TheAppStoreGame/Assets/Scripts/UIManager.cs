@@ -50,7 +50,7 @@ public class UIManager : MonoBehaviour
     // Loads an app to the main screen
         // Apps app - the app to be uploaded
     public void setApp(Apps app){
-        titleField.text = app.Title;
+        titleField.text = app.Name;
         descriptionField.text = app.Description;
         imageField.GetComponent<Image>().sprite = Resources.Load<Sprite>(app.Images[0]);
     }

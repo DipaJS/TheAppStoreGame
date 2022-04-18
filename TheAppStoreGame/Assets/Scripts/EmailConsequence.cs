@@ -27,7 +27,7 @@ public class EmailConsequence
         emailIcon       = mail.transform.Find("Email Icon").gameObject.GetComponent<Image>();
 
         sender.text     = c.Sender;
-        subject.text    = c.Subject;
+        subject.text    = c.Header;
         content.text    = c.TextToDisplay;
         this.date.text  = date;
     }
