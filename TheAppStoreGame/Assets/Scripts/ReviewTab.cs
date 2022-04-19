@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 using JsonHandler;
 using TMPro;
 
-//A script for player interaction with the computer screen. 
+//A script for player interaction with the ReviewTab 
 //Attached to 'Computer Screen' in 'GameView'
 
-public class ReviewApplicationsTab : MonoBehaviour
+public class ReviewTab : MonoBehaviour
 {
     //Gameobjects that are present on the Review Appliction Tab in 'GameView'
 	public TextMeshProUGUI descriptionField;
@@ -17,6 +17,12 @@ public class ReviewApplicationsTab : MonoBehaviour
 	public GameObject imageField;
     public GameObject standardView;
     public GameObject noApplicationsView;
+
+    //A list with all the images for the current application and an int for keeping track of which image is on display
+    public string[] images;
+
+    public int imageIndex = 0;
+
 
     //public GameObject ACM; Keep me 
 
@@ -27,17 +33,18 @@ public class ReviewApplicationsTab : MonoBehaviour
         //Loads the first application from apps-queue to the main screen
 
     //This doesnt work (therefore outcommented) not sure why but needs fixing!
-    /*void Start()
+    void Start()
     {
         currentApp = (Apps)GameManager.instance.apps.Dequeue();
-        setApp(currentApp);
-    }*/
+        images = currentApp.Images;
+        SetApp(currentApp);
+    }
 
     // Saves the players choice to accept the application for publication and loads a new application to screen
     public void Evaluate(bool accepted)
     {
         ConsequenceManager.instance.AppChoice(currentApp, accepted); // Saves currentApp to GameManager
-        ConsequenceManager.instance.LoadConsequences();
+        //ConsequenceManager.instance.LoadConsequences();
         if (GameManager.instance.apps.Count == 0)
         {
            NoApplications();
@@ -45,13 +52,13 @@ public class ReviewApplicationsTab : MonoBehaviour
         else
         {
             currentApp = (Apps)GameManager.instance.apps.Dequeue(); // Sets the next App as currentApp
-            setApp(currentApp); // Updates the screen with the new currentApp
+            SetApp(currentApp); // Updates the screen with the new currentApp
         } 
     }
 
     // Loads an app to the main screen
         // Apps app - the app to be uploaded
-    public void setApp(Apps app){
+    public void SetApp(Apps app){
         titleField.text = app.Name;
         descriptionField.text = app.Description;
         imageField.GetComponent<Image>().sprite = Resources.Load<Sprite>(app.Images[0]);
@@ -62,6 +69,11 @@ public class ReviewApplicationsTab : MonoBehaviour
     {
         noApplicationsView.SetActive(true);
         standardView.SetActive(false);
+    }
+
+    public void BrowseImage(){
+        imageIndex = ((imageIndex + 1) % images.Length);
+        imageField.GetComponent<Image>().sprite = Resources.Load<Sprite>(currentApp.Images[imageIndex]);
     }
 
     //CheckMe is a onClick function that displays (or removes) a checkmark when the button is pressed depending if the checkmark was previosly displayed or not

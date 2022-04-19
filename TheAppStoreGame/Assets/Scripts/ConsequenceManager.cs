@@ -42,7 +42,7 @@ public class ConsequenceManager : MonoBehaviour
     {
         app.Status = accepted;
         GameManager.instance.evaluatedApps.Enqueue(app);
-        newspaperModel.SetActive(true);
+        //newspaperModel.SetActive(true);
     }
 
     /* Uses the most recently evaluated application and checks if there are any consequences that should be 

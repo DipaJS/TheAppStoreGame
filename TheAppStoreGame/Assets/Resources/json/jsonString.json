@@ -4,7 +4,7 @@
         "creator" : "",
         "category" : "",
         "description": "Introducing CrimeCognition, an app for severe increase in safety in your city. As soon as a warrant is issued for an individual’s arrest, their description and identifying characteristics are automatically entered into the app. CrimeCognition’s facial detection system, enabled by traffic cameras on our major streets, will then be able to automatically locate, flag, and track any individual matching the description when they are seen by a camera. Officers logged in to the app can see the status of an arrest warrant and the location of any suspects. This innovative app will make for a more efficient police department and make your city more safe.\n\nThis app is only for use by licensed officers of your city’s Police Department.",
-        "images" : ["harrisonburg-police", "image2"],
+        "images" : ["ework2", "ework4"],
         "logo" : "logo",
         "accepted": {
             "consequences": [
