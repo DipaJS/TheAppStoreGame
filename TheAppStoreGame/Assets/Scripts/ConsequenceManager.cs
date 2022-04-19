@@ -5,6 +5,8 @@ using JsonHandler;
 using UnityEngine.UI;
 using TMPro; // TextMeshPro package
 
+//A script for managing the consequences the player will experience in the game depending on their choices
+
 public class ConsequenceManager : MonoBehaviour
 {
     public static ConsequenceManager instance;

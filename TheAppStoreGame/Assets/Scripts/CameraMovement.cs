@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+//OBS! Not used - can be deleted?
+
 // A script for moving and changing the player's perspective
 // Attached to 'Main Camera' in 'GameView'
 public class CameraMovement : ComputerUI

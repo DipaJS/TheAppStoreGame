@@ -2,22 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class cameraMovementNew : MonoBehaviour
+//A script for managing the main camera so that the player can change perspective when interacting with different objects.
+    //Attached to 'MainCamera' in 'GameplayView'
+public class CameraManager : MonoBehaviour
 {
+    //Camera positions are set in the inspector
 
+    //base camera-position and rotation sets the default camera view 
     public Vector3 baseCameraPosition;
     public Vector3 baseCameraRotation;
-    // Camera view zoomed in on the computer
-    public Vector3 cameraPosition;
-    public Vector3 cameraRotation;
+
+    //cs camera-position and rotation sets the camera view for when the player has interacted with the computer, i.e. a zoomed in view of the computer interface
+    public Vector3 csCameraPosition;
+    public Vector3 csCameraRotation;
 
     public GameObject screen;
     public GameObject ui;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -33,8 +33,8 @@ public class cameraMovementNew : MonoBehaviour
                 //Open computer/zoom in when clicking the screen
                 if (hit.collider.gameObject == screen && this.transform.position == baseCameraPosition)
                 {
-                    Move(cameraPosition, cameraRotation);
-                    OpenUI(ui);
+                    MoveCamera(csCameraPosition, csCameraRotation);
+                    ui.SetActive(true);
                     Debug.Log("Clicked!");
                 }
             }
@@ -45,23 +45,22 @@ public class cameraMovementNew : MonoBehaviour
         {
             Cancel();
             Debug.Log("Cancel!");
-            ui.SetActive(false);
         }
     }
 
-    public void Move(Vector3 position, Vector3 rotation)
+    //MoveCamera changes the camera position and therefore changes the view of the game
+        //Vector 3 position - changes the position of the camera to the paremeters of this vector
+        //Vector 3 rotation - changes the rotation of the camera to the parameters of this vector
+    public void MoveCamera(Vector3 position, Vector3 rotation)
     {
         this.transform.position = position;
         this.transform.eulerAngles = rotation;
     }
-    public void OpenUI(GameObject ui)
-    {
-        ui.SetActive(true);
-    }
+    //Cancel closes the computer interface and returns the game to default view
     public void Cancel()
     {
-        Move(baseCameraPosition, baseCameraRotation);
-        //ChangeMonitor(screenSaver, activeScreen);
+        MoveCamera(baseCameraPosition, baseCameraRotation);
+        ui.SetActive(false);
         Debug.Log("Exited!");
     }
 }

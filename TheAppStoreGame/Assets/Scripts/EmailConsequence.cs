@@ -5,6 +5,8 @@ using JsonHandler;
 using UnityEngine.UI;
 using TMPro; // TextMeshPro package
 
+//A script for managing the Email-tab 
+    //Will be attached to 'MailTabActive' in 'GamePlayView'
 public class EmailConsequence
 {
     public GameObject mail { get; set; }

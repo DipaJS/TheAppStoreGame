@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Do we use this??
+
 public class SceneNavigation : MonoBehaviour
 {
     public string sceneName;

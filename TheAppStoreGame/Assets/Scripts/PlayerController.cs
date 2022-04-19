@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//OBS! Excessive script - not needed at this moment, has the same functionality as CameraManeger,
+    //possible to seperate CameraManeger in to two parts - camera oriented and player interaction oriented, then place the latter components in this script
+
 //A script for letting the player interact with things in the gamespace.
 
 public class PlayerController //: MonoBehaviour
