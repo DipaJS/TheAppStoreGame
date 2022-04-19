@@ -1,7 +1,7 @@
 [
     {
-        "title": "This is only here to fill the 0-index so that code 1 can be retrieved using index 1 and so on..",
-        "description": ""
+        "title": "About ACM Code of Ethics",
+        "description": "Description about the ACM Code of Ethics here"
     },
     {
         "title": "1. Contribute to society and to human well-being, acknowledging that all people are stakeholders in computing.",
