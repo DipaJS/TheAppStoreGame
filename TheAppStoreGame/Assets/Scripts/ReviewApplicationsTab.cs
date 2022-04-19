@@ -9,9 +9,9 @@ using TMPro;
 //A script for player interaction with the computer screen. 
 //Attached to 'Computer Screen' in 'GameView'
 
-public class UIManager : MonoBehaviour
+public class ReviewApplicationsTab : MonoBehaviour
 {
-    //Gameobjects that are present on the screen in 'GameView'
+    //Gameobjects that are present on the Review Appliction Tab in 'GameView'
 	public TextMeshProUGUI descriptionField;
 	public TextMeshProUGUI titleField;
 	public GameObject imageField;
@@ -25,11 +25,13 @@ public class UIManager : MonoBehaviour
    
     // Start is called before the first frame update
         //Loads the first application from apps-queue to the main screen
-    void Start()
+
+    //This doesnt work (therefore outcommented) not sure why but needs fixing!
+    /*void Start()
     {
         currentApp = (Apps)GameManager.instance.apps.Dequeue();
         setApp(currentApp);
-    }
+    }*/
 
     // Saves the players choice to accept the application for publication and loads a new application to screen
     public void Evaluate(bool accepted)
@@ -62,4 +64,9 @@ public class UIManager : MonoBehaviour
         standardView.SetActive(false);
     }
 
+    //CheckMe is a onClick function that displays (or removes) a checkmark when the button is pressed depending if the checkmark was previosly displayed or not
+        //GameObject checkedBox is the checkmark to be displayed (set in the inspector)
+    public void CheckMe(GameObject checkedBox){
+        checkedBox.SetActive(!checkedBox.activeSelf);
+    }
 }
