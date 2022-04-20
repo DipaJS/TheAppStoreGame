@@ -4,8 +4,8 @@
         "creator" : "",
         "category" : "",
         "description": "Introducing CrimeCognition, an app for severe increase in safety in your city. As soon as a warrant is issued for an individual’s arrest, their description and identifying characteristics are automatically entered into the app. CrimeCognition’s facial detection system, enabled by traffic cameras on our major streets, will then be able to automatically locate, flag, and track any individual matching the description when they are seen by a camera. Officers logged in to the app can see the status of an arrest warrant and the location of any suspects. This innovative app will make for a more efficient police department and make your city more safe.\n\nThis app is only for use by licensed officers of your city’s Police Department.",
-        "images" : ["ework2", "ework4"],
-        "logo" : "logo",
+        "images" : ["crimecognition1", "crimecognition2"],
+        "logo" : "crimecognitionicon",
         "accepted": {
             "consequences": [
               {
@@ -54,8 +54,8 @@
         "creator" : "",
         "category" : "",
         "description": "EWork is only purchasable by official companies that:\n\n- Post a yearly revenue of over $20 million dollars\n- Consists of 150 or more employees\n\nE.Work sets out to maximize efficiency, employee trust and overall satisfaction in the workplace. Do you, as an employer, notice declining work performance in your office even though total work hours have stayed unchanged? Install our ‘E.Work Basic™’ package on all your technical devices. This application operates as a control center when E.Work is added and registered to your workplace.\n\nWith EWork Basic(or EW.B), you can track work efficiency during active use of e.g a employee computer, see during what time of the day your employees work better or worse or set custom hours when certain focus is needed with our EW.eh (E.Work.effectivehours) addon, complete with customizable features like on screen guidance specific to your company, restricted access to certain applications and direct communication channels between working parties. \n\nEW.B also has extensive support for visual tracking with many trusted and widespread brands of web-cameras, enabling you to track how much time your employees actually spend performing their assigned tasks. \n* All installation done on-site with the help of experienced EWork employees.",
-        "images" : ["", ""],
-        "logo" : "ework",
+        "images" : ["eworkbasic1", "eworkbasic2", "eworkbasic3", "eworkbasic4"],
+        "logo" : "eworkbasicicon",
         "accepted": {
             "consequences": [
               {
@@ -103,8 +103,8 @@
         "creator" : "",
         "category" : "",
         "description": "EWork is only purchasable by official companies that:\n\n- Post a yearly revenue of over $50 million dollars\n- Consists of 300 or more employees\n\nAs with our E.Work Basic product, this application serves as a control center and tracking software for all your efficiency needs.\n\nBeing our latest and most advanced product yet, ‘E.Work Enterprise™’ is targeted toward our largest and most ambitious clients. Using the latest version of our award-winning* and tested** E.Work ChipTracker, employees use implantable microchips in order to get the most out of themselves, both for your benefit and theirs. E.Work Enterprise is able to track employee stress levels, breathing patterns and even moods with our patented MoodLvl™. \n\nE.Work Enterprise also comes with EW.Planner, the most advanced work planning software available on the market. EW.Planner can assign and plan out each workday according to each employees most suitable task measured by our microchip while still maintaining equal workloads (adjustable salary rates available through external purchase of EW.SalTrkr™). \n\nEver suspect your employees call in sick when they are not? With ChipTracker, we can evaluate each employee based on their mental or physical health in order to get them the appropriate help needed and automatically call in sick if the need arises. ChipTracker also hosts an even wider variety of tracking tools compared to our Basic package, resulting in the most advanced and comprehensible workplace tool to date. In addition to tracking all your needs, the microchip also allows two-way audio messaging both on and off site, ensuring the quickest and easiest workplace communication available today. \n\nAs always, purchases of our most state-of-the-art packages include 24/7 support with no waiting time, lifetime warranty and on-site support implemented throughout your workspace.\n\n*Most Innovative Product, LPS Summit \n** Testing results not publicly available, inquire to support for more information.",
-        "images" : ["", ""],
-        "logo" : "ework",
+        "images" : ["eworkenterprise1", "eworkenterprise2", "eworkenterprise3"],
+        "logo" : "eworkenterpriseicon",
         "accepted": {
             "consequences": [
               {
@@ -180,8 +180,8 @@
         "creator" : "",
         "category" : "",
         "description": "Feeling lost, lacking direction in life? LifeGuide is here to help in all steps of life. Making use of groundbreaking machine learning algorithms, LifeGuide (henceforth referred to as LG) uses all information publicly available for a user to evaluate a comprehensive guide to help them on their way, wherever they may be.\n\nAmong other features, we can accurately suggest and predict:\n\n- What education and degree you should aim for\n- Your future dream job, complete with resume suggestions and open job offers\n- Friend suggestions based on your personality and compatibility\n- Your dream vacation destination\n- The city and apartment solutions that best tailor your needs\n- Most compatible romantic interests\n- A diet balanced around both your tastes and optimal calorie consumption\n- A complete and fool-proof budget plan\n\n..And with many more features still in development!\n\nLG will work closely with major corporations and companies to provide e.g the best pre-planning for a job interview, the most exclusive sales on products contained in your diet plan, or even automatically advertise you to companies that are very likely to be interested in what you provide as an asset. \n\nFor an even more accurate and exclusive plan, users can opt-in to provide more specific information about them, as well as letting LG be integrated to other apps in their phones to extract the most useful information to further improve on the analysis. All of this personal data will only be used to better the plan and final result, as mentioned in our ‘LG Personal Privacy Terms & Conditions’. \n\nEarly testing has proven that LG will be a massive help to a potentially massive number of people looking to find their true purpose and furthermore see themselves enjoy life to the fullest, just like they planned.",
-        "images" : ["", ""],
-        "logo" : "",
+        "images" : ["lifeguide1", "lifeguide2", "lifeguide3"],
+        "logo" : "lifeguideicon",
         "accepted": {
             "consequences": [
               {
@@ -260,8 +260,8 @@
         "creator" : "",
         "category" : "",
         "description": "Prioritize your wellbeing with MedBud, the latest and greatest tool for checking and improving on all your health concerns.\n\nInstalled into your body via a chip injected along the back of your neck (administered and controlled by professional medical personnel), MedBud can track everything from your blood pressure, vitamins, heart rate and blood sugar! Keep up on your health deficiencies and get quick recommendations on what to do when finding out what your body is lacking. Additionally, MedBud offers around-the-clock support sessions with medical experts in case you need a more personal and exclusive check-up. \n\nMedBud also offers communication with a large number of both public hospitals and private clinics. If your primary doctor or physician is located in our extensive list of contacts, MedBud can automatically alert them when the situation is needed and offer a more effective and quicker appointment to deal with your problems.\n\nMedBud also promises a steady flow of upgrades and additions to our already vast tracking capabilities and advances in keeping you in your healthiest self, as well as 24/7 support if any problem arises.",
-        "images" : ["", ""],
-        "logo" : "",
+        "images" : ["medbud1", "medbud2", "medbud3"],
+        "logo" : "medbudicon",
         "accepted": {
             "consequences": [
               {
@@ -294,8 +294,8 @@
         "creator" : "",
         "category" : "",
         "description": "(Only compatible with latest generation phones equipped with Mx16 camera and laser sensors, compatible models listed in additional notes.)\n\nWith the latest technology brought in from the Mx-sensors, we can now present NX-Scan, or NeXt-Gen Scan. With enhanced sensor capabilities and the Mx’s laser technology, NX-Scan has the same capabilities as an MRI or X-Ray! Within 25 minutes of letting your phone scan the desired body part, NX-Scan can identify possible fractures, torn ligaments, muscles and even inflammations with over 90% accuracy*.\n\nAvoid the crippling costs of a medical scan and get the same results from the comfort of your home, avoid a potentially unnecessary doctor visit or possibly get the opportunity to fast-track the treatment process with one simple tool.\n\n* Tests conducted with a sample size of 50.",
-        "images" : ["", ""],
-        "logo" : "",
+        "images" : ["nxscan1", "nxscan2", "nxscan3"],
+        "logo" : "nxscanicon",
         "accepted": {
             "consequences": [
               {
@@ -328,8 +328,8 @@
         "creator" : "",
         "category" : "",
         "description": "Have you ever wanted to preview a new you? With RealFilter, that is always a possibility.\n\nBegin by taking a photo of the part of your body that you’d like to preview changes on. RealFilter provides support for whichever photo you provide but works best with full body pictures or face close-ups. After you’ve imported the photo into RealFilter, you’re free to explore all the changes you’d like!\n\nHow would your body shape or face look if you lost (or gained) a couple of pounds? Thinking about a nose job? Maybe you’re interested in seeing your muscle definition based on variable body fat percentages? Trying new hairstyles, different makeup? RealFilter has the ability to show you it all, the only thing stopping you is your imagination.",
-        "images" : ["", ""],
-        "logo" : "",
+        "images" : ["realfilter1", "realfilter2", "realfilter3"],
+        "logo" : "realfiltericon",
         "accepted": {
             "consequences": [
               {

@@ -4,22 +4,18 @@ Set no consequences as displayLocation 0, probably doesn't quite work yet
 CrimeCognition:
 Creator
 Category
-Images
-Logo
 Consequences
 
 E.Work Basic:
 Creator
 Category
 Description bullet points?
-Images
 
 E.Work Enterprise:
 Shows even if basic is rejected
 Creator
 Category
 Description bullet points?
-Images
 
 Haze:
 Creator
@@ -33,8 +29,6 @@ Creator
 Category
 Description bullet points?
 Accepted consequence "(x) months"
-Images
-Logo
 
 MaxHealth:
 Creator
@@ -48,21 +42,15 @@ Logo
 MedBud:
 Creator
 Category
-Images
-Logo
 No rejection consequence?
 
 NX-Scan: 
 Creator
 Category
-Images
-Logo
 No accepted consequence?
 Rejected article talks as if the app was released?
 
 RealFilter:
 Creator
 Category
-Images
-Logo
 No rejected consequence?
