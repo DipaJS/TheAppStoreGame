@@ -22,7 +22,6 @@ public class ConsequenceManager : MonoBehaviour
     public GameObject emailNotification;
     public GameObject textMail;
     public GameObject nameMail;
-
     public GameObject emailPrefab;
     public List<EmailConsequence> emailList;
 
@@ -42,7 +41,7 @@ public class ConsequenceManager : MonoBehaviour
     {
         app.Status = accepted;
         GameManager.instance.evaluatedApps.Enqueue(app);
-        //newspaperModel.SetActive(true);
+        GameManager.instance.allEvaluatedApps.Add(app);
     }
 
     /* Uses the most recently evaluated application and checks if there are any consequences that should be 

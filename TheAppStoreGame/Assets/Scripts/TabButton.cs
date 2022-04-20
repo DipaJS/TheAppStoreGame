@@ -4,6 +4,8 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
+//No longer needed, the TabSystem is working differently so only TabGroup is necessary
+
 
 // This script will be called when a tab is interacted with 
 // Attached to 'Main', 'Mail', and 'ACM' in 'GameView'

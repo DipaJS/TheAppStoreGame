@@ -15,6 +15,8 @@ public class GameManager : MonoBehaviour
     // App queue and an array for conversion from Json
     public Queue apps;
     public Queue evaluatedApps;
+
+    public List<Apps> allEvaluatedApps;
     private Apps[] appsArray;
 
     // Player detail variables
@@ -50,6 +52,7 @@ public class GameManager : MonoBehaviour
     {
         evaluatedApps = new Queue();
         apps = new Queue(appsArray);
+        allEvaluatedApps = new List<Apps>();
     }
 
     // Sets the player details variables
