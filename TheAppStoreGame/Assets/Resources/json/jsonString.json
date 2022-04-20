@@ -140,40 +140,40 @@
             }
         }       
     },
-    
-    {
-        "name" : "Haze",
-        "creator" : "",
-        "category" : "",
-        "description": "Have you ever wanted to do live streams but haven’t had a great experience with previous applications?  With Haze, you can create content and let out your creative self by not having to worry about having the latest phone or the best system requirements. Our streaming service has deployed a new algorithm, proving to beat any rival in speed and optimization. You can now live stream with ease in the highest quality without sacrificing performance. \n\nBut this is not the only upper hand our product has; Does increasing your viewers at a fast rate sound interesting? Would you like your viewers to support you long-term? The advanced EmoteCapture plugin uses the camera on your phone to capture all your physical signs, giving your viewers an idea of how you view them by tracking body language among other things. This data gets processed by our software and displays it to your viewers with an intuitive interface directly on your streaming page. There is also the ViewSense bracelet that builds on top of EmoteCapture by measuring your heart rate in real time and also processes everything you are saying to indicate your honesty. Both EmoteCapture and ViewSense are directly connected to your Haze account and senses when you go live, but these features can also be turned off.",
-        "images" : ["Haze_1", "Haze_2", "Haze_3", "Haze_4"],
-        "logo" : "",
-        "accepted": {
-            "consequences": [
-              {
-                "header": "New streaming app has led people to demand a refund for donations",
-                "textToDisplay": "Haze, a streaming app enabling viewers to get a feel for the honesty and emotions of a streamer directly through a screen has started to set off, and not in a good way. A great deal of viewers are saying that the streamer is not who they thought they were and not being honest towards the viewers. The technology that is making this possible is called ViewSense, a heart rate tracker and voice recorder integrated in a bracelet, and EmoteCapture, a camera that captures physical signs. A recent event of this was when ViewSense detected one of the largest streamer on the platform, Practical_Panic884, lying about being able to stream on a specific day by first saying that he couldn’t because of personal matters and in the same stream then saying that there will be no stream since construction workers is coming over to renovate the bathroom. Some viewers were quick to question this and began demanding a refund for donations and even went as far as trying to cancel this streamer. \n\nOn the other hand, some viewers are not finding this technology reliable and saying that it is inaccurate and slow to pick up physical signs as well as processing voice recordings.",
-                "sender": "",
-                "displayLocation": 1
-              }
-            ],
-            "ACM": {
-                "positiveCodeScores": [1, 0, 2, 1, 1, 1, 1],
-                "negativeCodeScores": [1, 1, 0, 2, 0, 0, 0]
-            }
-        },
-        "rejected":{
-            "consequences": [
-              {
-                "displayLocation": 0
-              }
-            ],
-            "ACM": {
-                "positiveCodeScores": [],
-                "negativeCodeScores": []
-            }
-        }       
+
+  {
+    "name": "Haze",
+    "creator": "",
+    "category": "",
+    "description": "Have you ever wanted to do live streams but haven’t had a great experience with previous applications?  With Haze, you can create content and let out your creative self by not having to worry about having the latest phone or the best system requirements. Our streaming service has deployed a new algorithm, proving to beat any rival in speed and optimization. You can now live stream with ease in the highest quality without sacrificing performance. \n\nBut this is not the only upper hand our product has; Does increasing your viewers at a fast rate sound interesting? Would you like your viewers to support you long-term? The EmoteCapture plugin takes advantage of the camera on your phone and records how you behave by continuously  capturing your physical signs and body language, and the things you say*. These parameters are in turn used by the EmoteCapture software to determine how you currently feel and give your viewers an idea of your true side. Additionally, you have the ViewSense bracelet that builds on top of EmoteCapture by measuring your heart rate in real time. Together with voice recordings, ViewSense will process everything you are saying to indicate your honesty. EmoteCapture and ViewSense will be directly connected to your Haze account once purchased and can be activated or deactivated in the settings. \n\n*The camera must be faced on you for EmoteCapture to work as intended. ",
+    "images": [ "Haze_1", "Haze_2", "Haze_3", "Haze_4" ],
+    "logo": "",
+    "accepted": {
+      "consequences": [
+        {
+          "header": "New streaming app has led people to demand a refund for donations",
+          "textToDisplay": "Haze, a streaming app enabling viewers to get a feel for the honesty and emotions of a streamer directly through a screen has started to set off, and not in a good way. A great deal of viewers are saying that their favorite streamer is not who they thought they were and also accusing them of not being honest. The technology making this possible is called ViewSense, a heart rate tracker integrated in a bracelet and voice recorder, and EmoteCapture, a camera that captures physical signs and body language. A recent event of this was when ViewSense detected contradicting statements from one of the largest streamers on the platform, Practical_Panic884. He lied about being able to stream on a specific day by first saying that he couldn’t because of personal matters and in the same stream then saying that there will be no stream since construction workers are coming over to renovate the bathroom. \n\nOn the other hand, some viewers are not finding this technology reliable and saying that it is inaccurate and slow.",
+          "sender": "",
+          "displayLocation": 1
+        }
+      ],
+      "ACM": {
+        "positiveCodeScores": [ 1, 0, 2, 1, 1, 1, 1 ],
+        "negativeCodeScores": [ 1, 1, 0, 2, 0, 0, 0 ]
+      }
     },
+    "rejected": {
+      "consequences": [
+        {
+          "displayLocation": 0
+        }
+      ],
+      "ACM": {
+        "positiveCodeScores": [],
+        "negativeCodeScores": []
+      }
+    }
+  },
     
     {
         "name" : "LifeGuide",
