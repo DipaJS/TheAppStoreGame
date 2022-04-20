@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using JsonHandler;
 using TMPro;
+using System.IO;
 
 //A script for player interaction with the ReviewTab 
 //Attached to 'Computer Screen' in 'GameView'
@@ -61,7 +62,7 @@ public class ReviewTab : MonoBehaviour
     public void SetApp(Apps app){
         titleField.text = app.Name;
         descriptionField.text = app.Description;
-        imageField.GetComponent<Image>().sprite = Resources.Load<Sprite>(app.Images[0]);
+        imageField.GetComponent<Image>().sprite = Resources.Load<Sprite>(Path.Combine("wireframes", app.Images[0]));
     }
 
     // Loads the 'No Applications' content on the review tab

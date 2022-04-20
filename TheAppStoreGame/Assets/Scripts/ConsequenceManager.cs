@@ -4,6 +4,7 @@ using UnityEngine;
 using JsonHandler;
 using UnityEngine.UI;
 using TMPro; // TextMeshPro package
+using System.IO;
 
 //A script for managing the consequences the player will experience in the game depending on their choices
 
@@ -84,7 +85,7 @@ public class ConsequenceManager : MonoBehaviour
         Debug.Log(app.Name);
         titleField.GetComponent<TextMeshProUGUI>().text = app.Name;
         descriptionField.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
-        imageField.sprite = Resources.Load<Sprite>(app.Images[0]);
+        imageField.sprite = Resources.Load<Sprite>(Path.Combine("wireframes", app.Images[0]));
     }
 
     // Loads the email with consquence text and name for the corresponding application
