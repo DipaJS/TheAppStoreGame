@@ -7,8 +7,21 @@ using UnityEngine;
 
 //A script for letting the player interact with things in the gamespace.
 
-public class PlayerController //: MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
+    public GameObject newspaper;
+    public GameObject newsPopup;
+
+    void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            if (ifClicked(newspaper))
+            {
+                NewspaperPopup(true);
+            }
+        }
+    }
 
     //Uses raycast to check if a GameObject was succesfully clicked on
         //Gameobject o - the GameObject 
@@ -23,5 +36,17 @@ public class PlayerController //: MonoBehaviour
             return hit.collider.gameObject == o;
         }
         else return false;
+    }
+
+    // Opens or closes the popup for the newspaper
+        // bool open - True to open the popup, false to close it
+    // Attatched to the back button for the newspaper popup
+    public void NewspaperPopup(bool open)
+    {
+        int intBool = 0;
+        if (open) { intBool = 1; }
+        newsPopup.GetComponent<CanvasGroup>().alpha = intBool;
+        newsPopup.GetComponent<CanvasGroup>().blocksRaycasts = open;
+        newsPopup.GetComponent<CanvasGroup>().interactable = open;
     }
 }

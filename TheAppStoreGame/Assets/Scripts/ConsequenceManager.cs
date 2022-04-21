@@ -85,7 +85,7 @@ public class ConsequenceManager : MonoBehaviour
         Debug.Log(app.Name);
         titleField.GetComponent<TextMeshProUGUI>().text = app.Name;
         descriptionField.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
-        imageField.sprite = Resources.Load<Sprite>(Path.Combine("wireframes", app.Images[0]));
+        imageField.sprite = Resources.Load<Sprite>(Path.Combine("wireframes", app.Logo));
     }
 
     // Loads the email with consquence text and name for the corresponding application
