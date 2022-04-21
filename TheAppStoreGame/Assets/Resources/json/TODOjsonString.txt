@@ -21,7 +21,6 @@ Haze:
 Creator
 Category
 Rejected consequences? No ones listed
-Images
 Logo
 
 LifeGuide:
@@ -36,7 +35,6 @@ Category
 Description bullet points?
 Description number list?
 Which article is rejected and which is accepted?
-Images
 Logo
 
 MedBud:

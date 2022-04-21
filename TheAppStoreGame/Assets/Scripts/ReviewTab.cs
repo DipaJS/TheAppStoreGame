@@ -62,6 +62,7 @@ public class ReviewTab : MonoBehaviour
     public void SetApp(Apps app){
         titleField.text = app.Name;
         descriptionField.text = app.Description;
+        Debug.Log(Path.Combine("wireframes", app.Images[0]));
         imageField.GetComponent<Image>().sprite = Resources.Load<Sprite>(Path.Combine("wireframes", app.Images[0]));
     }
 
