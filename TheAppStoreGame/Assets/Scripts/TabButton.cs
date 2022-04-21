@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-//No longer needed, the TabSystem is working differently so only TabGroup is necessary
+//No longer needed, the TabSystem is working differently so only computerUI is necessary
 
 
 // This script will be called when a tab is interacted with 
