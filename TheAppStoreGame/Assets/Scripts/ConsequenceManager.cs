@@ -76,7 +76,11 @@ public class ConsequenceManager : MonoBehaviour
                 Debug.Log("Test: " + newsPaperConsequence.TextToDisplay);
             }
             //Calls for the corresponding Display-method if there are any new consequences to display in that location
-            if (newsPaperConsequence != null) { NewspaperDisplay(newsPaperConsequence, app); }
+            if (newsPaperConsequence != null) 
+            { 
+                NewspaperDisplay(newsPaperConsequence, app);
+                newspaperModel.SetActive(true);
+            }
             //if (emailConsequence != null) { EmailDisplay(emailConsequence); }
         }
     }
@@ -95,7 +99,7 @@ public class ConsequenceManager : MonoBehaviour
 
     private string[] StringSplit(string str)
     {
-        int mid = 550;//tr.Length / 2;
+        int mid = 550;
         while (str[mid] != ' ')
         {
             mid++;

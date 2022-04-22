@@ -4755,7 +4755,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 35, y: 0, z: 35, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5932,6 +5932,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: e16832bf9584f7e40b4ff175080fa683, type: 3}
       propertyPath: m_Name
       value: Newspaper Model
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e16832bf9584f7e40b4ff175080fa683, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4387995671734510267, guid: e16832bf9584f7e40b4ff175080fa683, type: 3}
       propertyPath: m_IsActive
