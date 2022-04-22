@@ -45,7 +45,7 @@ public class ReviewTab : MonoBehaviour
     public void Evaluate(bool accepted)
     {
         ConsequenceManager.instance.AppChoice(currentApp, accepted); // Saves currentApp to GameManager
-        //ConsequenceManager.instance.LoadConsequences();
+        ConsequenceManager.instance.LoadConsequences();
         if (GameManager.instance.apps.Count == 0)
         {
            NoApplications();

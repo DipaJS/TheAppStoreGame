@@ -14,7 +14,8 @@ public class ConsequenceManager : MonoBehaviour
 
     // Components and objects for the news popup, set in the Inspector
     public GameObject titleField;
-    public GameObject descriptionField;
+    public GameObject descriptionField1;
+    public GameObject descriptionField2;
     public Image imageField;
     public GameObject newsPopup;
     public GameObject newspaperModel;
@@ -76,20 +77,38 @@ public class ConsequenceManager : MonoBehaviour
             }
             //Calls for the corresponding Display-method if there are any new consequences to display in that location
             if (newsPaperConsequence != null) { NewspaperDisplay(newsPaperConsequence, app); }
-            if (emailConsequence != null) { EmailDisplay(emailConsequence); }
+            //if (emailConsequence != null) { EmailDisplay(emailConsequence); }
         }
     }
     // Loads the newspaper with consquence text and title+image for the corresponding application
     public void NewspaperDisplay(Consequence c, Apps app)
     {
         Debug.Log(app.Name);
-        titleField.GetComponent<TextMeshProUGUI>().text = app.Name;
-        descriptionField.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
+
+        string[] descriptions = StringSplit(c.TextToDisplay);
+
+        titleField.GetComponent<TextMeshProUGUI>().text = c.Header;
+        descriptionField1.GetComponent<TextMeshProUGUI>().text = descriptions[0];
+        descriptionField2.GetComponent<TextMeshProUGUI>().text = descriptions[1];
         imageField.sprite = Resources.Load<Sprite>(Path.Combine("wireframes", app.Logo));
     }
 
+    private string[] StringSplit(string str)
+    {
+        int mid = 550;//tr.Length / 2;
+        while (str[mid] != ' ')
+        {
+            mid++;
+        }
+        Debug.Log(mid);
+        string[] output = new string[] { str.Substring(0, mid), str.Substring(mid + 1, str.Length - mid - 1) };
+        return output;
+    }
+
+
+    // Keep! not fully implemented yet
     // Loads the email with consquence text and name for the corresponding application
-    public void EmailDisplay(Consequence c)
+    /*public void EmailDisplay(Consequence c)
     {
         //Load the parameters of consequence c to a new Email in the Email-tab
 
