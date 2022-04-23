@@ -19,6 +19,9 @@ public class ReviewTab : MonoBehaviour
     public GameObject standardView;
     public GameObject noApplicationsView;
 
+    public GameObject[] checkMarks;
+    public GameObject[] boxes;
+
     //A list with all the images for the current application and an int for keeping track of which image is on display
     public string[] images;
 
@@ -80,7 +83,15 @@ public class ReviewTab : MonoBehaviour
 
     //CheckMe is a onClick function that displays (or removes) a checkmark when the button is pressed depending if the checkmark was previosly displayed or not
         //GameObject checkedBox is the checkmark to be displayed (set in the inspector)
-    public void CheckMe(GameObject checkedBox){
-        checkedBox.SetActive(!checkedBox.activeSelf);
+    public void CheckMe(int index){
+        int start = (int)Mathf.Floor(index/3);
+        for (int i = start; i<start+3; i++){
+            if (i != index){
+                checkMarks[i].SetActive(false);
+            }
+        }
+        checkMarks[index].SetActive(!checkMarks[index].activeSelf);
     }
+
+    
 }
