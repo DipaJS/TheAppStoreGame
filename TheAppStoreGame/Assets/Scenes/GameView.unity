@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -537,7 +537,7 @@ GameObject:
   - component: {fileID: 52226875}
   - component: {fileID: 52226874}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -749,7 +749,7 @@ GameObject:
   - component: {fileID: 73013128}
   - component: {fileID: 73013127}
   m_Layer: 0
-  m_Name: Button (3)
+  m_Name: Button 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -820,13 +820,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 320590164}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -882,7 +882,7 @@ GameObject:
   - component: {fileID: 88392637}
   - component: {fileID: 88392636}
   m_Layer: 0
-  m_Name: Button (6)
+  m_Name: Button 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -901,7 +901,7 @@ RectTransform:
   m_Children:
   - {fileID: 562635862}
   m_Father: {fileID: 855284397}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -953,13 +953,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 562635861}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 7
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1130,13 +1130,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 318750362}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 8
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -1509,7 +1509,7 @@ GameObject:
   - component: {fileID: 178889477}
   - component: {fileID: 178889476}
   m_Layer: 0
-  m_Name: Button (18)
+  m_Name: Button 19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1528,7 +1528,7 @@ RectTransform:
   m_Children:
   - {fileID: 1279828795}
   m_Father: {fileID: 855284397}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -1580,13 +1580,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1279828794}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 19
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2146,7 +2146,7 @@ GameObject:
   - component: {fileID: 260610239}
   - component: {fileID: 260610238}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2284,7 +2284,7 @@ GameObject:
   - component: {fileID: 267600931}
   - component: {fileID: 267600930}
   m_Layer: 0
-  m_Name: Button (2)
+  m_Name: Button 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2355,13 +2355,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1650938543}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -2646,7 +2646,7 @@ GameObject:
   - component: {fileID: 318750365}
   - component: {fileID: 318750364}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2721,7 +2721,7 @@ GameObject:
   - component: {fileID: 320590167}
   - component: {fileID: 320590166}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2854,7 +2854,7 @@ GameObject:
   - component: {fileID: 326530033}
   - component: {fileID: 326530032}
   m_Layer: 0
-  m_Name: Button (16)
+  m_Name: Button 17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2873,7 +2873,7 @@ RectTransform:
   m_Children:
   - {fileID: 1212139652}
   m_Father: {fileID: 855284397}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -2925,13 +2925,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1212139651}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 17
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3368,7 +3368,7 @@ GameObject:
   - component: {fileID: 373569690}
   - component: {fileID: 373569689}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3504,7 +3504,7 @@ GameObject:
   - component: {fileID: 393322737}
   - component: {fileID: 393322736}
   m_Layer: 0
-  m_Name: Button (10)
+  m_Name: Button 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3523,7 +3523,7 @@ RectTransform:
   m_Children:
   - {fileID: 1815947687}
   m_Father: {fileID: 855284397}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -3575,13 +3575,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1815947686}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 11
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3703,7 +3703,7 @@ GameObject:
   - component: {fileID: 395908043}
   - component: {fileID: 395908042}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3880,7 +3880,7 @@ GameObject:
   - component: {fileID: 413832480}
   - component: {fileID: 413832479}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4231,7 +4231,7 @@ GameObject:
   - component: {fileID: 483105051}
   - component: {fileID: 483105050}
   m_Layer: 0
-  m_Name: Button (7)
+  m_Name: Button 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4250,7 +4250,7 @@ RectTransform:
   m_Children:
   - {fileID: 260610237}
   m_Father: {fileID: 855284397}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -4302,13 +4302,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 260610236}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 6
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -4781,7 +4781,7 @@ GameObject:
   - component: {fileID: 515520635}
   - component: {fileID: 515520634}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5000,7 +5000,7 @@ GameObject:
   - component: {fileID: 562635864}
   - component: {fileID: 562635863}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5081,7 +5081,7 @@ GameObject:
   - component: {fileID: 584700161}
   - component: {fileID: 584700160}
   m_Layer: 0
-  m_Name: Button (14)
+  m_Name: Button 13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5100,7 +5100,7 @@ RectTransform:
   m_Children:
   - {fileID: 515520633}
   m_Father: {fileID: 855284397}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -5152,13 +5152,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 515520632}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 13
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -5352,7 +5352,7 @@ GameObject:
   - component: {fileID: 634136362}
   - component: {fileID: 634136361}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark20
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5963,16 +5963,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e16832bf9584f7e40b4ff175080fa683, type: 3}
---- !u!4 &698993854 stripped
+--- !u!4 &698993854
 Transform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e16832bf9584f7e40b4ff175080fa683, type: 3}
   m_PrefabInstance: {fileID: 698993853}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &698993855 stripped
+  m_GameObject: {fileID: 1730908035}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 698993858}
+  m_Father: {fileID: 781538505}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &698993855
 GameObject:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e16832bf9584f7e40b4ff175080fa683, type: 3}
   m_PrefabInstance: {fileID: 698993853}
   m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 698993858}
+  - component: {fileID: 698993857}
+  - component: {fileID: 698993856}
+  m_Layer: 0
+  m_Name: Placeholder for referenced GameObject in Prefab instance (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!114 &698993856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6002,6 +6025,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.3535678, y: 0.1842761, z: 1.5497357}
   m_Center: {x: 0.015219898, y: 0.08529782, z: 0.82243395}
+--- !u!4 &698993858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 9223372036854775807, guid: e16832bf9584f7e40b4ff175080fa683, type: 3}
+  m_PrefabInstance: {fileID: 698993853}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698993855}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 698993854}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &712058383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464492, guid: 91e9ca4fbaac949e78348d5ba02b55bb, type: 3}
@@ -6091,13 +6128,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 754507571}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6152,7 +6189,7 @@ GameObject:
   - component: {fileID: 718439965}
   - component: {fileID: 718439964}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6228,7 +6265,7 @@ GameObject:
   - component: {fileID: 726268776}
   - component: {fileID: 726268775}
   m_Layer: 0
-  m_Name: Button (19)
+  m_Name: Button 18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6247,7 +6284,7 @@ RectTransform:
   m_Children:
   - {fileID: 1590502909}
   m_Father: {fileID: 855284397}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -6299,13 +6336,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1590502908}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 18
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6432,13 +6469,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1225303924}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 9
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6494,7 +6531,7 @@ GameObject:
   - component: {fileID: 738302933}
   - component: {fileID: 738302932}
   m_Layer: 0
-  m_Name: Button (11)
+  m_Name: Button 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6513,7 +6550,7 @@ RectTransform:
   m_Children:
   - {fileID: 395908041}
   m_Father: {fileID: 855284397}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -6565,13 +6602,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 395908040}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6698,13 +6735,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 634136359}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 20
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -6812,7 +6849,7 @@ GameObject:
   - component: {fileID: 754507574}
   - component: {fileID: 754507573}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7521,20 +7558,20 @@ RectTransform:
   - {fileID: 267600929}
   - {fileID: 1085703547}
   - {fileID: 1161329528}
-  - {fileID: 88392635}
   - {fileID: 483105049}
+  - {fileID: 88392635}
   - {fileID: 108363732}
   - {fileID: 736594556}
-  - {fileID: 393322735}
   - {fileID: 738302931}
+  - {fileID: 393322735}
   - {fileID: 1061004667}
-  - {fileID: 1613995825}
   - {fileID: 584700159}
+  - {fileID: 1613995825}
   - {fileID: 1687642363}
-  - {fileID: 326530031}
   - {fileID: 1845747265}
-  - {fileID: 178889475}
+  - {fileID: 326530031}
   - {fileID: 726268774}
+  - {fileID: 178889475}
   - {fileID: 742370397}
   m_Father: {fileID: 2092316854}
   m_RootOrder: 5
@@ -9041,7 +9078,7 @@ GameObject:
   - component: {fileID: 1061004669}
   - component: {fileID: 1061004668}
   m_Layer: 0
-  m_Name: Button (12)
+  m_Name: Button 12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9112,13 +9149,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 718439962}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 12
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9306,13 +9343,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 413832477}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9444,13 +9481,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1415786513}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 5
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -9653,7 +9690,7 @@ GameObject:
   - component: {fileID: 1212139654}
   - component: {fileID: 1212139653}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10143,7 +10180,7 @@ GameObject:
   - component: {fileID: 1225303927}
   - component: {fileID: 1225303926}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10605,7 +10642,7 @@ GameObject:
   - component: {fileID: 1279828797}
   - component: {fileID: 1279828796}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10856,7 +10893,7 @@ GameObject:
   - component: {fileID: 1415786516}
   - component: {fileID: 1415786515}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11541,7 +11578,7 @@ GameObject:
   - component: {fileID: 1459207889}
   - component: {fileID: 1459207888}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11745,12 +11782,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 373569687}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -12513,7 +12550,7 @@ GameObject:
   - component: {fileID: 1590502911}
   - component: {fileID: 1590502910}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12654,7 +12691,7 @@ GameObject:
   - component: {fileID: 1613995827}
   - component: {fileID: 1613995826}
   m_Layer: 0
-  m_Name: Button (13)
+  m_Name: Button 14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12673,7 +12710,7 @@ RectTransform:
   m_Children:
   - {fileID: 1907780876}
   m_Father: {fileID: 855284397}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -12725,13 +12762,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1907780875}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 14
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13037,7 +13074,7 @@ GameObject:
   - component: {fileID: 1650938546}
   - component: {fileID: 1650938545}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13370,13 +13407,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 1459207886}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 15
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -13708,6 +13745,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1730908035
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e16832bf9584f7e40b4ff175080fa683, type: 3}
+  m_PrefabInstance: {fileID: 698993853}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 698993854}
+  m_Layer: 0
+  m_Name: 'Newspaper Model (Missing Prefab with guid: e16832bf9584f7e40b4ff175080fa683)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1001 &1743365198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14306,6 +14359,50 @@ MonoBehaviour:
   imageField: {fileID: 304872905}
   standardView: {fileID: 654932660}
   noApplicationsView: {fileID: 654932660}
+  checkMarks:
+  - {fileID: 373569687}
+  - {fileID: 754507571}
+  - {fileID: 320590164}
+  - {fileID: 1650938543}
+  - {fileID: 413832477}
+  - {fileID: 1415786513}
+  - {fileID: 260610236}
+  - {fileID: 562635861}
+  - {fileID: 318750362}
+  - {fileID: 1225303924}
+  - {fileID: 395908040}
+  - {fileID: 1815947686}
+  - {fileID: 718439962}
+  - {fileID: 515520632}
+  - {fileID: 1907780875}
+  - {fileID: 1459207886}
+  - {fileID: 52226872}
+  - {fileID: 1212139651}
+  - {fileID: 1590502908}
+  - {fileID: 1279828794}
+  - {fileID: 634136359}
+  boxes:
+  - {fileID: 1487466958}
+  - {fileID: 714502576}
+  - {fileID: 73013125}
+  - {fileID: 267600928}
+  - {fileID: 1085703546}
+  - {fileID: 1161329527}
+  - {fileID: 483105048}
+  - {fileID: 88392634}
+  - {fileID: 108363731}
+  - {fileID: 736594555}
+  - {fileID: 738302930}
+  - {fileID: 393322734}
+  - {fileID: 1061004666}
+  - {fileID: 584700158}
+  - {fileID: 1613995824}
+  - {fileID: 1687642362}
+  - {fileID: 1845747264}
+  - {fileID: 326530030}
+  - {fileID: 726268773}
+  - {fileID: 178889474}
+  - {fileID: 742370396}
   images: []
   imageIndex: 0
 --- !u!1 &1815780578
@@ -14454,7 +14551,7 @@ GameObject:
   - component: {fileID: 1815947689}
   - component: {fileID: 1815947688}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14834,7 +14931,7 @@ GameObject:
   - component: {fileID: 1845747267}
   - component: {fileID: 1845747266}
   m_Layer: 0
-  m_Name: Button (17)
+  m_Name: Button (16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14853,7 +14950,7 @@ RectTransform:
   m_Children:
   - {fileID: 52226873}
   m_Father: {fileID: 855284397}
-  m_RootOrder: 17
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
@@ -14905,13 +15002,13 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1813508552}
-        m_TargetAssemblyTypeName: ReviewApplicationsTab, Assembly-CSharp
+        m_TargetAssemblyTypeName: ReviewTab, Assembly-CSharp
         m_MethodName: CheckMe
-        m_Mode: 2
+        m_Mode: 3
         m_Arguments:
-          m_ObjectArgument: {fileID: 52226872}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-          m_IntArgument: 0
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 16
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -15609,7 +15706,7 @@ GameObject:
   - component: {fileID: 1907780878}
   - component: {fileID: 1907780877}
   m_Layer: 0
-  m_Name: CheckMark
+  m_Name: CheckMark14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
