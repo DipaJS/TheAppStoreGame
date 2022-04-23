@@ -14,12 +14,19 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        // Check if the newspaper was clicked, show the popup if so
         if (Input.GetMouseButton(0))
         {
             if (ifClicked(newspaper))
             {
                 NewspaperPopup(true);
             }
+        }
+
+        // Let the cancel button close the popup
+        if (Input.GetButtonDown("Cancel"))
+        {
+            NewspaperPopup(false);
         }
     }
 
