@@ -31,7 +31,7 @@ public class ReviewTab : MonoBehaviour
     //public GameObject ACM; Keep me 
 
     //The app that is currently being reviewed
-    private Apps currentApp;
+    public Apps currentApp;
    
     // Start is called before the first frame update
         //Loads the first application from apps-queue to the main screen
@@ -76,15 +76,22 @@ public class ReviewTab : MonoBehaviour
         standardView.SetActive(false);
     }
 
-    public void BrowseImage(){
-        imageIndex = ((imageIndex + 1) % images.Length);
-        imageField.GetComponent<Image>().sprite = Resources.Load<Sprite>(currentApp.Images[imageIndex]);
+    public void BrowseImage(bool next){
+        if(next){
+            if (imageIndex == currentApp.Images.Length-1){imageIndex=0;}
+            else{imageIndex++;}
+        }
+        else{
+            if (imageIndex == 0){imageIndex=currentApp.Images.Length-1;}
+            else{imageIndex--;}
+        }
+        imageField.GetComponent<Image>().sprite = Resources.Load<Sprite>(Path.Combine("wireframes", currentApp.Images[imageIndex]));
     }
 
     //CheckMe is a onClick function that displays (or removes) a checkmark when the button is pressed depending if the checkmark was previosly displayed or not
         //GameObject checkedBox is the checkmark to be displayed (set in the inspector)
     public void CheckMe(int index){
-        int start = (int)Mathf.Floor(index/3);
+        int start = index - (index % 3);
         for (int i = start; i<start+3; i++){
             if (i != index){
                 checkMarks[i].SetActive(false);
