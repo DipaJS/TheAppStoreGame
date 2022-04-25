@@ -14,7 +14,15 @@ public class EndScreen : MonoBehaviour
 
     private int[] test;
 
+    private string interactedAcm;
+
     public TextMeshProUGUI[] honoredCodes;
+
+    public TextMeshProUGUI learnMore;
+
+    public GameObject learnMorePanel;
+
+    public GameObject centerPart;
 
     //start is called before the first frame update
     void Start(){
@@ -40,6 +48,19 @@ public class EndScreen : MonoBehaviour
         return scores;
     }
     
+    public string UpdateAcmInteractions(int i){
+        string s ="";
+        foreach (Apps app in GameManager.instance.allEvaluatedApps){
+            if(app.Accepted.Acm.PositiveCodeScores[i] > 0){s+=("Accepted " + app.Name + " : " +finalScores[i] + "\n");
+            }
+        }
+        return s;
+    }
+    public void SetLearnMoreText(int i){
+        learnMore.text = UpdateAcmInteractions(i);
+        learnMorePanel.SetActive(true);
+        centerPart.SetActive(false);
+    }
     public int[] GetTotalFollowed(){
         int[] scores = new int[]{0,0,0,0,0,0,0};
 
