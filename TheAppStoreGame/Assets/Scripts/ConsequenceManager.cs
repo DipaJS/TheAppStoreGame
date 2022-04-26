@@ -56,7 +56,7 @@ public class ConsequenceManager : MonoBehaviour
         Apps app;
         Consequence[] consequences;
         Consequence newsPaperConsequence = null;
-        Consequence emailConsequence = null;
+        List<Consequence> emailConsequence = new List<Consequence>();
 
         if (GameManager.instance.evaluatedApps.Count != 0)
         {
@@ -73,9 +73,8 @@ public class ConsequenceManager : MonoBehaviour
                 switch (c.DisplayLocation)
                 {
                     case 1: newsPaperConsequence = c; break;
-                    case 2: emailConsequence = c; break;
+                    case 2: emailConsequence.Add(c); break;
                 }
-                Debug.Log("Test: " + newsPaperConsequence.TextToDisplay);
             }
             //Calls for the corresponding Display-method if there are any new consequences to display in that location
             if (newsPaperConsequence != null) 
@@ -83,7 +82,13 @@ public class ConsequenceManager : MonoBehaviour
                 NewspaperDisplay(newsPaperConsequence, app);
                 newspaperModel.SetActive(true);
             }
-            if (emailConsequence != null) { EmailDisplay(emailConsequence); }
+            if (emailConsequence != null) 
+            { 
+                foreach(Consequence c in emailConsequence)
+                {
+                    EmailDisplay(c); 
+                }
+            }
         }
     }
     // Loads the newspaper with consquence text and title+image for the corresponding application
