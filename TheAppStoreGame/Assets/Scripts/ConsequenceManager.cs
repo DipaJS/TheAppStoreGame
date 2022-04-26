@@ -21,11 +21,13 @@ public class ConsequenceManager : MonoBehaviour
     public GameObject newspaperModel;
 
     // Components and objects for the email
-    public GameObject emailNotification;
-    public GameObject textMail;
-    public GameObject nameMail;
+    public Image[] emailTabs;
     public GameObject emailPrefab;
+    public GameObject emailScrollView;
     public List<EmailConsequence> emailList;
+    public int unreadEmails;
+    public TextMeshProUGUI[] emailComponents;   //Subject, Sender, Date, Content
+    public GameObject notificationAudio;
 
     // Start is called before the first frame update
     void Start()
@@ -81,7 +83,7 @@ public class ConsequenceManager : MonoBehaviour
                 NewspaperDisplay(newsPaperConsequence, app);
                 newspaperModel.SetActive(true);
             }
-            //if (emailConsequence != null) { EmailDisplay(emailConsequence); }
+            if (emailConsequence != null) { EmailDisplay(emailConsequence); }
         }
     }
     // Loads the newspaper with consquence text and title+image for the corresponding application
@@ -97,6 +99,11 @@ public class ConsequenceManager : MonoBehaviour
         imageField.sprite = Resources.Load<Sprite>(Path.Combine("wireframes", app.Logo));
     }
 
+    // Splits the newspaper content to fít around the image
+        // string str - The newspaper content
+        // Returns an array with two string
+            // 0: string meant for the first text field
+            // 1: string meant for the second text field
     private string[] StringSplit(string str)
     {
         int mid = 550;
@@ -110,24 +117,63 @@ public class ConsequenceManager : MonoBehaviour
     }
 
 
-    // Keep! not fully implemented yet
     // Loads the email with consquence text and name for the corresponding application
-    /*public void EmailDisplay(Consequence c)
+    // Uses UpdateNotifications to update notifications
+        // Consequence c - the details of the email to be displayed
+    public void EmailDisplay(Consequence c)
     {
-        //Load the parameters of consequence c to a new Email in the Email-tab
-
-        emailNotification.GetComponent<CanvasGroup>().alpha = 1;
-        nameMail.GetComponent<TextMeshProUGUI>().text = c.Sender;
-        textMail.GetComponent<TextMeshProUGUI>().text = c.TextToDisplay;
-
-        // Keep below
-        //emailList.Add(new EmailConsequence(c, newEmail(), "Date"));
+        EmailConsequence tempMail = new EmailConsequence();
+        GameObject tempMailObject = NewEmail(tempMail);
+        tempMail.SetEmail(c, tempMailObject, "");
+        emailList.Add(tempMail);
+        unreadEmails++;
+        UpdateNotifications();
+        notificationAudio.SetActive(false);
+        notificationAudio.SetActive(true);
     }
 
-    // Keep me - work in process
-    /*public GameObject newEmail()
+    // Creates a new email object
+        // EmailConsequence e - the EmailConsequence the mail is meant to represent
+    public GameObject NewEmail(EmailConsequence e)
     {
-        GameObject mail = Object.Instantiate(emailPrefab, /*parent*//*);
+        GameObject mail = Object.Instantiate(emailPrefab, emailScrollView.transform);
+        mail.GetComponent<Button>().onClick.AddListener(delegate { OpenEmail(e); });
+        mail.transform.SetAsFirstSibling();
         return mail;
-    }*/
+    }
+
+    // Opens an email to the content panel, and updates it if it was unread
+        // EmailConsequence mail - the mail being opened
+    public void OpenEmail(EmailConsequence mail)
+    {
+        if (!mail.read)
+        {
+            mail.read = true;
+            unreadEmails--;
+            UpdateNotifications();
+            mail.mail.GetComponent<Image>().sprite = Resources.Load<Sprite>(Path.Combine("UI Components/UIComps", "OpenedEmail"));
+        }
+
+        emailComponents[0].text = mail.subject.text;
+        emailComponents[1].text = mail.sender.text;
+        emailComponents[2].text = mail.date.text;
+        emailComponents[3].text = mail.content.text;
+    }
+
+    // Checks for unread emails, and updates the tabs notifications accordingly
+    public void UpdateNotifications()
+    {
+        if(unreadEmails > 0)
+        {
+            emailTabs[0].sprite = Resources.Load<Sprite>(Path.Combine("UI Components/UIComps", "inactiveTabNotification"));
+            emailTabs[1].sprite = Resources.Load<Sprite>(Path.Combine("UI Components/UIComps", "activeTabNotification"));
+            emailTabs[2].sprite = Resources.Load<Sprite>(Path.Combine("UI Components/UIComps", "inactiveTabNotification"));
+        } 
+        else
+        {
+            emailTabs[0].sprite = Resources.Load<Sprite>(Path.Combine("UI Components/UIComps", "inactiveTab"));
+            emailTabs[1].sprite = Resources.Load<Sprite>(Path.Combine("UI Components/UIComps", "activeTab"));
+            emailTabs[2].sprite = Resources.Load<Sprite>(Path.Combine("UI Components/UIComps", "inactiveTab"));
+        }
+    }
 }

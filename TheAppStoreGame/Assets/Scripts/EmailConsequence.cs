@@ -5,8 +5,7 @@ using JsonHandler;
 using UnityEngine.UI;
 using TMPro; // TextMeshPro package
 
-//A script for managing the Email-tab 
-    //Will be attached to 'MailTabActive' in 'GamePlayView'
+//A class for Email objects
 public class EmailConsequence
 {
     public GameObject mail { get; set; }
@@ -15,9 +14,13 @@ public class EmailConsequence
     public TextMeshProUGUI subject { get; set; }
     public TextMeshProUGUI content { get; set; }
     public TextMeshProUGUI date { get; set; }
-    public GameObject notification { get; set; }
-    public Image emailIcon { get; set; }
 
+    public bool read { get; set; }
+
+    // Constructor
+        // Consequence c - the contents for the email
+        // GameObject mailObject - the GameObject holding the email
+        // string date - the date displayed on the email
     public EmailConsequence(Consequence c, GameObject mailObject, string date)
     {
         mail            = mailObject;
@@ -25,12 +28,33 @@ public class EmailConsequence
         subject         = mail.transform.Find("Subject").gameObject.GetComponent<TextMeshProUGUI>();
         content         = mail.transform.Find("Content Preview").gameObject.GetComponent<TextMeshProUGUI>();
         this.date       = mail.transform.Find("Date").gameObject.GetComponent<TextMeshProUGUI>();
-        notification    = mail.transform.Find("Notification").gameObject;
-        emailIcon       = mail.transform.Find("Email Icon").gameObject.GetComponent<Image>();
+        read = false;
 
         sender.text     = c.Sender;
         subject.text    = c.Header;
         content.text    = c.TextToDisplay;
         this.date.text  = date;
+    }
+
+    // Constructor for an empty email
+    public EmailConsequence(){}
+
+    // Method to set all the variables of the email
+        // Consequence c - the contents for the email
+        // GameObject mailObject - the GameObject holding the email
+        // string date - the date displayed on the email
+    public void SetEmail(Consequence c, GameObject mailObject, string date)
+    {
+        mail = mailObject;
+        sender = mail.transform.Find("Sender").gameObject.GetComponent<TextMeshProUGUI>();
+        subject = mail.transform.Find("Subject").gameObject.GetComponent<TextMeshProUGUI>();
+        content = mail.transform.Find("Content Preview").gameObject.GetComponent<TextMeshProUGUI>();
+        this.date = mail.transform.Find("Date").gameObject.GetComponent<TextMeshProUGUI>();
+        read = false;
+
+        sender.text = c.Sender;
+        subject.text = c.Header;
+        content.text = c.TextToDisplay;
+        this.date.text = date;
     }
 }
