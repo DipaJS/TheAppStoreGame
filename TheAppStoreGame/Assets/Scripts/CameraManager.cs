@@ -18,6 +18,7 @@ public class CameraManager : MonoBehaviour
 
     public GameObject screen;
     public GameObject ui;
+    public GameObject world;
 
     // Update is called once per frame
     void Update()
@@ -35,6 +36,7 @@ public class CameraManager : MonoBehaviour
                 {
                     MoveCamera(csCameraPosition, csCameraRotation);
                     ui.SetActive(true);
+                    world.SetActive(false);
                     Debug.Log("Clicked!");
                 }
             }
@@ -61,6 +63,7 @@ public class CameraManager : MonoBehaviour
     {
         MoveCamera(baseCameraPosition, baseCameraRotation);
         ui.SetActive(false);
+        world.SetActive(true);
         Debug.Log("Exited!");
     }
 }
