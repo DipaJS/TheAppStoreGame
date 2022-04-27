@@ -88,6 +88,11 @@ public class ReviewTab : MonoBehaviour
         imageField.GetComponent<Image>().sprite = Resources.Load<Sprite>(Path.Combine("wireframes", currentApp.Images[imageIndex]));
     }
 
+    public void ClearCheckmarks(){
+        foreach (GameObject checkmark in checkMarks){
+            checkmark.SetActive(false);
+        }
+    }
     //CheckMe is a onClick function that displays (or removes) a checkmark when the button is pressed depending if the checkmark was previosly displayed or not
         //GameObject checkedBox is the checkmark to be displayed (set in the inspector)
     public void CheckMe(int index){
