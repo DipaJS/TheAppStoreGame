@@ -12,6 +12,8 @@ public class ConsequenceManager : MonoBehaviour
 {
     public static ConsequenceManager instance;
 
+    public GameObject interactMessage;
+
     // Components and objects for the news popup, set in the Inspector
     public GameObject titleField;
     public GameObject descriptionField1;
@@ -53,6 +55,7 @@ public class ConsequenceManager : MonoBehaviour
     // Method called in UIManager.Evaluate
     public void LoadConsequences()
     {
+        interactMessage.SetActive(false);
         Apps app;
         Consequence[] consequences;
         Consequence newsPaperConsequence = null;
