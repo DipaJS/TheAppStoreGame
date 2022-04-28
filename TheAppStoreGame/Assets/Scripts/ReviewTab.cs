@@ -49,6 +49,7 @@ public class ReviewTab : MonoBehaviour
     {
         ConsequenceManager.instance.AppChoice(currentApp, accepted); // Saves currentApp to GameManager
         ConsequenceManager.instance.LoadConsequences();
+        imageIndex = 0;
         if (GameManager.instance.apps.Count == 0)
         {
            NoApplications();
