@@ -19,6 +19,8 @@ public class ReviewTab : MonoBehaviour
     public GameObject standardView;
     public GameObject noApplicationsView;
 
+    public GameObject doChecklistNote;
+
     public GameObject[] checkMarks;
     public GameObject[] boxes;
 
@@ -47,18 +49,21 @@ public class ReviewTab : MonoBehaviour
     // Saves the players choice to accept the application for publication and loads a new application to screen
     public void Evaluate(bool accepted)
     {
-        ConsequenceManager.instance.AppChoice(currentApp, accepted); // Saves currentApp to GameManager
-        ConsequenceManager.instance.LoadConsequences();
-        imageIndex = 0;
-        if (GameManager.instance.apps.Count == 0)
-        {
-           NoApplications();
+        if(checkMarksComplete()){
+            ConsequenceManager.instance.AppChoice(currentApp, accepted); // Saves currentApp to GameManager
+            ConsequenceManager.instance.LoadConsequences();
+            imageIndex = 0;
+            if (GameManager.instance.apps.Count == 0)
+            {
+            NoApplications();
+            }
+            else
+            {
+                currentApp = (Apps)GameManager.instance.apps.Dequeue(); // Sets the next App as currentApp
+                SetApp(currentApp); // Updates the screen with the new currentApp
+            } 
         }
-        else
-        {
-            currentApp = (Apps)GameManager.instance.apps.Dequeue(); // Sets the next App as currentApp
-            SetApp(currentApp); // Updates the screen with the new currentApp
-        } 
+        else {doChecklistNote.SetActive(true);}
     }
 
     // Loads an app to the main screen
@@ -106,5 +111,12 @@ public class ReviewTab : MonoBehaviour
         checkMarks[index].SetActive(!checkMarks[index].activeSelf);
     }
 
-    
+    public bool checkMarksComplete(){
+        int i = 0;
+        foreach (GameObject checkmark in checkMarks){
+            if (checkmark.activeSelf){i++;}
+        }
+        if (i == 7){return true;}
+        else {return false;}
+    }
 }

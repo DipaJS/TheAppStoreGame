@@ -56,4 +56,8 @@ public class PlayerController : MonoBehaviour
         newsPopup.GetComponent<CanvasGroup>().blocksRaycasts = open;
         newsPopup.GetComponent<CanvasGroup>().interactable = open;
     }
+
+    public void CloseObject(GameObject o){
+        o.SetActive(false);
+    }
 }

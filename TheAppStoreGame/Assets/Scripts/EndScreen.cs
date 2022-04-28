@@ -17,6 +17,7 @@ public class EndScreen : MonoBehaviour
     private string interactedAcm;
 
     public TextMeshProUGUI[] honoredCodes;
+    public TextMeshProUGUI[] dishonoredCodes;
 
     public TextMeshProUGUI learnMore;
 
@@ -90,9 +91,16 @@ public class EndScreen : MonoBehaviour
 
     public void UpdateCodes(){
         int i=0;
+        //var allCodes = honoredCodes.Zip(dishonoredCodes, (h,d) => new {Honored = h, Dishonored = d});
         foreach(TextMeshProUGUI code in honoredCodes){
             code.text = "1."+(i+1)+" honored on " + totalFollowed[i] + " instances";
+            //code.Dishonored.text = "1."+(i+1)+" broken on " + totalBroken[i] + " instances";
             i++;
+        int j = 0;
+        foreach(TextMeshProUGUI brokenCode in dishonoredCodes){
+            brokenCode.text = "1."+(i+1)+" dishonored on " + totalBroken[i] + " instances";
+            j++;
+        }
         }
     }
     //Returns the score for the specific code given by index (note code 1 is index 0, code 2 index 1 etc.)
