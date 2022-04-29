@@ -181,15 +181,15 @@ public class ConsequenceManager : MonoBehaviour
 
     public void Fun(Apps app)
     {
-        if (app.Status == true && app.Name == "CrimeCognition") {
+        if (app.Status == true && app.Name == "E.Work Basic (Effective Work)") {
             fun[0].SetActive(true);
             Debug.Log("nice");
         }
-        // Switch case, app namn
-        // Status
-        // Activate gameObject
-        
-    }
+        else if (app.Status == true && app.Name == "CrimeCognition"){
+            fun[1].SetActive(true);
+            Debug.Log("seems good");
+        }
+   }
 
     // Checks for unread emails, and updates the tabs notifications accordingly
     public void UpdateNotifications()
