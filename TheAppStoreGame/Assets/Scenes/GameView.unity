@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8561,7 +8561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66a8e38ec266b94448694ff510ce9e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullText: Press "key" and read the newspaper on the desk!
+  fullText: Press "Esc" and read the newspaper on the desk!
   delay: 0.1
 --- !u!114 &531279432
 MonoBehaviour:
@@ -26824,7 +26824,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1609946480
 Transform:
   m_ObjectHideFlags: 0
@@ -27881,8 +27881,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66a8e38ec266b94448694ff510ce9e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullText: "Wow.. your first day as an app store employee.... sample text intro
-    for the player... \n\nClick on the computer to start reviewing the apps! (:"
+  fullText: "Wow.... your first day as an app store employee, how exciting!\n\nClick
+    on the computer to start reviewing the apps! \nMake sure to apply ethical thinking
+    using the ACM codes.... or not, it's up to you  (:"
   delay: 0.05
 --- !u!114 &1654104327
 MonoBehaviour:
