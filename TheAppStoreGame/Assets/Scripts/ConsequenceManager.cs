@@ -13,6 +13,7 @@ public class ConsequenceManager : MonoBehaviour
     public static ConsequenceManager instance;
 
     public GameObject interactMessage;
+    public Animator Popup;
 
     // Components and objects for the news popup, set in the Inspector
     public GameObject titleField;
@@ -35,7 +36,6 @@ public class ConsequenceManager : MonoBehaviour
     void Start()
     {
         instance = this;
-
         emailList = new List<EmailConsequence>();
     }
 
@@ -55,6 +55,7 @@ public class ConsequenceManager : MonoBehaviour
     // Method called in UIManager.Evaluate
     public void LoadConsequences()
     {
+        
         interactMessage.SetActive(false);
         Apps app;
         Consequence[] consequences;
@@ -63,6 +64,8 @@ public class ConsequenceManager : MonoBehaviour
 
         if (GameManager.instance.evaluatedApps.Count != 0)
         {
+            Popup.ResetTrigger("Popup");
+            Debug.Log("Triggerd");
             app = (Apps)GameManager.instance.evaluatedApps.Dequeue(); //app is the most recently reviewed application
 
             //Checks if the application was accepted or rejected and loads the corresponding consqequences to variable         
@@ -98,6 +101,8 @@ public class ConsequenceManager : MonoBehaviour
     public void NewspaperDisplay(Consequence c, Apps app)
     {
         Debug.Log(app.Name);
+        Popup.SetTrigger("Popup");
+        Debug.Log("Triggerd");
 
         string[] descriptions = StringSplit(c.TextToDisplay);
 
