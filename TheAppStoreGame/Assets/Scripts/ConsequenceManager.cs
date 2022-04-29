@@ -64,9 +64,9 @@ public class ConsequenceManager : MonoBehaviour
 
         if (GameManager.instance.evaluatedApps.Count != 0)
         {
-            Popup.transform.GetChild(0).gameObject.SetActive(false);
-            Popup.ResetTrigger("Popup");
-            Debug.Log("Triggerd");
+            Popup.transform.GetChild(0).gameObject.SetActive(false); //Disables gameObject for popup
+            Popup.ResetTrigger("Popup");                            // Resets the trigger parameter for the animation, to be able to retrigger it again later
+
             app = (Apps)GameManager.instance.evaluatedApps.Dequeue(); //app is the most recently reviewed application
 
             //Checks if the application was accepted or rejected and loads the corresponding consqequences to variable         
@@ -102,9 +102,8 @@ public class ConsequenceManager : MonoBehaviour
     public void NewspaperDisplay(Consequence c, Apps app)
     {
         Debug.Log(app.Name);
-        Popup.transform.GetChild(0).gameObject.SetActive(true);
-        Popup.SetTrigger("Popup");
-        Debug.Log("Triggerd");
+        Popup.transform.GetChild(0).gameObject.SetActive(true); // Set popup to active
+        Popup.SetTrigger("Popup");                              // Triggers the animation
 
         string[] descriptions = StringSplit(c.TextToDisplay);
 
