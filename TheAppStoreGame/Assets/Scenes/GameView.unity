@@ -1388,7 +1388,7 @@ Transform:
   - {fileID: 1706637481}
   - {fileID: 379573329}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &73013125
 GameObject:
@@ -2815,7 +2815,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &178889474
 GameObject:
@@ -6967,6 +6967,75 @@ RectTransform:
   m_AnchoredPosition: {x: 26.022171, y: -103}
   m_SizeDelta: {x: 11.5, y: 11.5}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &406483439
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 13.022722
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 41.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636386049, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636616481, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_Name
+      value: WebCamera
+      objectReference: {fileID: 0}
+    - target: {fileID: 7460431925636616481, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
 --- !u!1 &410955600
 GameObject:
   m_ObjectHideFlags: 0
@@ -10498,7 +10567,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &694000278
 GameObject:
@@ -11636,7 +11705,8 @@ MonoBehaviour:
   - {fileID: 1461016541}
   - {fileID: 1612440042}
   notificationAudio: {fileID: 1426839560}
-  fun: []
+  fun:
+  - {fileID: 1414298535}
 --- !u!4 &745385780
 Transform:
   m_ObjectHideFlags: 0
@@ -11649,7 +11719,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &747957449
 GameObject:
@@ -12676,7 +12746,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 2046260662}
   m_Direction: 2
   m_Value: 1.0000001
-  m_Size: 0.1943794
+  m_Size: 0.38875872
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -14823,7 +14893,7 @@ RectTransform:
   m_Children:
   - {fileID: 355100071}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -18673,7 +18743,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1161329527
 GameObject:
@@ -22548,6 +22618,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1407308197}
   m_CullTransparentMesh: 1
+--- !u!1 &1414298535 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7460431925636616481, guid: 7ed4db314c747204c8e1115a9723afc4, type: 3}
+  m_PrefabInstance: {fileID: 406483439}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1415786513
 GameObject:
   m_ObjectHideFlags: 0
@@ -23367,7 +23442,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1430132051
 GameObject:
@@ -26359,7 +26434,7 @@ Transform:
   m_Children:
   - {fileID: 1898942590}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1612393648
 GameObject:
@@ -27402,8 +27477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66a8e38ec266b94448694ff510ce9e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullText: 'Wow.. your first day as an app store employee.... sample text intro
-    for the player... Click on the computer to start reviewing the apps! (:'
+  fullText: "Wow.. your first day as an app store employee.... sample text intro
+    for the player... \n\nClick on the computer to start reviewing the apps! (:"
   delay: 0.05
 --- !u!114 &1654104327
 MonoBehaviour:
@@ -29906,7 +29981,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1792413947
 GameObject:
