@@ -19,6 +19,7 @@ public class CameraManager : MonoBehaviour
     public GameObject screen;
     public GameObject ui;
     public GameObject world;
+    public GameObject cat;
 
     // Update is called once per frame
     void Update()
@@ -39,6 +40,12 @@ public class CameraManager : MonoBehaviour
                     world.SetActive(false);
                     Debug.Log("Clicked!");
                 }
+                else if (hit.collider.gameObject == cat)
+                {
+                    cat.transform.GetChild(0).gameObject.SetActive(true);
+                    Debug.Log("Meow");
+                    StartCoroutine(Testing());
+                }
             }
         }
 
@@ -50,9 +57,17 @@ public class CameraManager : MonoBehaviour
         }
     }
 
+
+    IEnumerator Testing()
+    {
+        yield return new WaitForSeconds(3);
+        cat.transform.GetChild(0).gameObject.SetActive(false);
+        Debug.Log("Meow down");
+    }
+
     //MoveCamera changes the camera position and therefore changes the view of the game
-        //Vector 3 position - changes the position of the camera to the paremeters of this vector
-        //Vector 3 rotation - changes the rotation of the camera to the parameters of this vector
+    //Vector 3 position - changes the position of the camera to the paremeters of this vector
+    //Vector 3 rotation - changes the rotation of the camera to the parameters of this vector
     public void MoveCamera(Vector3 position, Vector3 rotation)
     {
         this.transform.position = position;

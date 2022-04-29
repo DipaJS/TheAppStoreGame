@@ -15,6 +15,7 @@ public class ConsequenceManager : MonoBehaviour
     public GameObject interactMessage;
     public Animator Popup;
 
+
     // Components and objects for the news popup, set in the Inspector
     public GameObject titleField;
     public GameObject descriptionField1;
@@ -31,6 +32,9 @@ public class ConsequenceManager : MonoBehaviour
     public int unreadEmails;
     public TextMeshProUGUI[] emailComponents;   //Subject, Sender, Date, Content
     public GameObject notificationAudio;
+
+    // Going to be used for Consequence objects in the office
+    public GameObject[] fun;
 
     // Start is called before the first frame update
     void Start()
@@ -96,6 +100,7 @@ public class ConsequenceManager : MonoBehaviour
                     EmailDisplay(c); 
                 }
             }
+            Fun(app);
         }
     }
     // Loads the newspaper with consquence text and title+image for the corresponding application
@@ -172,6 +177,14 @@ public class ConsequenceManager : MonoBehaviour
         emailComponents[1].text = mail.sender.text;
         emailComponents[2].text = mail.date.text;
         emailComponents[3].text = mail.content.text;
+    }
+
+    public void Fun(Apps app)
+    {
+        Debug.Log("Ok" + app.Status);
+        // Switch case, app namn
+        // Status
+        // Activate gameObject
     }
 
     // Checks for unread emails, and updates the tabs notifications accordingly
