@@ -8,7 +8,7 @@ using TMPro;
 using System.IO;
 
 //A script for player interaction with the ReviewTab 
-//Attached to 'Computer Screen' in 'GameView'
+//Attached to 'ReviewTab Active' in 'GameView'
 
 public class ReviewTab : MonoBehaviour
 {
@@ -16,6 +16,7 @@ public class ReviewTab : MonoBehaviour
 	public TextMeshProUGUI descriptionField;
 	public TextMeshProUGUI titleField;
 	public GameObject imageField;
+    public GameObject logoImage;
     public GameObject standardView;
     public GameObject noApplicationsView;
 
@@ -71,8 +72,8 @@ public class ReviewTab : MonoBehaviour
     public void SetApp(Apps app){
         titleField.text = app.Name;
         descriptionField.text = app.Description;
-        Debug.Log(Path.Combine("wireframes", app.Images[0]));
         imageField.GetComponent<Image>().sprite = Resources.Load<Sprite>(Path.Combine("wireframes", app.Images[0]));
+        logoImage.GetComponent<Image>().sprite = Resources.Load<Sprite>(Path.Combine("wireframes", app.Logo));
     }
 
     // Loads the 'No Applications' content on the review tab
