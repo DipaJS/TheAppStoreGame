@@ -6,9 +6,10 @@ using System.Collections.Generic;
 
 public class TypeWriterEffect : MonoBehaviour
 {
+	[TextArea]
+	public string fullText;
 
 	public float delay = 0.05f;
-	public string fullText;
 	private string currentText = "";
 
 	// Use this for initialization
@@ -19,7 +20,7 @@ public class TypeWriterEffect : MonoBehaviour
 
 	IEnumerator ShowText()
 	{
-		for (int i = 0; i < fullText.Length +1 ; i++)
+		for (int i = 0; i < fullText.Length + 1; i++)
 		{
 			currentText = fullText.Substring(0, i);
 			this.GetComponent<Text>().text = currentText;
