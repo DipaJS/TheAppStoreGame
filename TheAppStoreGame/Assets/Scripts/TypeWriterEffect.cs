@@ -1,7 +1,6 @@
 using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
-using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
 
@@ -26,6 +25,5 @@ public class TypeWriterEffect : MonoBehaviour
 			this.GetComponent<Text>().text = currentText;
 			yield return new WaitForSeconds(delay);
 		}
-		SceneManager.LoadScene("GameView");
 	}
 }

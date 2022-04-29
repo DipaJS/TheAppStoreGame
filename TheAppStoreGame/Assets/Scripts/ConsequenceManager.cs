@@ -64,6 +64,7 @@ public class ConsequenceManager : MonoBehaviour
 
         if (GameManager.instance.evaluatedApps.Count != 0)
         {
+            Popup.transform.GetChild(0).gameObject.SetActive(false);
             Popup.ResetTrigger("Popup");
             Debug.Log("Triggerd");
             app = (Apps)GameManager.instance.evaluatedApps.Dequeue(); //app is the most recently reviewed application
@@ -101,6 +102,7 @@ public class ConsequenceManager : MonoBehaviour
     public void NewspaperDisplay(Consequence c, Apps app)
     {
         Debug.Log(app.Name);
+        Popup.transform.GetChild(0).gameObject.SetActive(true);
         Popup.SetTrigger("Popup");
         Debug.Log("Triggerd");
 
