@@ -39,6 +39,7 @@ public class CameraManager : MonoBehaviour
                     ui.SetActive(true);
                     world.SetActive(false);
                     Debug.Log("Clicked!");
+					//GetComponent<MouseLook>().enabled = false; 
                 }
                 else if (hit.collider.gameObject == cat)
                 {
@@ -54,6 +55,7 @@ public class CameraManager : MonoBehaviour
         {
             Cancel();
             Debug.Log("Cancel!");
+			//GetComponent<MouseLook>().enabled = true; //Uncomment this and line 42 to enable camera look
         }
     }
 

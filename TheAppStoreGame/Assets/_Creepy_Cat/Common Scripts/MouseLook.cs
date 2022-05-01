@@ -40,7 +40,8 @@ public class MouseLook : MonoBehaviour
 
 	void Start ()
 	{
-		Cursor.visible = false;
+		Cursor.visible = true;
+		 Cursor.lockState = CursorLockMode.Locked;
 
 		// Set target direction to the camera's initial orientation.
 		targetDirection = transform.localRotation.eulerAngles;
