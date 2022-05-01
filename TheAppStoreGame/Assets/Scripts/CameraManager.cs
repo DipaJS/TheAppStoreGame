@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //A script for managing the main camera so that the player can change perspective when interacting with different objects.
-    //Attached to 'MainCamera' in 'GameplayView'
+    //Attached to 'MainCamera' in 'GameView'
 public class CameraManager : MonoBehaviour
 {
     //Camera positions are set in the inspector
