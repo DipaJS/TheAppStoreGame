@@ -11,8 +11,6 @@ using System.IO;
 public class ConsequenceManager : MonoBehaviour
 {
     public static ConsequenceManager instance;
-
-    public GameObject interactMessage;
     public Animator Popup;
 
 
@@ -59,8 +57,6 @@ public class ConsequenceManager : MonoBehaviour
     // Method called in UIManager.Evaluate
     public void LoadConsequences()
     {
-        
-        interactMessage.SetActive(false);
         Apps app;
         Consequence[] consequences;
         Consequence newsPaperConsequence = null;
