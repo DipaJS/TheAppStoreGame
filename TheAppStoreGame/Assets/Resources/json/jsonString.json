@@ -19,8 +19,7 @@
             "ACM": {
                 "positiveCodeScores": [2, 2, 1, 0, 0, 0, 0],
                 "negativeCodeScores": [1, 1, 0, 1, 0, 2, 2],
-                "positiveExplanations":[
-                  ["Can possibly lead to societal improvements","Promotes personal security and/or well-being "],
+                "positiveExplanations":[["Can possibly lead to societal improvements","Promotes personal security and/or well-being "],
                   ["Promotes mental/physical well-being", "If the application intends to ‘hurt’, there’s an ethically sound reason to do so."],
                   ["The company is reliable with no prior mishaps"],
                   [],
@@ -82,7 +81,9 @@
               }
             ],
             "ACM": {
-              "positiveExplanations2":[
+              "positiveCodeScores": [0, 0, 3, 0, 0, 3, 3],
+              "negativeCodeScores": [2, 2, 0, 2, 0, 0, 0],
+              "positiveExplanations":[
                 [],
                 [],
                 ["Presents the information that will be used and its purpose","The company is reliable with no prior mishaps","Customer-support available"],

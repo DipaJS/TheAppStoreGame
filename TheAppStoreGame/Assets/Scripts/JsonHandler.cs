@@ -66,6 +66,12 @@ namespace JsonHandler
 
         [JsonProperty("negativeCodeScores")]
         public int[] NegativeCodeScores { get; set; }
+
+        [JsonProperty("positiveExplanations", NullValueHandling = NullValueHandling.Ignore)]
+        public string[][] PositiveExplanations { get; set; }
+
+        [JsonProperty("negativeExplanations", NullValueHandling = NullValueHandling.Ignore)]
+        public string[][] NegativeExplanations { get; set; }
     }
 
     //Consequence has the textToDisplay and displayLocation

@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using JsonHandler;
+using UnityEngine.UI;
 using TMPro;
 using System.IO;
+
 public class EndScreen : MonoBehaviour
 {
     //An array with the final scores for each code
@@ -19,11 +21,13 @@ public class EndScreen : MonoBehaviour
     public TextMeshProUGUI[] honoredCodes;
     public TextMeshProUGUI[] dishonoredCodes;
 
-    public TextMeshProUGUI learnMore;
-
     public GameObject learnMorePanel;
 
     public GameObject centerPart;
+
+    public GameObject[] prefabs;
+
+    public GameObject scrollView;
 
     //start is called before the first frame update
     void Start(){
@@ -57,9 +61,9 @@ public class EndScreen : MonoBehaviour
         return s;
     }
     public void SetLearnMoreText(int i){
-        learnMore.text = UpdateAcmInteractions(i);
+        //learnMore.text = UpdateAcmInteractions(i);
         learnMorePanel.SetActive(true);
-        centerPart.SetActive(false);
+        //centerPart.SetActive(false);
     }
     public int[] GetTotalFollowed(){
         int[] scores = new int[]{0,0,0,0,0,0,0};
@@ -90,16 +94,51 @@ public class EndScreen : MonoBehaviour
 
     public void UpdateCodes(){
         int i=0;
-        //var allCodes = honoredCodes.Zip(dishonoredCodes, (h,d) => new {Honored = h, Dishonored = d});
         foreach(TextMeshProUGUI code in honoredCodes){
             code.text = "1."+(i+1)+" honored on " + totalFollowed[i] + " instances";
-            //code.Dishonored.text = "1."+(i+1)+" broken on " + totalBroken[i] + " instances";
             i++;
+        }
         int j = 0;
         foreach(TextMeshProUGUI brokenCode in dishonoredCodes){
-            brokenCode.text = "1."+(i+1)+" dishonored on " + totalBroken[i] + " instances";
+            brokenCode.text = "1."+(j+1)+" broken on " + totalBroken[j] + " instances";
             j++;
         }
+    }
+
+    public void UpdateLearnMore(int code){
+        foreach(Apps app in GameManager.instance.allEvaluatedApps){
+            if (app.Status){
+                string explanations = string.Join("\n", (app.Accepted.Acm.PositiveExplanations[code-1]));
+                explanations = explanations + "\n" + string.Join("\n", app.Accepted.Acm.NegativeExplanations[code-1]);
+                int totalExplanations = app.Accepted.Acm.PositiveExplanations[code-1].Length + app.Accepted.Acm.NegativeExplanations[code-1].Length;
+                GameObject prefab;
+                switch(totalExplanations){
+                    case 1:
+                        prefab = Object.Instantiate(prefabs[0], scrollView.transform);
+                        prefab.transform.Find("Title").gameObject.GetComponent<TextMeshProUGUI>().text = "Accepted " + app.Name;
+                        prefab.transform.Find("Text").gameObject.GetComponent<TextMeshProUGUI>().text = explanations;
+                        //prefab.transform.Find("Point").gameobject.GetComponent<TextMeshProUGUI>().text = "Accepted " + app.Name;
+                        break;
+                    case 2:
+                        prefab = Object.Instantiate(prefabs[1], scrollView.transform);
+                        prefab.transform.Find("Title").gameObject.GetComponent<TextMeshProUGUI>().text = "Accepted " + app.Name;
+                        prefab.transform.Find("Text").gameObject.GetComponent<TextMeshProUGUI>().text = explanations;
+                        //prefab.transform.Find("Point").gameobject.GetComponent<TextMeshProUGUI>().text = "Accepted " + app.Name;
+                        break;
+                    case 3:
+                        prefab = Object.Instantiate(prefabs[2], scrollView.transform);
+                        prefab.transform.Find("Title").gameObject.GetComponent<TextMeshProUGUI>().text = "Accepted " + app.Name;
+                        prefab.transform.Find("Text").gameObject.GetComponent<TextMeshProUGUI>().text = explanations;
+                        //prefab.transform.Find("Point").gameobject.GetComponent<TextMeshProUGUI>().text = "Accepted " + app.Name;
+                        break;
+                    default:
+                        prefab = Object.Instantiate(prefabs[3], scrollView.transform);
+                        prefab.transform.Find("Title").gameObject.GetComponent<TextMeshProUGUI>().text = "Accepted " + app.Name;
+                        prefab.transform.Find("Text").gameObject.GetComponent<TextMeshProUGUI>().text = explanations;
+                        //prefab.transform.Find("Point").gameobject.GetComponent<TextMeshProUGUI>().text = "Accepted " + app.Name;
+                        break;
+                }
+            }
         }
     }
     //Returns the score for the specific code given by index (note code 1 is index 0, code 2 index 1 etc.)
