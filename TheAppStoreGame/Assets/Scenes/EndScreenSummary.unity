@@ -7166,6 +7166,14 @@ MonoBehaviour:
   - {fileID: 945126171}
   - {fileID: 225489517}
   - {fileID: 1578142901}
+  dishonoredCodes:
+  - {fileID: 422607170}
+  - {fileID: 1565520890}
+  - {fileID: 97428807}
+  - {fileID: 1417892753}
+  - {fileID: 958962251}
+  - {fileID: 625566272}
+  - {fileID: 2070170512}
   learnMore: {fileID: 1428303533}
   learnMorePanel: {fileID: 1879996519}
   centerPart: {fileID: 2128626269}
@@ -20482,6 +20490,7 @@ MonoBehaviour:
   - {fileID: 1400686243}
   - {fileID: 820062955}
   - {fileID: 1216922977}
+  dishonoredCodes: []
   learnMore: {fileID: 0}
   learnMorePanel: {fileID: 0}
   centerPart: {fileID: 0}

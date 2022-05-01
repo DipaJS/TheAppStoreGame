@@ -18,7 +18,23 @@
             ],
             "ACM": {
                 "positiveCodeScores": [2, 2, 1, 0, 0, 0, 0],
-                "negativeCodeScores": [1, 1, 0, 1, 0, 2, 2]
+                "negativeCodeScores": [1, 1, 0, 1, 0, 2, 2],
+                "positiveExplanations":[
+                  ["Can possibly lead to societal improvements","Promotes personal security and/or well-being "],
+                  ["Promotes mental/physical well-being", "If the application intends to ‘hurt’, there’s an ethically sound reason to do so."],
+                  ["The company is reliable with no prior mishaps"],
+                  [],
+                  [],
+                  []
+                ],
+                "negativeExplanations":[
+                  ["Can lead to discrimination"],
+                  [],
+                  [],
+                  ["Potentially increases social class differences"],
+                  [],
+                  ["Uses personal data that is not publicly available", "Application is vague about how personal data is used, and/or this information is hard to find"]
+                ]
             }
         },
         "rejected":{
@@ -66,8 +82,22 @@
               }
             ],
             "ACM": {
-                "positiveCodeScores": [0, 0, 3, 0, 0, 3, 3],
-                "negativeCodeScores": [2, 2, 0, 2, 0, 0, 0]
+              "positiveExplanations2":[
+                [],
+                [],
+                ["Presents the information that will be used and its purpose","The company is reliable with no prior mishaps","Customer-support available"],
+                [],
+                [],
+                ["Stable and secure application","Does not sell the gathered data","Makes it clear for the user how information will be used, and/or this information is easy to look up"]
+              ],
+              "negativeExplanations":[
+                ["Can lead to discrimination","Further widens the socio economic class difference"],
+                ["Can lead to mental or physical issues","Promotes destruction of environment/property/reputation"],
+                [],
+                ["Potentially increases social class differences","Usage does not look the same for each user"],
+                [],
+                ["Uses personal data that is not publicly available", "Application is vague about how personal data is used, and/or this information is hard to find"]
+              ]
             }
         },
         "rejected":{
@@ -110,7 +140,23 @@
             ],
             "ACM": {
                 "positiveCodeScores": [0, 0, 2, 1, 1, 1, 1],
-                "negativeCodeScores": [1, 2, 1, 3, 1, 3, 3]
+                "negativeCodeScores": [1, 2, 1, 3, 1, 3, 3],
+                "positiveExplanations":[
+                  ["Can possibly lead to societal improvements","Promotes personal security and/or well-being "],
+                  [],
+                  ["The company is reliable with no prior mishaps","Customer-support available"],
+                  ["Accessibility support"],
+                  ["The application is innovative"],
+                  ["Stable and secure application","Does not sell the gathered data"]
+                ],
+                "negativeExplanations":[
+                  ["Further widens the socio economic class difference","Can lead to discrimination"],
+                  ["Can lead to mental or physical issues","Gives protection to those who cause harm"],
+                  ["Hides or does not mention system failures/bad test data"],
+                  ["Potentially increases social class differences","Usage does not look the same for each user","Application can possibly lead to harassment"],
+                  [],
+                  ["Uses personal data that is not publicly available", "Application is vague about how personal data is used, and/or this information is hard to find"]
+                ]
             }
         },
         "rejected":{
@@ -135,7 +181,7 @@
     "category": "",
     "description": "Have you ever wanted to do live streams but haven’t had a great experience with previous applications?  With Haze, you can create content and let out your creative self by not having to worry about having the latest phone or the best system requirements. Our streaming service has deployed a new algorithm, proving to beat any rival in speed and optimization. You can now live stream with ease in the highest quality without sacrificing performance. \n\nBut this is not the only upper hand our product has; Does increasing your viewers at a fast rate sound interesting? Would you like your viewers to support you long-term? The EmoteCapture plugin takes advantage of the camera on your phone and records how you behave by continuously  capturing your physical signs and body language, and the things you say*. These parameters are in turn used by the EmoteCapture software to determine how you currently feel and give your viewers an idea of your true side. Additionally, you have the ViewSense bracelet that builds on top of EmoteCapture by measuring your heart rate in real time. Together with voice recordings, ViewSense will process everything you are saying to indicate your honesty. EmoteCapture and ViewSense will be directly connected to your Haze account once purchased and can be activated or deactivated in the settings. \n\n*The camera must be faced on you for EmoteCapture to work as intended. ",
     "images": [ "haze1", "haze2", "haze3", "haze4" ],
-    "logo": "hazeicon",
+    "logo": "",
     "accepted": {
       "consequences": [
         {
@@ -147,7 +193,23 @@
       ],
       "ACM": {
         "positiveCodeScores": [ 1, 0, 2, 1, 1, 1, 1 ],
-        "negativeCodeScores": [ 1, 1, 0, 2, 0, 0, 0 ]
+        "negativeCodeScores": [ 1, 1, 0, 2, 0, 0, 0 ],
+        "positiveExplanations":[
+          ["Product available to everyone"],
+          [],
+          ["The company is reliable with no prior mishaps","Presents the information that will be used and its purpose"],
+          ["No exclusive features or restrictions for different users"],
+          ["The application is innovative"],
+          ["Makes it clear for the user how information will be used, and/or this information is easy to look up"]
+        ],
+        "negativeExplanations":[
+          ["Further widens the socio economic class difference","Can lead to discrimination"],
+          ["Can lead to mental or physical issues"],
+          [],
+          ["Application can possibly lead to harassment"],
+          [],
+          []
+        ]
       }
     },
     "rejected": {
@@ -187,7 +249,23 @@
             ],
             "ACM": {
               "positiveCodeScores": [3, 2, 2, 3, 2, 2, 2],
-              "negativeCodeScores": [0, 1, 0, 0, 0, 0, 0]
+              "negativeCodeScores": [0, 1, 0, 0, 0, 0, 0],
+              "positiveExplanations":[
+                ["Promotes human rights","Promotes personal security and/or well-being","Product available to everyone"],
+                ["Promotes mental/physical well-being"],
+                ["The company is reliable with no prior mishaps"],
+                ["Accessibility support","No exclusive features or restrictions for different users","Everyone is able to use the application"],
+                ["The application is innovative","Open-source/free software"],
+                ["Does not sell the gathered data","Makes it clear for the user how information will be used, and/or this information is easy to look up"]
+              ],
+              "negativeExplanations":[
+                ["Further widens the socio economic class difference","Can lead to discrimination"],
+                ["Can lead to mental or physical issues"],
+                [],
+                ["Potentially increases social class differences"],
+                [],
+                []
+              ]
             }
         },
         "rejected":{
@@ -212,7 +290,7 @@
         "category" : "",
         "description": "Are you tired of needing to buy several individual dietary supplements from several different companies? Avoid bulky packaging and the risk of forgetting to take one of your supplements by trying our pre-packaged supplements. We have a wide selection of supplements to find everything that you need and you can also mix and match different supplements*. Once you have chosen your preferred supplements, we will package them together for you in small disposable plastic pouches. Each box contains supplements for 30 days (a total of 30 pouches) and the price starts at $52/month. \n\n*Minimum of 5 different supplements \n\nSave money and join our monthly, yearly or special subscription: \n\n- Monthly: $42 (save $10)\n- Yearly: $252 (save $31/month)\n- Special: $337. Same as yearly but also includes a HealthCheck\n\nWould you like to know the exact supplements YOU need in order to thrive in life? Introducing HealthCheck, a comprehensive vitamin panel measuring the amount of different vitamins and minerals in your body. Price: $105. This test includes a total of 10 markers: \n\n- Vitamin D\n- Vitamin B12\n- Vitamin C\n- Vitamin K1\n- Vitamin A\n- Ferritin\n- Folate \n- Iron \n- Magnesium\n- Zinc \n\nWe have our own clinics where you take the tests to ensure you the fastest and cheapest test results. With HealthCheck, test results are private and directly sent to you in the app. Only 4 steps are required to take control of your health:\n\n1. Order the test.\n2. Take the test at one of our nearest clinics.\n3. Authenticate yourself and see the results in the app and the supplements we recommend for each marker.\n4. Place a checkmark in the box for the supplements you would like directly in the app and proceed with the order.",
         "images" : ["maxhealth1", "maxhealth2", "maxhealth3"],
-        "logo" : "maxhealthicon",
+        "logo" : "",
         "accepted": {
             "consequences": [
               {
@@ -224,7 +302,23 @@
             ],
             "ACM": {
                 "positiveCodeScores": [2, 1, 1, 1, 0, 1, 1],
-                "negativeCodeScores": [1, 1, 0, 0, 1, 0, 0]
+                "negativeCodeScores": [1, 1, 0, 0, 1, 0, 0],
+                "positiveExplanations":[
+                  ["Promotes personal security and/or well-being"," Product available to everyone"],
+                  ["Promotes mental/physical well-being"],
+                  ["The company is reliable with no prior mishaps","Presents the information that will be used and its purpose"],
+                  ["Everyone is able to use the application"],
+                  [],
+                  ["Stable and secure application"]
+                ],
+                "negativeExplanations":[
+                  ["Further widens the socio economic class difference","Can lead to discrimination"],
+                  ["Environmentally hazardous"],
+                  [],
+                  ["Potentially increases social class differences"],
+                  ["No customer support"],
+                  []
+                ]
             }
         },
         "rejected":{
@@ -261,7 +355,23 @@
             ],
             "ACM": {
                 "positiveCodeScores": [1, 1, 2, 2, 2, 1, 1],
-                "negativeCodeScores": [0, 0, 3, 0, 0, 1, 1]
+                "negativeCodeScores": [0, 0, 3, 0, 0, 1, 1],
+                "positiveExplanations":[
+                  ["Promotes personal security and/or well-being"],
+                  ["Promotes mental/physical well-being"],
+                  ["The company is reliable with no prior mishaps"],
+                  ["Everyone is able to use the application","Accessibility support"],
+                  ["The application is innovative"],
+                  ["Stable and secure application"]
+                ],
+                "negativeExplanations":[
+                  ["Further widens the socio economic class difference","Can lead to discrimination"],
+                  [],
+                  ["Adds extra features that could intrude privacy in later updates","Hides or does not mention system failures/bad test data"],
+                  ["Potentially increases social class differences"],
+                  [],
+                  []
+                ]
             }
         },
         "rejected":{
@@ -292,7 +402,23 @@
             ],
             "ACM": {
                 "positiveCodeScores": [1, 2, 1, 2, 1, 0, 0],
-                "negativeCodeScores": [1, 0, 1, 0, 1, 0, 0]
+                "negativeCodeScores": [1, 0, 1, 0, 1, 0, 0],
+                "positiveExplanations":[
+                  ["Product available to everyone"],
+                  ["Promotes mental/physical well-being", "If the application intends to ‘hurt’, there’s an ethically sound reason to do so."],
+                  ["The company is reliable with no prior mishaps"],
+                  [],
+                  ["The application is innovative"],
+                  []
+                ],
+                "negativeExplanations":[
+                  ["Further widens the socio economic class difference","Can lead to discrimination"],
+                  [],
+                  ["Hides or does not mention system failures/bad test data"],
+                  ["Potentially increases social class differences"],
+                  [],
+                  []
+                ]
             }
         },
         "rejected":{
@@ -329,7 +455,23 @@
             ],
             "ACM": {
                 "positiveCodeScores": [1, 0, 1, 2, 1, 0, 0],
-                "negativeCodeScores": [0, 1, 0, 1, 0, 1, 1]
+                "negativeCodeScores": [0, 1, 0, 1, 0, 1, 1],
+                "positiveExplanations":[
+                  ["Can possibly lead to societal improvements","Promotes personal security and/or well-being "],
+                  ["Can lead to mental or physical issues"],
+                  ["Open-Source"],
+                  ["No exclusive features or restrictions for different users","Everyone is able to use the application"],
+                  ["The application is innovative"],
+                  ["Application is susceptible to security breaches"]
+                ],
+                "negativeExplanations":[
+                  ["Further widens the socio economic class difference","Can lead to discrimination"],
+                  [],
+                  [],
+                  ["Potentially increases social class differences"],
+                  [],
+                  []
+                ]
             }
         },
         "rejected":{

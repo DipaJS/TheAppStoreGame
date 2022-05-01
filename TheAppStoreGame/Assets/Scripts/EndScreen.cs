@@ -31,7 +31,6 @@ public class EndScreen : MonoBehaviour
         totalBroken = GetTotalBroken();
         totalFollowed = GetTotalFollowed();
         test = new int[]{1,2,3,4,5,6,7};
-        //honoredCodes = new TextMeshProUGUI[7];
         UpdateCodes();
     }
 
