@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Let the cancel button close the popup
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel") && newsPopup)
         {
             NewspaperPopup(false);
         }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2695,7 +2695,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Please comlpete the ACM Code of Ethics checklist before choosing to accept
+  m_text: Please complete the ACM Code of Ethics checklist before choosing to accept
     or reject the application.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2923,7 +2923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &158438329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9077,7 +9077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66a8e38ec266b94448694ff510ce9e8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fullText: Press "Esc" and read the newspaper on the desk!
+  fullText: A new newspaper has arrived at your desk!
   delay: 0.05
 --- !u!114 &531279432
 MonoBehaviour:
@@ -17408,7 +17408,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &989834578
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25754,7 +25754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1530689427
 RectTransform:
   m_ObjectHideFlags: 0
@@ -27206,7 +27206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1609946480
 Transform:
   m_ObjectHideFlags: 0
