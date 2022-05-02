@@ -53,9 +53,18 @@ public class CameraManager : MonoBehaviour
         // If the "Cancel" button (esc) is pressed, return to default view
         if (Input.GetButtonDown("Cancel"))
         {
-            Cancel();
-            Debug.Log("Cancel!");
-			//GetComponent<MouseLook>().enabled = true; //Uncomment this and line 42&85 to enable camera look
+			if(ui.activeSelf)
+			{
+					Cancel();
+					Debug.Log("Cancel!");
+					//GetComponent<MouseLook>().enabled = true; //Uncomment this and line 42&94 to enable camera look
+			}
+			else
+			{
+					world.transform.GetChild(0).gameObject.SetActive(true); // Menu when pressing "Esc"
+					//GetComponent<MouseLook>().enabled = false; //Uncomment this and line 42&94 to enable camera look
+			}
+	
         }
     }
 
