@@ -9,7 +9,7 @@ public class TypeWriterEffect : MonoBehaviour
 	[TextArea]
 	public string fullText;
 
-	public float delay = 0.05f;
+	public float delay;// = 0.05f;
 	private string currentText = "";
 
 	// Use this for initialization
