@@ -7521,7 +7521,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &427468024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9060,10 +9060,10 @@ RectTransform:
   m_Father: {fileID: 1991484557}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 350, y: 30}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 1.4940033, y: 0.0000038146973}
+  m_SizeDelta: {x: 261.21, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &531279431
 MonoBehaviour:
@@ -9078,7 +9078,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fullText: Press "Esc" and read the newspaper on the desk!
-  delay: 0.1
+  delay: 0.05
 --- !u!114 &531279432
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9106,7 +9106,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -33931,8 +33931,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 340, y: -205}
-  m_SizeDelta: {x: 300, y: 30}
+  m_AnchoredPosition: {x: 330, y: -205}
+  m_SizeDelta: {x: 267.184, y: 30}
   m_Pivot: {x: 0.50000006, y: 0.5}
 --- !u!95 &1991484558
 Animator:
