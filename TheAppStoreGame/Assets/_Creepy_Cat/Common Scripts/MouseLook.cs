@@ -41,7 +41,10 @@ public class MouseLook : MonoBehaviour
 	void Start ()
 	{
 		Cursor.visible = true;
-		 Cursor.lockState = CursorLockMode.Locked;
+		Cursor.lockState = CursorLockMode.Locked;
+
+		//Cursor.lockState = CursorLockMode.Confined;
+		//Debug.Log("Confined");
 
 		// Set target direction to the camera's initial orientation.
 		targetDirection = transform.localRotation.eulerAngles;
@@ -56,6 +59,7 @@ public class MouseLook : MonoBehaviour
 		// Ensure the cursor is always locked when set
 		//Screen.lockCursor = lockCursor;
 		Cursor.lockState = lockCursor;
+		
 		
 		// Allow the script to clamp based on a desired target value.
 		var targetOrientation = Quaternion.Euler (targetDirection);

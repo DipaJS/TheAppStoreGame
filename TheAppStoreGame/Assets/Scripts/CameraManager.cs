@@ -55,7 +55,7 @@ public class CameraManager : MonoBehaviour
         {
             Cancel();
             Debug.Log("Cancel!");
-			//GetComponent<MouseLook>().enabled = true; //Uncomment this and line 42 to enable camera look
+			//GetComponent<MouseLook>().enabled = true; //Uncomment this and line 42&85 to enable camera look
         }
     }
 
@@ -82,5 +82,6 @@ public class CameraManager : MonoBehaviour
         ui.SetActive(false);
         world.SetActive(true);
         Debug.Log("Exited!");
+		//GetComponent<MouseLook>().enabled = true;
     }
 }
