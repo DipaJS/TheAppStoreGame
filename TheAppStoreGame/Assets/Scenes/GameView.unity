@@ -30757,6 +30757,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newspaper: {fileID: 320134017}
   newsPopup: {fileID: 494991042}
+  PlayerOfficeObject: {fileID: 197595815}
 --- !u!4 &1788426659
 Transform:
   m_ObjectHideFlags: 0

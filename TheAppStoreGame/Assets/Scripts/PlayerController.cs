@@ -11,6 +11,19 @@ public class PlayerController : MonoBehaviour
 {
     public GameObject newspaper;
     public GameObject newsPopup;
+    public GameObject PlayerOfficeObject;
+
+    void Start()
+    {
+        StartCoroutine(InteractionPause());
+    }
+
+    IEnumerator InteractionPause() 
+    { 
+        PlayerOfficeObject.GetComponent<Collider>().enabled = false;
+        yield return new WaitForSeconds(20);
+        PlayerOfficeObject.GetComponent<Collider>().enabled = true;
+    }
 
     void Update()
     {
